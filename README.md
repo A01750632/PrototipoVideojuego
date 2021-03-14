@@ -1,4 +1,4 @@
 # PrototipoVideojuego
- Prototipo Videojuego STEAM fase 1 \n
- Liam Garay Monroy A01750632 \n
+ Prototipo Videojuego STEAM fase 1 
+ Liam Garay Monroy A01750632 
  Ya está todo el equipo
