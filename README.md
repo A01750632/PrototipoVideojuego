@@ -5,3 +5,6 @@
 
 Ariadna Guzmán
 Prueba de actualización de archivo
+
+Amy Murakami Tsutsumi 
+Prueba clonar repositorio
