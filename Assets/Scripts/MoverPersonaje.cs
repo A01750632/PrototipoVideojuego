@@ -29,7 +29,7 @@ public class MoverPersonaje : MonoBehaviour
 
         //salto (Después lo vamos a resolver con JUMP)
         float movVertical = Input.GetAxis("Vertical");
-        if (movVertical > 0 )//&& PruebaPiso.estaEnPiso)
+        if (movVertical > 0 && PruebaPiso.estaEnPiso)
         {
             rigidbody.velocity = new Vector2(rigidbody.velocity.x, maxVelocidadY);
         }
