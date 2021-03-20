@@ -12,3 +12,5 @@ Prueba clonar repositorio
 
 Andrea Díaz
 Prueba
+
+Jorge Chávez Badillo A01749448
