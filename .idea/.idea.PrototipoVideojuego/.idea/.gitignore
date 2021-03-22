@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/contentModel.xml
+/.idea.PrototipoVideojuego.iml
+/modules.xml
+/projectSettingsUpdater.xml
+# Datasource local storage ignored files
+/../../../../../../../../../../../:\arijo\OneDrive\Documentos\4TO SEMESTRE\Construcción de software y toma de decisiones\Videojuegos\PrototipoVideojuego\.idea\.idea.PrototipoVideojuego\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
