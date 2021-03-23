@@ -266,3 +266,27 @@ Received Import Request.
 Start importing Assets/FreeButtonSet/Textures/icons/64x64/pause.png using Guid(75c6c57e72a33de42bcf6efefad9c957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2d9f0abc84b0f1c30bfa429687722b9') in 0.029396 seconds
   Import took 0.036417 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 544.894900 seconds.
+  path: Assets/FreeButtonSet/Fonts/Platinum Sign.ttf
+  artifactKey: Guid(e1f305b72a753f34ab81747450b2cda9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeButtonSet/Fonts/Platinum Sign.ttf using Guid(e1f305b72a753f34ab81747450b2cda9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31798465449334b84cd72344f4068d97') in 0.072664 seconds
+  Import took 0.081260 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.527350 seconds.
+  path: Assets/FreeButtonSet/Fonts/techno_hideo_bold.ttf
+  artifactKey: Guid(535778a179df3104f89dacd29b2bc126) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeButtonSet/Fonts/techno_hideo_bold.ttf using Guid(535778a179df3104f89dacd29b2bc126) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aae5aa8b9aad743b79e00b057775eb90') in 0.022559 seconds
+  Import took 0.032047 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2131.355380 seconds.
+  path: Assets/FreeButtonSet/Textures/buttons/regresar.png
+  artifactKey: Guid(a23c540890efc35428d9ffe00e88cf9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeButtonSet/Textures/buttons/regresar.png using Guid(a23c540890efc35428d9ffe00e88cf9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '962eeffbbff37d3257c1dffa516336a0') in 0.057636 seconds
+  Import took 0.067531 seconds .
+
