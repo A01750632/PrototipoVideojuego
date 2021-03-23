@@ -104,3 +104,36 @@ Received Import Request.
 Start importing Assets/Scenes/EscenaMenu2.unity using Guid(1b14f6adfde074e22bf6f77924ce83b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ab5a2d0577c83c1607e48401a0c7e51') in 0.005272 seconds
   Import took 0.015361 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 841.234006 seconds.
+  path: Assets/Warped City Assets/Artwork/ENVIRONMENT/background/buildings-bg.png
+  artifactKey: Guid(37d1bdb3e1de647ae915d01a2b7def15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City Assets/Artwork/ENVIRONMENT/background/buildings-bg.png using Guid(37d1bdb3e1de647ae915d01a2b7def15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ca7a814bce833ae65c5d34fb12f55a5') in 0.374857 seconds
+  Import took 0.378410 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000342 seconds.
+  path: Assets/Warped City Assets/Artwork/ENVIRONMENT/background/near-buildings-bg.png
+  artifactKey: Guid(8be56079f98104befaf15e67184d36f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City Assets/Artwork/ENVIRONMENT/background/near-buildings-bg.png using Guid(8be56079f98104befaf15e67184d36f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25202c0922d65bb66f1e131d18fbb896') in 0.013676 seconds
+  Import took 0.016954 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000379 seconds.
+  path: Assets/Warped City Assets/Artwork/ENVIRONMENT/background/skyline-a.png
+  artifactKey: Guid(85e3b366cc43a412eaea4abb85da0cd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City Assets/Artwork/ENVIRONMENT/background/skyline-a.png using Guid(85e3b366cc43a412eaea4abb85da0cd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66d78d2932b013b30ccd79dd8b9148df') in 0.014171 seconds
+  Import took 0.017628 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Warped City Assets/Artwork/ENVIRONMENT/background/skyline-b.png
+  artifactKey: Guid(224884cef4f9549dc8e494a2c3f6ee87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City Assets/Artwork/ENVIRONMENT/background/skyline-b.png using Guid(224884cef4f9549dc8e494a2c3f6ee87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb2732197d059b6edd82b845d98abb72') in 0.027323 seconds
+  Import took 0.031575 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
