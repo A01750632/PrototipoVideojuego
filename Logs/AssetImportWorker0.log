@@ -12,230 +12,1734 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55166
+55349
 Successfully changed project path to: /Users/jorgechb/Documents/GitHub/PrototipoVideojuego
 /Users/jorgechb/Documents/GitHub/PrototipoVideojuego
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 34.33 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 32.78 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.6f1 (8a2143876886)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.2.6f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/jorgechb/Documents/GitHub/PrototipoVideojuego/Assets
 GfxDevice: creating device client; threaded=0
-2021-03-22 21:41:38.034 Unity[29746:2510515] (null) preferred device: Apple M1 (high power)
-2021-03-22 21:41:38.034 Unity[29746:2510515] Metal devices available: 1
-2021-03-22 21:41:38.034 Unity[29746:2510515] 0: Apple M1 (high power)
-2021-03-22 21:41:38.034 Unity[29746:2510515] Using device Apple M1 (high power)
+2021-03-22 21:56:47.547 Unity[29914:2521010] (null) preferred device: Apple M1 (high power)
+2021-03-22 21:56:47.547 Unity[29914:2521010] Metal devices available: 1
+2021-03-22 21:56:47.547 Unity[29914:2521010] 0: Apple M1 (high power)
+2021-03-22 21:56:47.547 Unity[29914:2521010] Using device Apple M1 (high power)
 Initializing Metal device caps: Apple M1
 Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2020.2.6f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2020.2.6f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/Applications/Unity/Hub/Editor/2020.2.6f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56746
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56914
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2020.2.6f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2020.2.6f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001428 seconds.
+Registered in 0.000472 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 34.45 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 34.00 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.971 seconds
+- Completed reload, in  1.967 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001724 seconds.
+Registered in 0.000326 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 35.13 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 35.03 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.790 seconds
+- Completed reload, in  1.741 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launching external process: /Applications/Unity/Hub/Editor/2020.2.6f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1801 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 144.4 MB.
 System memory in use after: 144.5 MB.
 
 Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2248.
-Total: 1.627500 ms (FindLiveObjects: 0.188417 ms CreateObjectMapping: 0.037250 ms MarkObjects: 1.339458 ms  DeleteObjects: 0.061500 ms)
+Total: 1.941709 ms (FindLiveObjects: 0.227750 ms CreateObjectMapping: 0.041458 ms MarkObjects: 1.603000 ms  DeleteObjects: 0.068000 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes/Nivel5.unity
-  artifactKey: Guid(d9aea28ac564ebe409831cbedbb54abf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Nivel5.unity using Guid(d9aea28ac564ebe409831cbedbb54abf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c736d714c3fd41521db3893dafe0c775') in 0.019817 seconds
-  Import took 0.022411 seconds .
+  path: Assets/Scenes/EscenaMenu2.unity
+  artifactKey: Guid(1b14f6adfde074e22bf6f77924ce83b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/EscenaMenu2.unity using Guid(1b14f6adfde074e22bf6f77924ce83b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f279ccde8bf196841550a8ebfc47dba5') in 0.017534 seconds
+  Import took 0.020047 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000217 seconds.
-  path: Assets/Scenes/Nivel3.unity
-  artifactKey: Guid(572dadf71d779054f98a6775a3343e16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Nivel3.unity using Guid(572dadf71d779054f98a6775a3343e16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae6c442df058976f034661a699a8779d') in 0.000934 seconds
-  Import took 0.002481 seconds .
+  Time since last request: 258.506143 seconds.
+  path: Assets/Items/FontMap
+  artifactKey: Guid(4735c008660f977468b174ab146038db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap using Guid(4735c008660f977468b174ab146038db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d41ed227e30aa3fe3eed09c9c8b4cef') in 0.001155 seconds
+  Import took 0.005050 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000183 seconds.
-  path: Assets/Scenes/Nivel1.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Nivel1.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a12a55114c93ef79f022efec64ae4099') in 0.000677 seconds
-  Import took 0.002280 seconds .
+  Time since last request: 0.263768 seconds.
+  path: Assets/Items/FontMap/frame_000_delay-0.04s.gif
+  artifactKey: Guid(ab40ff49c2f15ba4a974ba8701016757) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_000_delay-0.04s.gif using Guid(ab40ff49c2f15ba4a974ba8701016757) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfb03cde3a8348a0d83735268bc8a2e8') in 0.582889 seconds
+  Import took 0.586454 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000278 seconds.
-  path: Assets/Scenes/Nivel2.unity
-  artifactKey: Guid(6b830670c04672447aa7c0c363b7f7aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Nivel2.unity using Guid(6b830670c04672447aa7c0c363b7f7aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd04cdd163fe619c886a3ea844ab2cab7') in 0.000716 seconds
-  Import took 0.002330 seconds .
+  Time since last request: 0.000296 seconds.
+  path: Assets/Items/FontMap/frame_020_delay-0.03s.gif
+  artifactKey: Guid(9c5d82f20ba34c942b72c71dcbc4adfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_020_delay-0.03s.gif using Guid(9c5d82f20ba34c942b72c71dcbc4adfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2573b0162845b01d09566760a5a6726') in 0.012232 seconds
+  Import took 0.014294 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.511798 seconds.
-  path: Assets/Scenes/MapaNiveles.unity
-  artifactKey: Guid(ad7cf34dae4e4454eaba375943181a9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MapaNiveles.unity using Guid(ad7cf34dae4e4454eaba375943181a9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8de43b74138abd974e6d3d2f49d5441') in 0.001619 seconds
-  Import took 0.004876 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000592 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.673 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.30 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1791 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 144.1 MB.
-System memory in use after: 144.2 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2251.
-Total: 1.306750 ms (FindLiveObjects: 0.118875 ms CreateObjectMapping: 0.034833 ms MarkObjects: 1.134000 ms  DeleteObjects: 0.018334 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000537 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.695 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.30 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1791 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 144.3 MB.
-System memory in use after: 144.5 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2254.
-Total: 1.330500 ms (FindLiveObjects: 0.126500 ms CreateObjectMapping: 0.036333 ms MarkObjects: 1.145958 ms  DeleteObjects: 0.020834 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000412 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.648 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.26 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1791 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 144.6 MB.
-System memory in use after: 144.7 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2257.
-Total: 1.286667 ms (FindLiveObjects: 0.114917 ms CreateObjectMapping: 0.035917 ms MarkObjects: 1.121375 ms  DeleteObjects: 0.013583 ms)
+  Time since last request: 0.000252 seconds.
+  path: Assets/Items/FontMap/frame_028_delay-0.06s.gif
+  artifactKey: Guid(2c48cb86283cd5440ab2a0a83f9a17ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_028_delay-0.06s.gif using Guid(2c48cb86283cd5440ab2a0a83f9a17ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e20c9f22d542884c36c8db484ea65a4') in 0.009330 seconds
+  Import took 0.011476 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 85.838397 seconds.
-  path: Assets/Animation/Correr.anim
-  artifactKey: Guid(86e4e87cb8ba2fa4ba8947c32d8f4300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Correr.anim using Guid(86e4e87cb8ba2fa4ba8947c32d8f4300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5772be15ed46b7237aa4ff42d0cb4a1d') in 0.628032 seconds
-  Import took 0.631037 seconds .
+  Time since last request: 0.000249 seconds.
+  path: Assets/Items/FontMap/frame_006_delay-0.03s.gif
+  artifactKey: Guid(7d036ce1804cd474a8db2eb6c9a732ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_006_delay-0.03s.gif using Guid(7d036ce1804cd474a8db2eb6c9a732ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ae14c34ce1b990fe18ce0d76ac725aa') in 0.008752 seconds
+  Import took 0.010939 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.052355 seconds.
-  path: Assets/Animation/Idle__000.controller
-  artifactKey: Guid(e558a8a7640ad1a448bb1fbb477c5d4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Idle__000.controller using Guid(e558a8a7640ad1a448bb1fbb477c5d4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2390e2f737dd5bfe5334cc5ac19ec3b') in 0.169804 seconds
-  Import took 0.172242 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.871012 seconds.
-  path: Assets/Animation/mapFont.controller
-  artifactKey: Guid(a4a4b8fe9b9b86946a8de6c1da103997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/mapFont.controller using Guid(a4a4b8fe9b9b86946a8de6c1da103997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73b462bccba28112841d4112f92e1239') in 0.004027 seconds
-  Import took 0.007231 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.440589 seconds.
-  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab
-  artifactKey: Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab using Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc6b1c951af078ace7e3bee774415406') in 0.138534 seconds
-  Import took 0.141078 seconds .
+  Time since last request: 0.000210 seconds.
+  path: Assets/Items/FontMap/frame_011_delay-0.03s.gif
+  artifactKey: Guid(3368aa03d5a93404a930fb269dd182c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_011_delay-0.03s.gif using Guid(3368aa03d5a93404a930fb269dd182c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6aae8d2db97a72dc5e4aab44bd6bc7fb') in 0.008962 seconds
+  Import took 0.011149 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000239 seconds.
-  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Open Sprite Shape.prefab
-  artifactKey: Guid(86ae7de409eb54f619fb1328e4d42480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Open Sprite Shape.prefab using Guid(86ae7de409eb54f619fb1328e4d42480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9bbba0f81786a81a33c140257f039c5') in 0.004893 seconds
-  Import took 0.006851 seconds .
+  path: Assets/Items/FontMap/frame_030_delay-0.03s.gif
+  artifactKey: Guid(959d83833c3c84748b77e605888d4532) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_030_delay-0.03s.gif using Guid(959d83833c3c84748b77e605888d4532) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e22eb571c6aaf1a67f8558c508a9573') in 0.008385 seconds
+  Import took 0.010533 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 15.940496 seconds.
-  path: Assets
-  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f47cf443bddc682ac2de11ea429897ce') in 0.001332 seconds
-  Import took 0.005045 seconds .
+  Time since last request: 0.000171 seconds.
+  path: Assets/Items/FontMap/frame_009_delay-0.02s.gif
+  artifactKey: Guid(bcb633db5f099bf41afffdfce629b58b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_009_delay-0.02s.gif using Guid(bcb633db5f099bf41afffdfce629b58b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac20c1a4024e36a129c65ec9467a2da5') in 0.008067 seconds
+  Import took 0.010168 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Items/FontMap/frame_015_delay-0.03s.gif
+  artifactKey: Guid(ffa4428c8e353ce4a8c748fcc71810b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_015_delay-0.03s.gif using Guid(ffa4428c8e353ce4a8c748fcc71810b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b5c867d4f002840c01f7656d4987ac7') in 0.008103 seconds
+  Import took 0.010194 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000326 seconds.
+  path: Assets/Items/FontMap/frame_029_delay-0.03s.gif
+  artifactKey: Guid(def24f14fa4331843b3370710f0db502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_029_delay-0.03s.gif using Guid(def24f14fa4331843b3370710f0db502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a51e0a865e5489a9b15898bad64a3eab') in 0.008847 seconds
+  Import took 0.010952 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Items/FontMap/frame_017_delay-0.03s.gif
+  artifactKey: Guid(26ff815530067b2408d0645d2092e1a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_017_delay-0.03s.gif using Guid(26ff815530067b2408d0645d2092e1a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6222b0af78748fa32b6fa6cf4b6ace74') in 0.009097 seconds
+  Import took 0.011259 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Items/FontMap/frame_032_delay-0.03s.gif
+  artifactKey: Guid(be7c7e8cbd1845c4fa2628f863194855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_032_delay-0.03s.gif using Guid(be7c7e8cbd1845c4fa2628f863194855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '874508b12d52b353543f244532abc718') in 0.008710 seconds
+  Import took 0.010891 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Items/FontMap/frame_043_delay-0.05s.gif
+  artifactKey: Guid(028a20bfd209f234a89cf80cafccda60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_043_delay-0.05s.gif using Guid(028a20bfd209f234a89cf80cafccda60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af505efacf40fea5a34b1ee88b348bc1') in 0.008112 seconds
+  Import took 0.010110 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Items/FontMap/frame_052_delay-0.03s.gif
+  artifactKey: Guid(4721e39c8e7fcb140a6a78419479b720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_052_delay-0.03s.gif using Guid(4721e39c8e7fcb140a6a78419479b720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4262ee9bdfae82e9982de17280bf28f') in 0.008984 seconds
+  Import took 0.010993 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/Items/FontMap/frame_031_delay-0.03s.gif
+  artifactKey: Guid(6e6cbbadb86ef4a4f8b501d3e8ae53e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_031_delay-0.03s.gif using Guid(6e6cbbadb86ef4a4f8b501d3e8ae53e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa9af1e106754c5c28b3faae6fcbbfb0') in 0.008132 seconds
+  Import took 0.010190 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/Items/FontMap/frame_034_delay-0.03s.gif
+  artifactKey: Guid(b08d1da3b0825094ebe2c7d83bef337b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_034_delay-0.03s.gif using Guid(b08d1da3b0825094ebe2c7d83bef337b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c93223cc2cbe3b5596ea1a8f902264f6') in 0.008324 seconds
+  Import took 0.010409 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/Items/FontMap/frame_022_delay-0.03s.gif
+  artifactKey: Guid(c8181246cf07e624e906c71a28b44845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_022_delay-0.03s.gif using Guid(c8181246cf07e624e906c71a28b44845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dc586a6f367773ce95d8e4ca10fa5bd') in 0.007967 seconds
+  Import took 0.010092 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/Items/FontMap/frame_042_delay-0.05s.gif
+  artifactKey: Guid(64b65b17fe8e24d42b96f21d9bc3e949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_042_delay-0.05s.gif using Guid(64b65b17fe8e24d42b96f21d9bc3e949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47befe2d5323059d1bb9857f4eb7201a') in 0.008505 seconds
+  Import took 0.010726 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/Items/FontMap/frame_025_delay-0.03s.gif
+  artifactKey: Guid(d110a9ec143e79a4784028f8c647b64e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_025_delay-0.03s.gif using Guid(d110a9ec143e79a4784028f8c647b64e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9b8ad2bd3f05481d9038795f3232724') in 0.008281 seconds
+  Import took 0.010323 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/Items/FontMap/frame_041_delay-0.03s.gif
+  artifactKey: Guid(4e45c7caaee732240beea9fe981a17dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_041_delay-0.03s.gif using Guid(4e45c7caaee732240beea9fe981a17dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1dbcf33f378a118f609935058b7314c') in 0.008171 seconds
+  Import took 0.010224 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Items/FontMap/frame_023_delay-0.03s.gif
+  artifactKey: Guid(bf6bb2cbfabd2694381f3c9fcfc7bacc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_023_delay-0.03s.gif using Guid(bf6bb2cbfabd2694381f3c9fcfc7bacc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c94c0152eb0778ebc959f309373c7fa') in 0.008009 seconds
+  Import took 0.010141 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/Items/FontMap/frame_014_delay-0.03s.gif
+  artifactKey: Guid(ad3194aaa6491014e947b74716466a7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_014_delay-0.03s.gif using Guid(ad3194aaa6491014e947b74716466a7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '336c1ed6810b270a18def1232ffb94f0') in 0.008633 seconds
+  Import took 0.010752 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/Items/FontMap/frame_039_delay-0.03s.gif
+  artifactKey: Guid(f8cfcaf9e2511d343aac20eb0e086c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_039_delay-0.03s.gif using Guid(f8cfcaf9e2511d343aac20eb0e086c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ead41dee5bae343a11956e1a883d898') in 0.007904 seconds
+  Import took 0.009945 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Items/FontMap/frame_016_delay-0.03s.gif
+  artifactKey: Guid(8694b09b1894bba4b9c86557b14ec5a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_016_delay-0.03s.gif using Guid(8694b09b1894bba4b9c86557b14ec5a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6640d0f3470307998030025c2f6e1fb3') in 0.008852 seconds
+  Import took 0.010842 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/Items/FontMap/frame_005_delay-0.03s.gif
+  artifactKey: Guid(4068e3c082eec7849a049e366fcd9324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_005_delay-0.03s.gif using Guid(4068e3c082eec7849a049e366fcd9324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5972cb0a92df704d160dde57b0e5862') in 0.008238 seconds
+  Import took 0.010392 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/Items/FontMap/frame_035_delay-0.03s.gif
+  artifactKey: Guid(0785110ce03d28a44a4092dd88d7e8fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_035_delay-0.03s.gif using Guid(0785110ce03d28a44a4092dd88d7e8fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95a261fe1d551be954052db7d340c351') in 0.011764 seconds
+  Import took 0.013948 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Items/FontMap/frame_037_delay-0.03s.gif
+  artifactKey: Guid(eb9c27daa56527e4c992e6d29052fa21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_037_delay-0.03s.gif using Guid(eb9c27daa56527e4c992e6d29052fa21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43e4bf76414f6e81c711d6a45d295b45') in 0.008124 seconds
+  Import took 0.010116 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/Items/FontMap/frame_007_delay-0.03s.gif
+  artifactKey: Guid(c22aa1fb2fc48a549a438791a629fa77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_007_delay-0.03s.gif using Guid(c22aa1fb2fc48a549a438791a629fa77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50e39a64f9501fc96391a0341baea577') in 0.008212 seconds
+  Import took 0.010295 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/Items/FontMap/frame_004_delay-0.03s.gif
+  artifactKey: Guid(2aca40cff7c5e0944a1d6f2bb3bed6c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_004_delay-0.03s.gif using Guid(2aca40cff7c5e0944a1d6f2bb3bed6c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7fafc926fb0c07ecbccc9ffd1824b45') in 0.008205 seconds
+  Import took 0.010375 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Items/FontMap/frame_033_delay-0.04s.gif
+  artifactKey: Guid(a6ba9178649ce57488f19cfb5c3455f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_033_delay-0.04s.gif using Guid(a6ba9178649ce57488f19cfb5c3455f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc61a3408d6d57b223062452bdc5cef1') in 0.008067 seconds
+  Import took 0.010078 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/Items/FontMap/frame_044_delay-0.05s.gif
+  artifactKey: Guid(9899b5025fbac6b4baf440f1a1d3adfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_044_delay-0.05s.gif using Guid(9899b5025fbac6b4baf440f1a1d3adfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aae375b48f3307f35e39d734e06993d6') in 0.008070 seconds
+  Import took 0.010162 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Items/FontMap/frame_047_delay-0.03s.gif
+  artifactKey: Guid(e2b9d166284014f4a874f2dd5f07dca6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_047_delay-0.03s.gif using Guid(e2b9d166284014f4a874f2dd5f07dca6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1543c3da00d8fdd4add01c351a1da6a3') in 0.008250 seconds
+  Import took 0.010320 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/Items/FontMap/frame_027_delay-0.06s.gif
+  artifactKey: Guid(d78b416cc1757b94fae1cef869951a6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_027_delay-0.06s.gif using Guid(d78b416cc1757b94fae1cef869951a6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cebf9f9727c59c129c5b2ba8d7f7e5f') in 0.009531 seconds
+  Import took 0.011640 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/Items/FontMap/frame_019_delay-0.03s.gif
+  artifactKey: Guid(2a48e9bbac1d1074ab5be95023fc67ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_019_delay-0.03s.gif using Guid(2a48e9bbac1d1074ab5be95023fc67ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c163c9a88a783d4252cca77bc9e55117') in 0.008863 seconds
+  Import took 0.010908 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Items/FontMap/frame_049_delay-0.04s.gif
+  artifactKey: Guid(ded8aaaed9f9042498852620ae799b17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_049_delay-0.04s.gif using Guid(ded8aaaed9f9042498852620ae799b17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81f454f57ae367212e2472a3a5c0cfcd') in 0.008333 seconds
+  Import took 0.010380 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Items/FontMap/frame_002_delay-0.04s.gif
+  artifactKey: Guid(6b0a756a853f1db4b971e69836e51310) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_002_delay-0.04s.gif using Guid(6b0a756a853f1db4b971e69836e51310) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3698bf72151855d9c9aa868132e70b7f') in 0.008057 seconds
+  Import took 0.010090 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/Items/FontMap/frame_040_delay-0.03s.gif
+  artifactKey: Guid(3adf57f07ae3143408d30e340ac624bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_040_delay-0.03s.gif using Guid(3adf57f07ae3143408d30e340ac624bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0ea6d34952cf0d6691c583be3221c78') in 0.008348 seconds
+  Import took 0.010514 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/Items/FontMap/frame_036_delay-0.03s.gif
+  artifactKey: Guid(7500eb18315b65e49b0e8efd446a1d9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_036_delay-0.03s.gif using Guid(7500eb18315b65e49b0e8efd446a1d9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e505ca7fef6de1b74ce877d89308924') in 0.008174 seconds
+  Import took 0.010277 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Items/FontMap/frame_051_delay-0.03s.gif
+  artifactKey: Guid(d74186851cf4c4948b0a15bb3785248c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_051_delay-0.03s.gif using Guid(d74186851cf4c4948b0a15bb3785248c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a24d1a44127d61f4709201540660654') in 0.007947 seconds
+  Import took 0.009947 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/Items/FontMap/frame_018_delay-0.03s.gif
+  artifactKey: Guid(d19ec3220486c9b41a04e84630c467eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_018_delay-0.03s.gif using Guid(d19ec3220486c9b41a04e84630c467eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38b0e8a4faa7952477b8f9672e8b7b8f') in 0.007957 seconds
+  Import took 0.009962 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/Items/FontMap/frame_010_delay-0.03s.gif
+  artifactKey: Guid(db823aaf85930cf4c80ca3c94f803df6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_010_delay-0.03s.gif using Guid(db823aaf85930cf4c80ca3c94f803df6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c48b2b6c07a79e66c1b5ca5d0df5c411') in 0.007941 seconds
+  Import took 0.010065 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Items/FontMap/frame_012_delay-0.03s.gif
+  artifactKey: Guid(d2058f13a70eac9458205d23fa2cdc49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_012_delay-0.03s.gif using Guid(d2058f13a70eac9458205d23fa2cdc49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f322b8ad933113595a60c225505e0e69') in 0.008511 seconds
+  Import took 0.010562 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/Items/FontMap/frame_021_delay-0.03s.gif
+  artifactKey: Guid(68920879a573e18458c17aa6c166be7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_021_delay-0.03s.gif using Guid(68920879a573e18458c17aa6c166be7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9265e56bd509b1ca5031b45c1b451efd') in 0.008065 seconds
+  Import took 0.010109 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Items/FontMap/frame_024_delay-0.03s.gif
+  artifactKey: Guid(a1b56d08da91f354f81e204b053383ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_024_delay-0.03s.gif using Guid(a1b56d08da91f354f81e204b053383ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '573717b387c632a2f0d9ea807bcd0880') in 0.008112 seconds
+  Import took 0.010137 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/Items/FontMap/frame_045_delay-0.03s.gif
+  artifactKey: Guid(6d1f48c3830cc4844ac2695c6c7294b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_045_delay-0.03s.gif using Guid(6d1f48c3830cc4844ac2695c6c7294b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c5030939443789a02a56a99638b5b30') in 0.007887 seconds
+  Import took 0.010003 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/Items/FontMap/frame_003_delay-0.03s.gif
+  artifactKey: Guid(b096b27543573a14f8273896414047c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_003_delay-0.03s.gif using Guid(b096b27543573a14f8273896414047c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57d1914d5cd5b49e598fa7a7cd306073') in 0.008330 seconds
+  Import took 0.010477 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/Items/FontMap/frame_026_delay-0.03s.gif
+  artifactKey: Guid(45b25847b0e89b14db984f93d90aa5a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_026_delay-0.03s.gif using Guid(45b25847b0e89b14db984f93d90aa5a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4ca077157980ecc865e4370d587c897') in 0.007947 seconds
+  Import took 0.009949 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/Items/FontMap/frame_001_delay-0.06s.gif
+  artifactKey: Guid(f08ed0e778e841c49b17d2309e3933b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_001_delay-0.06s.gif using Guid(f08ed0e778e841c49b17d2309e3933b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d63dd1117d47f3b22460db32bc3267f') in 0.007964 seconds
+  Import took 0.009980 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Items/FontMap/frame_038_delay-0.03s.gif
+  artifactKey: Guid(2b7d2cd2027d2f947a053891b851c4fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_038_delay-0.03s.gif using Guid(2b7d2cd2027d2f947a053891b851c4fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6689564d71d199811ceae3f6d3e66118') in 0.008481 seconds
+  Import took 0.010628 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Items/FontMap/frame_050_delay-0.03s.gif
+  artifactKey: Guid(1b4685fc71a875849a8049a6929c56d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_050_delay-0.03s.gif using Guid(1b4685fc71a875849a8049a6929c56d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd984275a52759448230c2aaab7a4ae64') in 0.008666 seconds
+  Import took 0.010719 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Items/FontMap/frame_048_delay-0.03s.gif
+  artifactKey: Guid(fa14449d433397648885b10026660a0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_048_delay-0.03s.gif using Guid(fa14449d433397648885b10026660a0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df3fd0356cc7e601df0a0b31968e7f2d') in 0.008638 seconds
+  Import took 0.010718 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Items/FontMap/frame_046_delay-0.04s.gif
+  artifactKey: Guid(f94a9bfd7c93e6c45b11d977418997f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_046_delay-0.04s.gif using Guid(f94a9bfd7c93e6c45b11d977418997f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7316b50d520aef604cfebb7b2b1fcf4e') in 0.008533 seconds
+  Import took 0.010701 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Items/FontMap/frame_008_delay-0.03s.gif
+  artifactKey: Guid(aa32a4f3020c10143ac5cb7f2df07d39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_008_delay-0.03s.gif using Guid(aa32a4f3020c10143ac5cb7f2df07d39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ebce627289a853f52a02cb82900d8d7') in 0.007911 seconds
+  Import took 0.009924 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Items/FontMap/frame_013_delay-0.03s.gif
+  artifactKey: Guid(68b885b059a40294ea85cfa4d74b4709) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_013_delay-0.03s.gif using Guid(68b885b059a40294ea85cfa4d74b4709) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8acc88ed40359f61d03b2ff0e7b1c1ff') in 0.008008 seconds
+  Import took 0.010026 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.993990 seconds.
+  path: Assets/Items/FontMap/frame_053_delay-0.03s.gif
+  artifactKey: Guid(8e10e723681c6e644829616fb795a31f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_053_delay-0.03s.gif using Guid(8e10e723681c6e644829616fb795a31f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5cce123f27a00dddcfa05f9ac239441') in 0.010328 seconds
+  Import took 0.013099 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Items/FontMap/frame_057_delay-0.03s.gif
+  artifactKey: Guid(23d6440ddf04ef7459181d6d5a5ecf54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_057_delay-0.03s.gif using Guid(23d6440ddf04ef7459181d6d5a5ecf54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4201c10739f4a1c8bdd9d2bb01360bb') in 0.008336 seconds
+  Import took 0.010572 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Assets/Items/FontMap/frame_055_delay-0.03s.gif
+  artifactKey: Guid(ff60c775831d5c446a110ec243e1e05b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_055_delay-0.03s.gif using Guid(ff60c775831d5c446a110ec243e1e05b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2510757207a452a54a209beb017a40a') in 0.008870 seconds
+  Import took 0.011218 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Items/FontMap/frame_073_delay-0.03s.gif
+  artifactKey: Guid(302a61b30a88deb4ba3cebc33951a370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_073_delay-0.03s.gif using Guid(302a61b30a88deb4ba3cebc33951a370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '309be6c2f5a31ff58aec57693591eb51') in 0.008760 seconds
+  Import took 0.011092 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Items/FontMap/frame_074_delay-0.03s.gif
+  artifactKey: Guid(902baf5f540d0274ba58ebff2326f0c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_074_delay-0.03s.gif using Guid(902baf5f540d0274ba58ebff2326f0c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75260e33aa340f86d005ec445c3a5283') in 0.008836 seconds
+  Import took 0.010934 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/Items/FontMap/frame_071_delay-0.03s.gif
+  artifactKey: Guid(b6311ea8e368398428a5d3a7a720a68c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_071_delay-0.03s.gif using Guid(b6311ea8e368398428a5d3a7a720a68c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5459a36a7c9811aedb7b6ac4cf93efdc') in 0.008562 seconds
+  Import took 0.010648 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/Items/FontMap/frame_078_delay-0.03s.gif
+  artifactKey: Guid(94019795a70ab184e88babeb664de192) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_078_delay-0.03s.gif using Guid(94019795a70ab184e88babeb664de192) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ce80d89854ef78a9752b358b7b05d33') in 0.009122 seconds
+  Import took 0.011240 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/Items/FontMap/frame_075_delay-0.03s.gif
+  artifactKey: Guid(3a3858516ae5ab749a8ac1f3de8e2ae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_075_delay-0.03s.gif using Guid(3a3858516ae5ab749a8ac1f3de8e2ae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db1d584a03b9d961b125e818dbc1ee9c') in 0.008338 seconds
+  Import took 0.010432 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/Items/FontMap/frame_086_delay-0.05s.gif
+  artifactKey: Guid(a31b7af8cc184d6418237be995a7e469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_086_delay-0.05s.gif using Guid(a31b7af8cc184d6418237be995a7e469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b37dda9080acb8e075141406b999f6d') in 0.008544 seconds
+  Import took 0.010475 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Items/FontMap/frame_088_delay-0.05s.gif
+  artifactKey: Guid(fadfb75b71e94fa4883292c5ddbeaed7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_088_delay-0.05s.gif using Guid(fadfb75b71e94fa4883292c5ddbeaed7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0654d521284aabe3acf7274e8a074ffe') in 0.008632 seconds
+  Import took 0.010838 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/Items/FontMap/frame_081_delay-0.05s.gif
+  artifactKey: Guid(553e64911dd00bf46815b3211d83029f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_081_delay-0.05s.gif using Guid(553e64911dd00bf46815b3211d83029f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44ac71cbad91aa95d0b6190975eb11a2') in 0.008349 seconds
+  Import took 0.010374 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000346 seconds.
+  path: Assets/Items/FontMap/frame_077_delay-0.04s.gif
+  artifactKey: Guid(538d8cf2a4fc6dc4985924aae91cde55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_077_delay-0.04s.gif using Guid(538d8cf2a4fc6dc4985924aae91cde55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfb48dea4c20ccb18dcc07495dc89fc9') in 0.009134 seconds
+  Import took 0.011197 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Items/FontMap/frame_058_delay-0.04s.gif
+  artifactKey: Guid(c03af57dc043bff488ffc853abcc8444) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_058_delay-0.04s.gif using Guid(c03af57dc043bff488ffc853abcc8444) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94ba0f50a47f5f689f3f8c5a2f2cd2aa') in 0.008219 seconds
+  Import took 0.010397 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/Items/FontMap/frame_066_delay-0.03s.gif
+  artifactKey: Guid(92d933a2563d93847b8f873acbc8b3f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_066_delay-0.03s.gif using Guid(92d933a2563d93847b8f873acbc8b3f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cea2e8b9454f32324f92896fe76a07f5') in 0.008325 seconds
+  Import took 0.010466 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/Items/FontMap/frame_116_delay-0.05s.gif
+  artifactKey: Guid(20fb102854c58244da1633ed6eb5d2e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_116_delay-0.05s.gif using Guid(20fb102854c58244da1633ed6eb5d2e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a14eed12c7e1d87f852711751acf35b') in 0.007977 seconds
+  Import took 0.009981 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Items/FontMap/frame_104_delay-0.06s.gif
+  artifactKey: Guid(880e95d65a20bd040855da908be19f4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_104_delay-0.06s.gif using Guid(880e95d65a20bd040855da908be19f4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '441a5d154957bfa7ce7d05b438ba34d4') in 0.008842 seconds
+  Import took 0.010790 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000323 seconds.
+  path: Assets/Items/FontMap/frame_111_delay-0.05s.gif
+  artifactKey: Guid(91549f8ab37389c41b03bba00b586d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_111_delay-0.05s.gif using Guid(91549f8ab37389c41b03bba00b586d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11e3f99a9f517732a9e33cbe128f36ea') in 0.008054 seconds
+  Import took 0.010000 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Items/FontMap/frame_107_delay-0.05s.gif
+  artifactKey: Guid(d9e6c3297f9875d4f8d6d697a9344a90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_107_delay-0.05s.gif using Guid(d9e6c3297f9875d4f8d6d697a9344a90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55e38f187491dcfef9c129b0d15b33e8') in 0.008562 seconds
+  Import took 0.010604 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/Items/FontMap/frame_092_delay-0.05s.gif
+  artifactKey: Guid(e5d8944e23a1d0e45991ba779a094d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_092_delay-0.05s.gif using Guid(e5d8944e23a1d0e45991ba779a094d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b31f1724c1ca38b458d0bd17ffc707b') in 0.008761 seconds
+  Import took 0.010976 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Items/FontMap/frame_097_delay-0.06s.gif
+  artifactKey: Guid(3cb2ad9a4d17abc4db0977bddb604dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_097_delay-0.06s.gif using Guid(3cb2ad9a4d17abc4db0977bddb604dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41f060741b498029f4fd07f4bd365de3') in 0.008892 seconds
+  Import took 0.010982 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/Items/FontMap/frame_108_delay-0.06s.gif
+  artifactKey: Guid(e4104a09d40178d4c82aad3c672e29b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_108_delay-0.06s.gif using Guid(e4104a09d40178d4c82aad3c672e29b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17b2fe1c9ffc84896b94a3c788c4123c') in 0.008734 seconds
+  Import took 0.010758 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/Items/FontMap/frame_102_delay-0.06s.gif
+  artifactKey: Guid(2640d7e10ad837f4d840139f2ce6ec2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_102_delay-0.06s.gif using Guid(2640d7e10ad837f4d840139f2ce6ec2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98da2d10fdf45a78c63b8f391d34f030') in 0.008860 seconds
+  Import took 0.010817 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Items/FontMap/frame_109_delay-0.06s.gif
+  artifactKey: Guid(de361469193ed8c4db38ea85979a91dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_109_delay-0.06s.gif using Guid(de361469193ed8c4db38ea85979a91dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c8ce4972a49e143961437774bb7bccb') in 0.008152 seconds
+  Import took 0.010081 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: Assets/Items/FontMap/frame_101_delay-0.06s.gif
+  artifactKey: Guid(4da0ce205c998164a9bfd424908704b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_101_delay-0.06s.gif using Guid(4da0ce205c998164a9bfd424908704b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88e13dcc3b918bc303c155a491756b28') in 0.008280 seconds
+  Import took 0.010320 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Items/FontMap/frame_093_delay-0.05s.gif
+  artifactKey: Guid(f672f867401956449966959dab738b14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_093_delay-0.05s.gif using Guid(f672f867401956449966959dab738b14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd7823d89665ebc0a51d3853a6d79e53') in 0.009036 seconds
+  Import took 0.011346 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Items/FontMap/frame_110_delay-0.05s.gif
+  artifactKey: Guid(8c148e9d281186f4786e7bdd66d7637f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_110_delay-0.05s.gif using Guid(8c148e9d281186f4786e7bdd66d7637f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0de8a2fae4f2bbe9cbadeb1408cb8bc1') in 0.008591 seconds
+  Import took 0.010923 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Items/FontMap/frame_127_delay-0.04s.gif
+  artifactKey: Guid(2787e197614de0548a1f900a6068b337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_127_delay-0.04s.gif using Guid(2787e197614de0548a1f900a6068b337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0168cc4c17ebcfb095847cf22c5f8a1') in 0.007907 seconds
+  Import took 0.009979 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/Items/FontMap/frame_141_delay-0.03s.gif
+  artifactKey: Guid(009a7940676713842850f8a927b44a79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_141_delay-0.03s.gif using Guid(009a7940676713842850f8a927b44a79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc23baf8dcfc3e18a82127315c0a3bb7') in 0.007958 seconds
+  Import took 0.009919 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Items/FontMap/frame_135_delay-0.04s.gif
+  artifactKey: Guid(7d7f4c3298c122248bc4d4d42163bfd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_135_delay-0.04s.gif using Guid(7d7f4c3298c122248bc4d4d42163bfd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49d68f21b485820884eec91da3198375') in 0.007820 seconds
+  Import took 0.009776 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Items/FontMap/frame_136_delay-0.03s.gif
+  artifactKey: Guid(bd0ffd59a81661d4d95f438374735035) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_136_delay-0.03s.gif using Guid(bd0ffd59a81661d4d95f438374735035) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '851c103e34798189926ffe52ddbaa38a') in 0.008150 seconds
+  Import took 0.010431 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Items/FontMap/frame_122_delay-0.05s.gif
+  artifactKey: Guid(9c1a9ed3ee92e274c8b6c301bca7dd9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_122_delay-0.05s.gif using Guid(9c1a9ed3ee92e274c8b6c301bca7dd9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '733056cd8f69a45d08299af0619d04bc') in 0.008578 seconds
+  Import took 0.010911 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/Items/FontMap/frame_130_delay-0.05s.gif
+  artifactKey: Guid(4a54de0b8cc5bf541883f7d202f0d98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_130_delay-0.05s.gif using Guid(4a54de0b8cc5bf541883f7d202f0d98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a947eed50928a4c0820ac574f8ffdba7') in 0.008071 seconds
+  Import took 0.010126 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/Items/FontMap/frame_138_delay-0.03s.gif
+  artifactKey: Guid(7bc3c170f49f2a547b0c62fbfe826e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_138_delay-0.03s.gif using Guid(7bc3c170f49f2a547b0c62fbfe826e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c1b44780161d1c4bd8cf2f2fbdadc4f') in 0.007999 seconds
+  Import took 0.010178 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/Items/FontMap/frame_124_delay-0.04s.gif
+  artifactKey: Guid(17cc5d349f3ec734dbb577bf5472c600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_124_delay-0.04s.gif using Guid(17cc5d349f3ec734dbb577bf5472c600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aa724c720ff59868584d1630b6ba218') in 0.008374 seconds
+  Import took 0.010684 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/Items/FontMap/frame_149_delay-0.1s.gif
+  artifactKey: Guid(156a211f2502cc443878224648544a5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_149_delay-0.1s.gif using Guid(156a211f2502cc443878224648544a5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '763188a227ed6564811e2ee63eebbffa') in 0.007906 seconds
+  Import took 0.009959 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/Items/FontMap/frame_148_delay-0.05s.gif
+  artifactKey: Guid(74a2cec37a25b734e99cc6f0dc7147c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_148_delay-0.05s.gif using Guid(74a2cec37a25b734e99cc6f0dc7147c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62a03389304a22b4bc52fc519f9e7b15') in 0.007919 seconds
+  Import took 0.009860 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/Items/FontMap/frame_125_delay-0.05s.gif
+  artifactKey: Guid(f602c45018f7fe343b98aee400d05218) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_125_delay-0.05s.gif using Guid(f602c45018f7fe343b98aee400d05218) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f18eff33da8f327ba32355fe7a5887fd') in 0.007969 seconds
+  Import took 0.009917 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Items/FontMap/frame_146_delay-0.05s.gif
+  artifactKey: Guid(3fefcaa92e338e046acc0c5db1d58f3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_146_delay-0.05s.gif using Guid(3fefcaa92e338e046acc0c5db1d58f3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e343990d1f956ca08d4a4c5056f28b9') in 0.008016 seconds
+  Import took 0.010164 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Items/FontMap/frame_100_delay-0.06s.gif
+  artifactKey: Guid(5abaa9b5dde863548a560ba649f91367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_100_delay-0.06s.gif using Guid(5abaa9b5dde863548a560ba649f91367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40bedb05ab410c53dd5c00437bce6305') in 0.008885 seconds
+  Import took 0.010907 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Items/FontMap/frame_119_delay-0.05s.gif
+  artifactKey: Guid(d9e4ce5132a13b44ebc19d4208514255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_119_delay-0.05s.gif using Guid(d9e4ce5132a13b44ebc19d4208514255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbd2edb115f9a38fdcafbcd1e15469d9') in 0.008466 seconds
+  Import took 0.010505 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Items/FontMap/frame_117_delay-0.04s.gif
+  artifactKey: Guid(64e72adeb75067b44bc0efb0cd4d65ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_117_delay-0.04s.gif using Guid(64e72adeb75067b44bc0efb0cd4d65ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12f74feafc7696adc10a8f70dec6f2c7') in 0.008530 seconds
+  Import took 0.010523 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Items/FontMap/frame_105_delay-0.05s.gif
+  artifactKey: Guid(eec0eea177f3cc94aaf39ae9f5a3c90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_105_delay-0.05s.gif using Guid(eec0eea177f3cc94aaf39ae9f5a3c90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5125277d2acedb2db608499894171074') in 0.008494 seconds
+  Import took 0.010627 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Items/FontMap/frame_112_delay-0.06s.gif
+  artifactKey: Guid(a6252b3773bf99843bb9bbbb1d3b76f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_112_delay-0.06s.gif using Guid(a6252b3773bf99843bb9bbbb1d3b76f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26926f54af5c8a39f08e9b3be93cee65') in 0.007882 seconds
+  Import took 0.009923 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/Items/FontMap/frame_113_delay-0.05s.gif
+  artifactKey: Guid(8ae118572e7a37f4eb69ee37805593ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_113_delay-0.05s.gif using Guid(8ae118572e7a37f4eb69ee37805593ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb7f7f378ccd64e0a6372a706e243957') in 0.008035 seconds
+  Import took 0.010007 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/Items/FontMap/frame_095_delay-0.06s.gif
+  artifactKey: Guid(1bc98aca33b5a614494403454d0d16fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_095_delay-0.06s.gif using Guid(1bc98aca33b5a614494403454d0d16fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50e95a6f86130cc5ed113c87a27677f5') in 0.008829 seconds
+  Import took 0.010970 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/Items/FontMap/frame_068_delay-0.03s.gif
+  artifactKey: Guid(87cddc7c2eacd4643a87041a5e389575) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_068_delay-0.03s.gif using Guid(87cddc7c2eacd4643a87041a5e389575) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '352ad4b770a268b058fb4008b91fe99a') in 0.008641 seconds
+  Import took 0.010741 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/Items/FontMap/frame_121_delay-0.05s.gif
+  artifactKey: Guid(d1dfaed2ef6a5e14c92ef19a5be93d71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_121_delay-0.05s.gif using Guid(d1dfaed2ef6a5e14c92ef19a5be93d71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa6b7acb1c45726b0482781497173061') in 0.008344 seconds
+  Import took 0.010427 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/Items/FontMap/frame_137_delay-0.04s.gif
+  artifactKey: Guid(1a508fa46c5a07243b461c00682fb0e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_137_delay-0.04s.gif using Guid(1a508fa46c5a07243b461c00682fb0e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c737368632422f49dbcc5ad11f67fbe') in 0.007801 seconds
+  Import took 0.009735 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Items/FontMap/frame_106_delay-0.06s.gif
+  artifactKey: Guid(560780ca6d72d5243b9a337603e56f83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_106_delay-0.06s.gif using Guid(560780ca6d72d5243b9a337603e56f83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10c2b45578df9acdf1318081570e137f') in 0.008290 seconds
+  Import took 0.010223 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/Items/FontMap/frame_139_delay-0.06s.gif
+  artifactKey: Guid(09af716d0532e454b83cfed74ef55859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_139_delay-0.06s.gif using Guid(09af716d0532e454b83cfed74ef55859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23049f96f9fa1e37ba1e4174bd990ae3') in 0.007852 seconds
+  Import took 0.009827 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Items/FontMap/frame_061_delay-0.03s.gif
+  artifactKey: Guid(adda973f61f2477479654939ec88eb4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_061_delay-0.03s.gif using Guid(adda973f61f2477479654939ec88eb4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '981e4b8cec92db0871d2b63d1105f4f4') in 0.008575 seconds
+  Import took 0.010630 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Items/FontMap/frame_129_delay-0.05s.gif
+  artifactKey: Guid(0b2c461d8acba2f43bd61386b09f9843) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_129_delay-0.05s.gif using Guid(0b2c461d8acba2f43bd61386b09f9843) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d936d90e105ffee4ac91fb059732d17') in 0.008417 seconds
+  Import took 0.010423 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/Items/FontMap/frame_084_delay-0.05s.gif
+  artifactKey: Guid(22a425006952d9e4b8bfed8b80652585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_084_delay-0.05s.gif using Guid(22a425006952d9e4b8bfed8b80652585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df62ecda21ac83ff81664e8c33e82f9f') in 0.008292 seconds
+  Import took 0.010240 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/Items/FontMap/frame_063_delay-0.03s.gif
+  artifactKey: Guid(eb1d76194e5290e4d96d703929e51ed3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_063_delay-0.03s.gif using Guid(eb1d76194e5290e4d96d703929e51ed3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c499f1370ea4c80a498dbda5d4882974') in 0.007905 seconds
+  Import took 0.010034 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/Items/FontMap/frame_134_delay-0.05s.gif
+  artifactKey: Guid(d3a7ee7dd25e29b4b833fad389aef04c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_134_delay-0.05s.gif using Guid(d3a7ee7dd25e29b4b833fad389aef04c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '587ca748320a4de8163ff180f1dd25c6') in 0.007880 seconds
+  Import took 0.010029 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Items/FontMap/frame_089_delay-0.04s.gif
+  artifactKey: Guid(dccf0bfd3f41ec0449928228130f4e71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_089_delay-0.04s.gif using Guid(dccf0bfd3f41ec0449928228130f4e71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e4cdb586decf5b037d218c508e41cc1') in 0.008165 seconds
+  Import took 0.010106 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/Items/FontMap/frame_079_delay-0.03s.gif
+  artifactKey: Guid(a978158482d548c429596e0f947476e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_079_delay-0.03s.gif using Guid(a978158482d548c429596e0f947476e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3ffd47b2a986c5d28f80d75d9c7d682') in 0.008464 seconds
+  Import took 0.010466 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/Items/FontMap/frame_064_delay-0.03s.gif
+  artifactKey: Guid(53466f3f3c2b9a54cb3a6888cf6590ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_064_delay-0.03s.gif using Guid(53466f3f3c2b9a54cb3a6888cf6590ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c0761d5f79e386f2ced184ff85224ba') in 0.008198 seconds
+  Import took 0.010349 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/Items/FontMap/frame_053_delay-0.03s.gif
+  artifactKey: Guid(8e10e723681c6e644829616fb795a31f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_053_delay-0.03s.gif using Guid(8e10e723681c6e644829616fb795a31f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5cce123f27a00dddcfa05f9ac239441') in 0.007402 seconds
+  Import took 0.009414 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000330 seconds.
+  path: Assets/Items/FontMap/frame_128_delay-0.05s.gif
+  artifactKey: Guid(a0df3071cbc254943b43fab3d4e65aa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_128_delay-0.05s.gif using Guid(a0df3071cbc254943b43fab3d4e65aa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6965b1c4f47c6f03bc0f064032c42043') in 0.007907 seconds
+  Import took 0.010107 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Items/FontMap/frame_131_delay-0.04s.gif
+  artifactKey: Guid(729bab4282cf7114a95b52d384b81a8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_131_delay-0.04s.gif using Guid(729bab4282cf7114a95b52d384b81a8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41bd851d9a7328ffb6aa740c68c7a4d0') in 0.008422 seconds
+  Import took 0.010493 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Items/FontMap/frame_132_delay-0.05s.gif
+  artifactKey: Guid(a6b546a8b3fb53a4980e9401b82548f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_132_delay-0.05s.gif using Guid(a6b546a8b3fb53a4980e9401b82548f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fb4c5a3d9c800d76f3d15afde929176') in 0.007836 seconds
+  Import took 0.009795 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Items/FontMap/frame_147_delay-0.05s.gif
+  artifactKey: Guid(c6d6f40a54839d841adf802c5af51f47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_147_delay-0.05s.gif using Guid(c6d6f40a54839d841adf802c5af51f47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b732c896c82434948ed252c625149e09') in 0.008026 seconds
+  Import took 0.009972 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Items/FontMap/frame_144_delay-0.05s.gif
+  artifactKey: Guid(cf43bbc3c6b35684d871d3104f02b77f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_144_delay-0.05s.gif using Guid(cf43bbc3c6b35684d871d3104f02b77f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4863c32029643489f5392bce95a39b76') in 0.007916 seconds
+  Import took 0.009886 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/Items/FontMap/frame_069_delay-0.03s.gif
+  artifactKey: Guid(d5c7ea63c9363aa47a0c83e36d503a15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_069_delay-0.03s.gif using Guid(d5c7ea63c9363aa47a0c83e36d503a15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a59d92efe35c23e481bcd69c5e4a8d32') in 0.008312 seconds
+  Import took 0.010345 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Items/FontMap/frame_099_delay-0.06s.gif
+  artifactKey: Guid(fe43a339a2499ff4aa79af0e854f2a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_099_delay-0.06s.gif using Guid(fe43a339a2499ff4aa79af0e854f2a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34c747993a0452d154171fb01d49ad83') in 0.008591 seconds
+  Import took 0.010579 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/Items/FontMap/frame_062_delay-0.03s.gif
+  artifactKey: Guid(5368fd4e3c1bff14797456fbb84770fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_062_delay-0.03s.gif using Guid(5368fd4e3c1bff14797456fbb84770fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c6ece0a9c4a17fd1fdb190487b811ae') in 0.008100 seconds
+  Import took 0.010103 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Items/FontMap/frame_096_delay-0.07s.gif
+  artifactKey: Guid(05e9dfe267956a346942431552b462e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_096_delay-0.07s.gif using Guid(05e9dfe267956a346942431552b462e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f33937401eff9e8db8a003bad828dbc') in 0.008271 seconds
+  Import took 0.010326 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/Items/FontMap/frame_103_delay-0.06s.gif
+  artifactKey: Guid(b3173be137307634cb28ec27e7f9ecf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_103_delay-0.06s.gif using Guid(b3173be137307634cb28ec27e7f9ecf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '578a33a6234a4f7292cb3dda0af41fdc') in 0.008294 seconds
+  Import took 0.010274 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/Items/FontMap/frame_070_delay-0.03s.gif
+  artifactKey: Guid(6ec51a529fdeeed458f999439b015c42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_070_delay-0.03s.gif using Guid(6ec51a529fdeeed458f999439b015c42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2bf591490a1f7a8bdcc8c7b0e0a7891') in 0.008660 seconds
+  Import took 0.010652 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Items/FontMap/frame_145_delay-0.04s.gif
+  artifactKey: Guid(eb593168e472dc442a69ce47d8d3188d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_145_delay-0.04s.gif using Guid(eb593168e472dc442a69ce47d8d3188d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8ea1bb4cbdca5f4b84044e04f62b7b3') in 0.008147 seconds
+  Import took 0.010171 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Items/FontMap/frame_133_delay-0.04s.gif
+  artifactKey: Guid(9c47a30a55c8d57408dd2a8262d265cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_133_delay-0.04s.gif using Guid(9c47a30a55c8d57408dd2a8262d265cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4913e7fdfbbb8806097dce60fb4687c') in 0.008499 seconds
+  Import took 0.010484 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Items/FontMap/frame_054_delay-0.03s.gif
+  artifactKey: Guid(246d5a1530dc48e44a988254fcfb05a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_054_delay-0.03s.gif using Guid(246d5a1530dc48e44a988254fcfb05a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0aa1530762b0471fead02b82e974a06c') in 0.008100 seconds
+  Import took 0.010116 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/Items/FontMap/frame_090_delay-0.05s.gif
+  artifactKey: Guid(8db979b3dc03a4e479906f276875136e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_090_delay-0.05s.gif using Guid(8db979b3dc03a4e479906f276875136e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a65f070a9f5107f21592869126b0fc34') in 0.008376 seconds
+  Import took 0.010391 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000342 seconds.
+  path: Assets/Items/FontMap/frame_098_delay-0.04s.gif
+  artifactKey: Guid(6c4c7cd26eff6b34d969d71647e9a7d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_098_delay-0.04s.gif using Guid(6c4c7cd26eff6b34d969d71647e9a7d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31849a763ff0bfcb128971c27312bfc4') in 0.008780 seconds
+  Import took 0.010910 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/Items/FontMap/frame_085_delay-0.05s.gif
+  artifactKey: Guid(269192d58d473f648bacd1f93b30c788) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_085_delay-0.05s.gif using Guid(269192d58d473f648bacd1f93b30c788) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cf1fe688fc0bafd081aa37c5c70a46f') in 0.008657 seconds
+  Import took 0.010650 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Items/FontMap/frame_087_delay-0.05s.gif
+  artifactKey: Guid(f2f84277cf9f42746956ed47dd7bdb88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_087_delay-0.05s.gif using Guid(f2f84277cf9f42746956ed47dd7bdb88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee31cf10426312ccfd96b0bee070a7f0') in 0.008285 seconds
+  Import took 0.010265 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Items/FontMap/frame_143_delay-0.04s.gif
+  artifactKey: Guid(73ae1c7316855944abedcd086e0d7649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_143_delay-0.04s.gif using Guid(73ae1c7316855944abedcd086e0d7649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75681f09d30cb1d22d83b1797e203d4e') in 0.008483 seconds
+  Import took 0.010547 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/Items/FontMap/frame_120_delay-0.04s.gif
+  artifactKey: Guid(ebf154ba88413ca4fa1d8b5d3d491e7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_120_delay-0.04s.gif using Guid(ebf154ba88413ca4fa1d8b5d3d491e7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10975edc818d8cf00975161e402e57ec') in 0.008390 seconds
+  Import took 0.010448 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Items/FontMap/frame_094_delay-0.05s.gif
+  artifactKey: Guid(f24d5aef2e473a34fb29a59c9a76350a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_094_delay-0.05s.gif using Guid(f24d5aef2e473a34fb29a59c9a76350a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eaa4018e1351c41cac06b829947aea4f') in 0.008221 seconds
+  Import took 0.010254 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Items/FontMap/frame_056_delay-0.03s.gif
+  artifactKey: Guid(0eb22ce1230d50a4ba5734ed81061cee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_056_delay-0.03s.gif using Guid(0eb22ce1230d50a4ba5734ed81061cee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5246cee9955edeaac5f7786184658d9') in 0.008310 seconds
+  Import took 0.010300 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/Items/FontMap/frame_060_delay-0.03s.gif
+  artifactKey: Guid(90cd19e8c66846e49adbbf984c7f19d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_060_delay-0.03s.gif using Guid(90cd19e8c66846e49adbbf984c7f19d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfc7b121ce1e026e01ac206cbdbc1499') in 0.008175 seconds
+  Import took 0.010127 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Items/FontMap/frame_059_delay-0.03s.gif
+  artifactKey: Guid(23b1af91dda6723428143bf576948bdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_059_delay-0.03s.gif using Guid(23b1af91dda6723428143bf576948bdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bef3de2768d133fdcce3b6023020458') in 0.007744 seconds
+  Import took 0.009691 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/Items/FontMap/frame_080_delay-0.05s.gif
+  artifactKey: Guid(fe30471696b90ce4e897cbdc366cc475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_080_delay-0.05s.gif using Guid(fe30471696b90ce4e897cbdc366cc475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51a38fa617d8123552f9278866b56be0') in 0.008416 seconds
+  Import took 0.010407 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Items/FontMap/frame_082_delay-0.05s.gif
+  artifactKey: Guid(4ad97fd1ce6053f429f910396585c985) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_082_delay-0.05s.gif using Guid(4ad97fd1ce6053f429f910396585c985) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93142d67b3c0a1d16aa40b35f303989c') in 0.008174 seconds
+  Import took 0.010132 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/Items/FontMap/frame_114_delay-0.04s.gif
+  artifactKey: Guid(8b9ac0cc2f23b6849a96f1863a145b04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_114_delay-0.04s.gif using Guid(8b9ac0cc2f23b6849a96f1863a145b04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e327dc32659b3e4d1edffac3299737c4') in 0.008678 seconds
+  Import took 0.010712 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Items/FontMap/frame_067_delay-0.04s.gif
+  artifactKey: Guid(d3bb0d9c1f82b3d4ea78ae7da00adffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_067_delay-0.04s.gif using Guid(d3bb0d9c1f82b3d4ea78ae7da00adffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7729a54e464feeab3569b1a629de8df9') in 0.009659 seconds
+  Import took 0.011869 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/Items/FontMap/frame_072_delay-0.03s.gif
+  artifactKey: Guid(c7a7b32c3dd6aee4bb603698d45889d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_072_delay-0.03s.gif using Guid(c7a7b32c3dd6aee4bb603698d45889d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd73d0ae0d21a4d16f739f2ff6943d2a3') in 0.007901 seconds
+  Import took 0.010018 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Items/FontMap/frame_118_delay-0.04s.gif
+  artifactKey: Guid(d5bb72a088babf64e96441f2d7723659) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_118_delay-0.04s.gif using Guid(d5bb72a088babf64e96441f2d7723659) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2f2fc5c41d7750ed892d2dc50ed0aae') in 0.008016 seconds
+  Import took 0.010136 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/Items/FontMap/frame_140_delay-0.08s.gif
+  artifactKey: Guid(95675777f5207c7468e22b903b29047a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_140_delay-0.08s.gif using Guid(95675777f5207c7468e22b903b29047a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01450cd883970a2e7625bf33315dde0c') in 0.011371 seconds
+  Import took 0.013336 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Items/FontMap/frame_126_delay-0.04s.gif
+  artifactKey: Guid(bb9818055e8fe2343854b667b128b55a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_126_delay-0.04s.gif using Guid(bb9818055e8fe2343854b667b128b55a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82eb22901ff66d67b32696711e5d2576') in 0.007862 seconds
+  Import took 0.009844 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/Items/FontMap/frame_123_delay-0.04s.gif
+  artifactKey: Guid(4d8e27f1138877340818e54a4242b95e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_123_delay-0.04s.gif using Guid(4d8e27f1138877340818e54a4242b95e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2ffd2c2cc3bfd7dd087ac0e338e4e07') in 0.008528 seconds
+  Import took 0.010612 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/Items/FontMap/frame_083_delay-0.05s.gif
+  artifactKey: Guid(b4313057cc985c140be476a0294037fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_083_delay-0.05s.gif using Guid(b4313057cc985c140be476a0294037fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '756be5b7ea9cd45b609265ff0ba2cd3f') in 0.008736 seconds
+  Import took 0.011078 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Items/FontMap/frame_142_delay-0.03s.gif
+  artifactKey: Guid(2d7b0bd266e6f884286401232f7b3eda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_142_delay-0.03s.gif using Guid(2d7b0bd266e6f884286401232f7b3eda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '908c0878fb183374eccc56833b4902bd') in 0.010129 seconds
+  Import took 0.012254 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/Items/FontMap/frame_115_delay-0.04s.gif
+  artifactKey: Guid(06adfdb4d798b5d4d8e6d15e25b31799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_115_delay-0.04s.gif using Guid(06adfdb4d798b5d4d8e6d15e25b31799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cacf94dd94478e747a8e39bcc811271') in 0.007959 seconds
+  Import took 0.009939 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Items/FontMap/frame_091_delay-0.05s.gif
+  artifactKey: Guid(dd1aeb611350d434b97cfbc7c5d6d6df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_091_delay-0.05s.gif using Guid(dd1aeb611350d434b97cfbc7c5d6d6df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b18cb14cbf6e3f7ff35243f2ce153c3') in 0.009350 seconds
+  Import took 0.011443 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/Items/FontMap/frame_076_delay-0.03s.gif
+  artifactKey: Guid(a89c6d8a993643546922fe28574d7ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_076_delay-0.03s.gif using Guid(a89c6d8a993643546922fe28574d7ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd94ea137ce5e56c7e1a3054626fa6ab9') in 0.008448 seconds
+  Import took 0.010545 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/Items/FontMap/frame_065_delay-0.03s.gif
+  artifactKey: Guid(6cb04619d6c9920429cb731d469783db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FontMap/frame_065_delay-0.03s.gif using Guid(6cb04619d6c9920429cb731d469783db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97675f587834a8dbf47f471427c6af9d') in 0.008236 seconds
+  Import took 0.010266 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.405312 seconds.
+  path: Assets/Sprites Personaje/Attack__000.png
+  artifactKey: Guid(5b4172de566f58143b25c58fc0b40736) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Attack__000.png using Guid(5b4172de566f58143b25c58fc0b40736) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6510207de4fe236874b2455aea57e718') in 0.442326 seconds
+  Import took 0.445769 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/Sprites Personaje/Climb_006.png
+  artifactKey: Guid(7654a65194df9a145974f4a895fc2a1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Climb_006.png using Guid(7654a65194df9a145974f4a895fc2a1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fe5abaf1d129bc1a1c0c96f88ac95c3') in 0.008914 seconds
+  Import took 0.011116 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Sprites Personaje/Attack__006.png
+  artifactKey: Guid(41f48683fb780e94c8f63901d3f27b56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Attack__006.png using Guid(41f48683fb780e94c8f63901d3f27b56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ce7eed2da3a035f0f97e76ae59e0cc7') in 0.009450 seconds
+  Import took 0.011589 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Sprites Personaje/Climb_000.png
+  artifactKey: Guid(46069fec4f451fd41bc9ec667135a48a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Climb_000.png using Guid(46069fec4f451fd41bc9ec667135a48a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56c5b19dc111d12db70d35f04bcf0eb8') in 0.008744 seconds
+  Import took 0.010960 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Sprites Personaje/Attack__007.png
+  artifactKey: Guid(319982ad1d3cfd649b77a0413ea15110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Attack__007.png using Guid(319982ad1d3cfd649b77a0413ea15110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '934325e3efe743ebb7e4ec4c4fb47743') in 0.008856 seconds
+  Import took 0.011091 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Sprites Personaje/Attack__004.png
+  artifactKey: Guid(526d9592e352d354fa7942be141abdf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Attack__004.png using Guid(526d9592e352d354fa7942be141abdf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49e3f4d13821fa9dd349badc659b299f') in 0.008884 seconds
+  Import took 0.011040 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/Sprites Personaje/Glide_005.png
+  artifactKey: Guid(f929b02bb01eafd4f8aafe57e2b032a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Glide_005.png using Guid(f929b02bb01eafd4f8aafe57e2b032a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cef427170f39886dbd0511204e59a81') in 0.009017 seconds
+  Import took 0.011161 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/Sprites Personaje/Attack__002.png
+  artifactKey: Guid(fab56e8bdb8eae64a8f64fbe838f55c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Attack__002.png using Guid(fab56e8bdb8eae64a8f64fbe838f55c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed499bade251bc3d309981a056493b95') in 0.008507 seconds
+  Import took 0.010687 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/Sprites Personaje/Jump__002.png
+  artifactKey: Guid(6947b672ff63d6b4c81180bafbd47695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Jump__002.png using Guid(6947b672ff63d6b4c81180bafbd47695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0907a1d649ef860e92d52a615c6f1a27') in 0.008258 seconds
+  Import took 0.010505 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/Sprites Personaje/Glide_009.png
+  artifactKey: Guid(29e20c2f192de354bab630282b530352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Glide_009.png using Guid(29e20c2f192de354bab630282b530352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f735a6efa7eb5205cc5984679b9eaf8f') in 0.008867 seconds
+  Import took 0.011202 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/Sprites Personaje/Dead__000.png
+  artifactKey: Guid(b978e7415972b6c46b64436c0bc906f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Dead__000.png using Guid(b978e7415972b6c46b64436c0bc906f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e59c85fe9793eea085ed05fcb574a4d') in 0.008592 seconds
+  Import took 0.010703 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Sprites Personaje/Climb_002.png
+  artifactKey: Guid(5f9ef852b6377674eb5a5ad9be726861) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Climb_002.png using Guid(5f9ef852b6377674eb5a5ad9be726861) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2fa94f5c772412fa95370f8ea2d1abd') in 0.007443 seconds
+  Import took 0.009411 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Sprites Personaje/Attack__009.png
+  artifactKey: Guid(cabcdeb572cd8ca489b944aa8a362ec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Attack__009.png using Guid(cabcdeb572cd8ca489b944aa8a362ec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e67bb78eab7550009250305408f2de1') in 0.008504 seconds
+  Import took 0.010550 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Sprites Personaje/Idle__002.png
+  artifactKey: Guid(f3620fa178a12d5499396215631299bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Idle__002.png using Guid(f3620fa178a12d5499396215631299bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3dfb766efec8883300ff05518c655c0') in 0.007756 seconds
+  Import took 0.009925 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/Sprites Personaje/Glide_007.png
+  artifactKey: Guid(e49d576adbc548b4c882c60af1852863) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Glide_007.png using Guid(e49d576adbc548b4c882c60af1852863) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e5247790975546945ee11f3d1c6a98a') in 0.008505 seconds
+  Import took 0.010925 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/Sprites Personaje/Idle__004.png
+  artifactKey: Guid(de313a9d7c67b6c41a22139ecff4acdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Idle__004.png using Guid(de313a9d7c67b6c41a22139ecff4acdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10f6643ee44cc38429991758f12df7bd') in 0.007322 seconds
+  Import took 0.009385 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Sprites Personaje/Climb_008.png
+  artifactKey: Guid(eaa653a9c3b6fa8499c5e419d757493e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Climb_008.png using Guid(eaa653a9c3b6fa8499c5e419d757493e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ec24e256159cb746616c57ca43e58e6') in 0.007587 seconds
+  Import took 0.009787 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Sprites Personaje/Idle__005.png
+  artifactKey: Guid(3891e414e110b5b4e8bc57f1c5edd599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Idle__005.png using Guid(3891e414e110b5b4e8bc57f1c5edd599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e6ae246736bfbe4e6f833283294519a') in 0.008066 seconds
+  Import took 0.010487 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/Sprites Personaje/Glide_001.png
+  artifactKey: Guid(42d4592df755b2540803ff7764f9e123) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Glide_001.png using Guid(42d4592df755b2540803ff7764f9e123) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49e600faf2afb8d633fc7121e091283e') in 0.008658 seconds
+  Import took 0.010693 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Sprites Personaje/Glide_006.png
+  artifactKey: Guid(c1c5def1263fbb14a98e5497c7d5bda4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Glide_006.png using Guid(c1c5def1263fbb14a98e5497c7d5bda4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b1994faae0ba9f93931cef4c1dc2697') in 0.008567 seconds
+  Import took 0.010533 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/Sprites Personaje/Climb_003.png
+  artifactKey: Guid(a323340bd029f9041a73fcc916861b42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Climb_003.png using Guid(a323340bd029f9041a73fcc916861b42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '381c654c36c0ecf8de30a2e0278f3b5a') in 0.007539 seconds
+  Import took 0.009498 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000311 seconds.
+  path: Assets/Sprites Personaje/Dead__004.png
+  artifactKey: Guid(cc6394c135f10de47b8c2668331d6d45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Dead__004.png using Guid(cc6394c135f10de47b8c2668331d6d45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9a017c7edabb9ad83adcd8aef77a980') in 0.008676 seconds
+  Import took 0.010825 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Sprites Personaje/Attack__008.png
+  artifactKey: Guid(6d2e625923a96ed48b94bec0f5ed3c49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Attack__008.png using Guid(6d2e625923a96ed48b94bec0f5ed3c49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '537de297c0abe122c8ced9e79f3370f1') in 0.008088 seconds
+  Import took 0.010246 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/Sprites Personaje/Idle__006.png
+  artifactKey: Guid(5a929cf8d713b904ab6e00ff16fa24db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Idle__006.png using Guid(5a929cf8d713b904ab6e00ff16fa24db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cce05049676bdc00500c3296f76a516') in 0.007870 seconds
+  Import took 0.010119 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Sprites Personaje/Dead__003.png
+  artifactKey: Guid(1e55a7e1252dbbc4783495e8e12ebaaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Dead__003.png using Guid(1e55a7e1252dbbc4783495e8e12ebaaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcc128d4f7764d82eaac94ffa98a84f1') in 0.008477 seconds
+  Import took 0.010781 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Sprites Personaje/Idle__000.png
+  artifactKey: Guid(3a89e87e1fff85841be4729fd8ea6694) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Idle__000.png using Guid(3a89e87e1fff85841be4729fd8ea6694) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6c358c5c3df12a1d583d1efca18ede6') in 0.008437 seconds
+  Import took 0.010943 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/Sprites Personaje/Dead__002.png
+  artifactKey: Guid(21451a80d986cb4489d3d6bd3f4939a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Dead__002.png using Guid(21451a80d986cb4489d3d6bd3f4939a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5f1aa31104b71f96d1548bad4376cd0') in 0.008371 seconds
+  Import took 0.010887 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/Sprites Personaje/Jump__001.png
+  artifactKey: Guid(225208bbc2e921e448085a18c71431ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Jump__001.png using Guid(225208bbc2e921e448085a18c71431ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2f4febecd42285794981ee22ae45695') in 0.007882 seconds
+  Import took 0.009958 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Sprites Personaje/Dead__001.png
+  artifactKey: Guid(116c6975141b63d45b2bc9a10e6b36ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Dead__001.png using Guid(116c6975141b63d45b2bc9a10e6b36ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87d91a30d6afac9581f61da82ab8af70') in 0.008106 seconds
+  Import took 0.010138 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Sprites Personaje/Attack__005.png
+  artifactKey: Guid(21082e5e2a795bf4a9fae54663b01e28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Attack__005.png using Guid(21082e5e2a795bf4a9fae54663b01e28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf422a4447009f6c01ef74fb19e48cdc') in 0.009366 seconds
+  Import took 0.011387 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/Sprites Personaje/Dead__007.png
+  artifactKey: Guid(4716e342695f3f345a0da025474577b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Dead__007.png using Guid(4716e342695f3f345a0da025474577b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0550e4ead2f1e75f50c0acffe44e7298') in 0.008864 seconds
+  Import took 0.011042 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Sprites Personaje/Climb_009.png
+  artifactKey: Guid(4e9ac14cf490a7445831ba3da5eeccab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Climb_009.png using Guid(4e9ac14cf490a7445831ba3da5eeccab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca9b9b600fe5ed1549d2d50450d4246a') in 0.007923 seconds
+  Import took 0.010212 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Sprites Personaje/Glide_000.png
+  artifactKey: Guid(1b5983b6b46f0ae46adffd6bebcc88d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Glide_000.png using Guid(1b5983b6b46f0ae46adffd6bebcc88d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd13d9b7edd15633a5aaf80a9df97c94') in 0.008547 seconds
+  Import took 0.010599 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/Sprites Personaje/Attack__003.png
+  artifactKey: Guid(3a7511e53169cbd4ea820c8ad0b5f683) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Attack__003.png using Guid(3a7511e53169cbd4ea820c8ad0b5f683) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eaf5bc837f5e511a984835b4529aec7') in 0.008678 seconds
+  Import took 0.010938 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/Sprites Personaje/Climb_004.png
+  artifactKey: Guid(4f4f66444ee26894797abcd50d29ca7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Climb_004.png using Guid(4f4f66444ee26894797abcd50d29ca7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89169236d4e692c967c3c208e9072c45') in 0.007514 seconds
+  Import took 0.009842 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Sprites Personaje/Idle__007.png
+  artifactKey: Guid(9be4de1c1e82ea540ad9bf0beb324312) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Idle__007.png using Guid(9be4de1c1e82ea540ad9bf0beb324312) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '002e8f3dc1a0c1654576e97f6f353420') in 0.007757 seconds
+  Import took 0.009984 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/Sprites Personaje/Idle__001.png
+  artifactKey: Guid(31137ba4af3514a4ba0c7f83ce5ce930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Idle__001.png using Guid(31137ba4af3514a4ba0c7f83ce5ce930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae9da78cfea25f21ee84ad4c3562e5b2') in 0.007521 seconds
+  Import took 0.009480 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/Sprites Personaje/Jump__000.png
+  artifactKey: Guid(29bb0c7e64ffbe148a8403c8e3c5aa35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Jump__000.png using Guid(29bb0c7e64ffbe148a8403c8e3c5aa35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38f9a6c427e4eee35aac1bbd02054512') in 0.008170 seconds
+  Import took 0.010246 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/Sprites Personaje/Dead__008.png
+  artifactKey: Guid(b9bfb504a6c3f20498b4c8f19cdfa371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Dead__008.png using Guid(b9bfb504a6c3f20498b4c8f19cdfa371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d1fc80ed62d1cbe561b07336cb44074') in 0.008599 seconds
+  Import took 0.010705 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Sprites Personaje/Climb_007.png
+  artifactKey: Guid(63c3cdc666a33c64c894026a589d6027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Climb_007.png using Guid(63c3cdc666a33c64c894026a589d6027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95e0ec1b025f7a0857eeaf6a83ef9391') in 0.007941 seconds
+  Import took 0.010118 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Sprites Personaje/Dead__005.png
+  artifactKey: Guid(117207884e1bd2646ae7ba4bf53d5375) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Dead__005.png using Guid(117207884e1bd2646ae7ba4bf53d5375) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aeed0b50d37d60bd23873d5ac20a2e0') in 0.008238 seconds
+  Import took 0.010192 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Sprites Personaje/Idle__009.png
+  artifactKey: Guid(f40ee91d1027a6c49b016bede498270d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Idle__009.png using Guid(f40ee91d1027a6c49b016bede498270d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f25a3815156dd19e5aed5110391db65') in 0.007853 seconds
+  Import took 0.010056 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Sprites Personaje/Dead__009.png
+  artifactKey: Guid(d3c8795bebc591b489c83d43e2cf6a98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Dead__009.png using Guid(d3c8795bebc591b489c83d43e2cf6a98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c73eccf8d3542302cfb22bdfb2019afa') in 0.008713 seconds
+  Import took 0.010913 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Sprites Personaje/Climb_005.png
+  artifactKey: Guid(e48889416f6f4554182355eabc2bfc9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Climb_005.png using Guid(e48889416f6f4554182355eabc2bfc9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8f4f8cf9123b16fd12d69983c79c0c5') in 0.007766 seconds
+  Import took 0.009736 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Sprites Personaje/Attack__001.png
+  artifactKey: Guid(d60b9426137b45c42bcc5bff9098daa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Attack__001.png using Guid(d60b9426137b45c42bcc5bff9098daa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47e4fa43806e5ad1db84e6a0d1788ca5') in 0.007911 seconds
+  Import took 0.009821 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/Sprites Personaje/Climb_001.png
+  artifactKey: Guid(f7a34406e214cb84d943f22cdd951e46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Climb_001.png using Guid(f7a34406e214cb84d943f22cdd951e46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '461f925f081114decdea437667569b10') in 0.007895 seconds
+  Import took 0.009879 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/Sprites Personaje/Glide_008.png
+  artifactKey: Guid(1e12fb6e672260d49b9ae2cf20e2aba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Glide_008.png using Guid(1e12fb6e672260d49b9ae2cf20e2aba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e25ac4ec31646e7af5acf6a8169677c3') in 0.008179 seconds
+  Import took 0.010287 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/Sprites Personaje/Idle__003.png
+  artifactKey: Guid(c1b73f1c177eed3419f591b9edd47ae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Idle__003.png using Guid(c1b73f1c177eed3419f591b9edd47ae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27348f009c57db5fc4f4a69600847d5e') in 0.007427 seconds
+  Import took 0.009480 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/Sprites Personaje/Idle__008.png
+  artifactKey: Guid(ce7c01cfbeb445f449c5c70d8926a161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Idle__008.png using Guid(ce7c01cfbeb445f449c5c70d8926a161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0378b4664bab60974144289caadc8b9') in 0.007507 seconds
+  Import took 0.009595 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Sprites Personaje/Glide_003.png
+  artifactKey: Guid(e22ac75ff62901a4197d64d60218d88a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Glide_003.png using Guid(e22ac75ff62901a4197d64d60218d88a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '404edd8383ed50b69166186efdc1828c') in 0.013842 seconds
+  Import took 0.015894 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Sprites Personaje/Glide_002.png
+  artifactKey: Guid(24073ef8c0f37cc4397a2aa1c9eb8388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Glide_002.png using Guid(24073ef8c0f37cc4397a2aa1c9eb8388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e723b689dd6b73dfa5c2eaecc1140196') in 0.008772 seconds
+  Import took 0.010799 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Sprites Personaje/Glide_004.png
+  artifactKey: Guid(23c8323c2447538438dd21a6500a3519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Glide_004.png using Guid(23c8323c2447538438dd21a6500a3519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dce2d813b818a6b39f88db629586906e') in 0.008680 seconds
+  Import took 0.010720 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/Sprites Personaje/Dead__006.png
+  artifactKey: Guid(3b67e8383541bdb47b31b5c12fe0e5c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites Personaje/Dead__006.png using Guid(3b67e8383541bdb47b31b5c12fe0e5c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0a3dba45d53441180e7bee57fbcd439') in 0.008436 seconds
+  Import took 0.010356 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 106.267455 seconds.
+  path: Assets/FreeButtonSet/Scenes
+  artifactKey: Guid(98be6b037f328b8438b72e7ffb1ee8cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeButtonSet/Scenes using Guid(98be6b037f328b8438b72e7ffb1ee8cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96cee1cb18e5d73e6dda7164bbbc2279') in 0.000814 seconds
+  Import took 0.003343 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001222 seconds.
+  path: Assets/FreeButtonSet/Scenes
+  artifactKey: Guid(98be6b037f328b8438b72e7ffb1ee8cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeButtonSet/Scenes using Guid(98be6b037f328b8438b72e7ffb1ee8cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96cee1cb18e5d73e6dda7164bbbc2279') in 0.000575 seconds
+  Import took 0.002449 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001192 seconds.
+Registered in 0.000472 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
@@ -245,53 +1749,29 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.664 seconds
+- Completed reload, in  1.610 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.28 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.27 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1791 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 158.0 MB.
-System memory in use after: 158.1 MB.
+Unloading 1804 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 159.2 MB.
+System memory in use after: 158.7 MB.
 
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2260.
-Total: 1.303500 ms (FindLiveObjects: 0.108250 ms CreateObjectMapping: 0.034625 ms MarkObjects: 1.146166 ms  DeleteObjects: 0.013417 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000797 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.638 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1791 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 158.2 MB.
-System memory in use after: 158.3 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2263.
-Total: 1.307750 ms (FindLiveObjects: 0.129292 ms CreateObjectMapping: 0.034666 ms MarkObjects: 1.127542 ms  DeleteObjects: 0.015375 ms)
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2269.
+Total: 1.544833 ms (FindLiveObjects: 0.103375 ms CreateObjectMapping: 0.034166 ms MarkObjects: 1.169584 ms  DeleteObjects: 0.237125 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 103.089026 seconds.
-  path: Assets/Scenes/Nivel 4.unity
-  artifactKey: Guid(693aa0944c48e4a7490c5dea83c5b005) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Nivel 4.unity using Guid(693aa0944c48e4a7490c5dea83c5b005) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02900e486c933ab804f9a9221d445fa7') in 0.018229 seconds
-  Import took 0.020545 seconds .
+  Time since last request: 74.541160 seconds.
+  path: Assets/FreeButtonSet/background.png
+  artifactKey: Guid(a093780a76b8e8c4c8b121e123d21a82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeButtonSet/background.png using Guid(a093780a76b8e8c4c8b121e123d21a82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0eaf804ffec1b13ea6ae444687f6897') in 0.121584 seconds
+  Import took 0.124075 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001079 seconds.
+Registered in 0.001348 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
@@ -301,22 +1781,150 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.675 seconds
+- Completed reload, in  1.724 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1791 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 158.4 MB.
-System memory in use after: 158.5 MB.
+Unloading 1804 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 159.4 MB.
+System memory in use after: 158.9 MB.
 
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2266.
-Total: 1.321500 ms (FindLiveObjects: 0.102834 ms CreateObjectMapping: 0.034542 ms MarkObjects: 1.167792 ms  DeleteObjects: 0.015541 ms)
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2275.
+Total: 1.521541 ms (FindLiveObjects: 0.127500 ms CreateObjectMapping: 0.034791 ms MarkObjects: 1.099917 ms  DeleteObjects: 0.258541 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 540.152277 seconds.
-  path: Assets/Scenes/Nivel4.unity
-  artifactKey: Guid(693aa0944c48e4a7490c5dea83c5b005) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Nivel4.unity using Guid(693aa0944c48e4a7490c5dea83c5b005) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a635694e6cffd399a12b9827a2c77a66') in 0.016983 seconds
-  Import took 0.019643 seconds .
+  Time since last request: 163.836739 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat
+  artifactKey: Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat using Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8c9fddf46f61be2f8bf0056cd3fc5c1') in 0.780546 seconds
+  Import took 0.783862 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat
+  artifactKey: Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat using Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68a8c145b1b018453c6835cbf7cb49dd') in 0.101224 seconds
+  Import took 0.103529 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000382 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a9dfdfda3e263f38f8631b262f6622a') in 0.247077 seconds
+  Import took 0.249492 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000365 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat
+  artifactKey: Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat using Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8c9fddf46f61be2f8bf0056cd3fc5c1') in 0.015931 seconds
+  Import took 0.018322 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a9dfdfda3e263f38f8631b262f6622a') in 0.012282 seconds
+  Import took 0.014533 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f2921b3ac98961f3f6b10743ab2b857') in 0.030954 seconds
+  Import took 0.033187 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 161.858997 seconds.
+  path: Assets/TextMesh Pro/Fonts
+  artifactKey: Guid(6ab70aee4d56447429c680537fbf93ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts using Guid(6ab70aee4d56447429c680537fbf93ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ea76a85c99a49e924db29b3b27e4c8e') in 0.000678 seconds
+  Import took 0.002885 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000925 seconds.
+  path: Assets/TextMesh Pro/Fonts
+  artifactKey: Guid(6ab70aee4d56447429c680537fbf93ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts using Guid(6ab70aee4d56447429c680537fbf93ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ea76a85c99a49e924db29b3b27e4c8e') in 0.000515 seconds
+  Import took 0.002251 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.101506 seconds.
+  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c22c399e16381690b6aaa95d4f4d41a') in 0.805275 seconds
+  Import took 0.807962 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 144.910694 seconds.
+  path: Assets/FreeButtonSet/Fonts/Platinum Sign.ttf
+  artifactKey: Guid(8b036302192aa7e4fb3474e7b2c03cb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeButtonSet/Fonts/Platinum Sign.ttf using Guid(8b036302192aa7e4fb3474e7b2c03cb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80a7ac5bf44727b8fba1938ec8d71edf') in 0.011297 seconds
+  Import took 0.014560 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/FreeButtonSet/Fonts/techno_hideo_bold.ttf
+  artifactKey: Guid(553234205e55d8f4ba73c4b47ad8c7ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeButtonSet/Fonts/techno_hideo_bold.ttf using Guid(553234205e55d8f4ba73c4b47ad8c7ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '200ccba80e2a8e332b874ed1e9b8f474') in 0.007914 seconds
+  Import took 0.010174 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 189.177297 seconds.
+  path: Assets/TextMesh Pro
+  artifactKey: Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro using Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75675d294a40c6da1749df6770443982') in 0.001145 seconds
+  Import took 0.004451 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 65.396586 seconds.
+  path: Assets/TextMesh Pro/Fonts/8-BIT WONDER.TTF
+  artifactKey: Guid(ddc4058a26c5b4fbab57438a2b0f0909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/8-BIT WONDER.TTF using Guid(ddc4058a26c5b4fbab57438a2b0f0909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99074bd3d3687df98d585aadb10b63d6') in 0.777838 seconds
+  Import took 0.780402 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.430520 seconds.
+  path: Assets/TextMesh Pro/Fonts/Pixel font.TTF
+  artifactKey: Guid(ddc4058a26c5b4fbab57438a2b0f0909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/Pixel font.TTF using Guid(ddc4058a26c5b4fbab57438a2b0f0909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cfaa37863d66c230d3c36b24fcef7c1') in 0.009570 seconds
+  Import took 0.012247 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 122.114648 seconds.
+  path: Assets/TextMesh Pro/Fonts/PixelFont.asset
+  artifactKey: Guid(0b562131b22194ad1a977edc4c75a380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/PixelFont.asset using Guid(0b562131b22194ad1a977edc4c75a380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '420efb0791685a27a4c1d524ca519b51') in 0.060458 seconds
+  Import took 0.063300 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 46.956167 seconds.
+  path: Assets/TextMesh Pro/Glyph Report.txt
+  artifactKey: Guid(441db3a32b2ae44edb5b03d522298fae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Glyph Report.txt using Guid(441db3a32b2ae44edb5b03d522298fae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b1a32b149d936bc287a5931c87990e5') in 1.317342 seconds
+  Import took 1.320371 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 60.530997 seconds.
+  path: Assets/TextMesh Pro/Fonts/PixelFont.asset
+  artifactKey: Guid(0b562131b22194ad1a977edc4c75a380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/PixelFont.asset using Guid(0b562131b22194ad1a977edc4c75a380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '711dec7edae720d0c567de417d558df4') in 0.016230 seconds
+  Import took 0.018919 seconds .
 
