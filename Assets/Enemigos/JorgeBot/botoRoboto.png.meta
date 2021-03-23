@@ -1,7 +1,121 @@
 fileFormatVersion: 2
 guid: 5221e8d026eb21b4794b7492f71da79b
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -4977029059012213504
+    second: botoRoboto_0
+  - first:
+      213: -4311408642769251464
+    second: botoRoboto_1
+  - first:
+      213: 1564985337705448295
+    second: botoRoboto_2
+  - first:
+      213: -1221291297603340827
+    second: botoRoboto_3
+  - first:
+      213: 8735691260087956664
+    second: botoRoboto_4
+  - first:
+      213: 2982851376755206506
+    second: botoRoboto_5
+  - first:
+      213: -7584836680331427940
+    second: botoRoboto_6
+  - first:
+      213: 2518367089190287975
+    second: botoRoboto_7
+  - first:
+      213: -2016281060451410570
+    second: botoRoboto_8
+  - first:
+      213: 5305853780539306043
+    second: botoRoboto_9
+  - first:
+      213: 7301911509606217925
+    second: botoRoboto_10
+  - first:
+      213: -3255849656858036794
+    second: botoRoboto_11
+  - first:
+      213: 5471320444035568526
+    second: botoRoboto_12
+  - first:
+      213: -3907613176897105305
+    second: botoRoboto_13
+  - first:
+      213: 3237209917876700166
+    second: botoRoboto_14
+  - first:
+      213: -7622844819325130730
+    second: botoRoboto_15
+  - first:
+      213: -8872668898858527390
+    second: botoRoboto_16
+  - first:
+      213: 7647531198187993300
+    second: botoRoboto_17
+  - first:
+      213: -3672712489487134350
+    second: botoRoboto_18
+  - first:
+      213: 3367258162892910485
+    second: botoRoboto_19
+  - first:
+      213: 1537841801381371273
+    second: botoRoboto_20
+  - first:
+      213: 1162700170426862606
+    second: botoRoboto_21
+  - first:
+      213: -5737272476094297510
+    second: botoRoboto_22
+  - first:
+      213: 3043173761169371563
+    second: botoRoboto_23
+  - first:
+      213: -5754527433050459918
+    second: botoRoboto_24
+  - first:
+      213: -7820076970428247238
+    second: botoRoboto_25
+  - first:
+      213: -2981335485334304292
+    second: botoRoboto_26
+  - first:
+      213: 4762540903915824351
+    second: botoRoboto_27
+  - first:
+      213: -350881758705484150
+    second: botoRoboto_28
+  - first:
+      213: -3580118862120578441
+    second: botoRoboto_29
+  - first:
+      213: 1821001643570820709
+    second: botoRoboto_30
+  - first:
+      213: 814121530258876052
+    second: botoRoboto_31
+  - first:
+      213: 6439761394964736655
+    second: botoRoboto_32
+  - first:
+      213: 9209568684900215915
+    second: botoRoboto_33
+  - first:
+      213: 9219293845337992017
+    second: botoRoboto_34
+  - first:
+      213: -7649975125520398564
+    second: botoRoboto_35
+  - first:
+      213: -437755100266589684
+    second: botoRoboto_36
+  - first:
+      213: -8584122706354416179
+    second: botoRoboto_37
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -32,7 +146,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -41,9 +155,9 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -75,9 +189,819 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: botoRoboto_0
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 393
+        width: 44
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 005c7c4b07a0eeab0800000000000000
+      internalID: -4977029059012213504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoRoboto_1
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 395
+        width: 40
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8739036aeacca24c0800000000000000
+      internalID: -4311408642769251464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoRoboto_2
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 484
+        width: 37
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 763c0ac7fd1f7b510800000000000000
+      internalID: 1564985337705448295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoRoboto_3
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 484
+        width: 39
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e5b317190a1d0fe0800000000000000
+      internalID: -1221291297603340827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoRoboto_4
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 487
+        width: 48
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4f609dae86b3970800000000000000
+      internalID: 8735691260087956664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoRoboto_5
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 487
+        width: 53
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a696749f587356920800000000000000
+      internalID: 2982851376755206506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoRoboto_6
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 482
+        width: 34
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9ffd75b93f3db690800000000000000
+      internalID: -7584836680331427940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoRoboto_7
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 481
+        width: 34
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76ab835568903f220800000000000000
+      internalID: 2518367089190287975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoRoboto_8
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 484
+        width: 41
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d1278ee0bb404e0800000000000000
+      internalID: -2016281060451410570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoRoboto_9
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 300
+        width: 46
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b30753bd6ed22a940800000000000000
+      internalID: 5305853780539306043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoRoboto_10
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 300
+        width: 42
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c83a6fa4d9955560800000000000000
+      internalID: 7301911509606217925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoRoboto_11
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 392
+        width: 45
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c536e0ccf5e0d2d0800000000000000
+      internalID: -3255849656858036794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoRoboto_12
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 393
+        width: 47
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e83921f94f80eeb40800000000000000
+      internalID: 5471320444035568526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoRoboto_13
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 395
+        width: 41
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 762996fd48e55c9c0800000000000000
+      internalID: -3907613176897105305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoRoboto_14
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 214
+        width: 74
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6048962d441ecec20800000000000000
+      internalID: 3237209917876700166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoRoboto_15
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 301
+        width: 80
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 618e23e3607363690800000000000000
+      internalID: -7622844819325130730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoRoboto_16
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 120
+        width: 72
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26591e955a2fdd480800000000000000
+      internalID: -8872668898858527390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoRoboto_17
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 303
+        width: 49
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d876bc3b1d712a60800000000000000
+      internalID: 7647531198187993300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoRoboto_18
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 209
+        width: 42
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2719afd1377e70dc0800000000000000
+      internalID: -3672712489487134350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoRoboto_19
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 298
+        width: 44
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59f244a6577eabe20800000000000000
+      internalID: 3367258162892910485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoRoboto_20
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 299
+        width: 53
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98d551478f2875510800000000000000
+      internalID: 1537841801381371273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoRoboto_21
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 118
+        width: 70
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c449e05adb22010800000000000000
+      internalID: 1162700170426862606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoRoboto_22
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 117
+        width: 59
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5a06c2941d1160b0800000000000000
+      internalID: -5737272476094297510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoRoboto_23
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 207
+        width: 40
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba13a4099668b3a20800000000000000
+      internalID: 3043173761169371563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoRoboto_24
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 211
+        width: 46
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f079c6d9cfc320b0800000000000000
+      internalID: -5754527433050459918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoRoboto_25
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 212
+        width: 49
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a33596d8d61897390800000000000000
+      internalID: -7820076970428247238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoRoboto_26
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 116
+        width: 68
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd9c1600c2b20a6d0800000000000000
+      internalID: -2981335485334304292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoRoboto_27
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 26
+        width: 54
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd4ab2618b1f71240800000000000000
+      internalID: 4762540903915824351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoRoboto_28
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 116
+        width: 38
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8ef13646ea612bf0800000000000000
+      internalID: -350881758705484150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoRoboto_29
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 117
+        width: 43
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77290a9fcdcd05ec0800000000000000
+      internalID: -3580118862120578441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoRoboto_30
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 32
+        width: 62
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 566f074c85f754910800000000000000
+      internalID: 1821001643570820709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoRoboto_31
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 118
+        width: 66
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 496e317e7375c4b00800000000000000
+      internalID: 814121530258876052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoRoboto_32
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 24
+        width: 43
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8aa5219ed0ae5950800000000000000
+      internalID: 6439761394964736655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoRoboto_33
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 25
+        width: 39
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ce90eace5fecf70800000000000000
+      internalID: 9209568684900215915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoRoboto_34
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 25
+        width: 47
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15be05b08e281ff70800000000000000
+      internalID: 9219293845337992017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoRoboto_35
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 28
+        width: 56
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1748c69724d5d590800000000000000
+      internalID: -7649975125520398564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoRoboto_36
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 29
+        width: 60
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c029efd3e08cce9f0800000000000000
+      internalID: -437755100266589684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoRoboto_37
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 24
+        width: 49
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc5516311e11fd880800000000000000
+      internalID: -8584122706354416179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

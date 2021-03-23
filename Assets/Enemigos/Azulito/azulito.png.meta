@@ -1,7 +1,145 @@
 fileFormatVersion: 2
 guid: c663296d36bc66e4a87a1096388ac57e
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -203942253326168041
+    second: azulito_0
+  - first:
+      213: -2895904917358847218
+    second: azulito_1
+  - first:
+      213: 8800385209018201697
+    second: azulito_2
+  - first:
+      213: 66707826706868454
+    second: azulito_3
+  - first:
+      213: -772756251296487600
+    second: azulito_4
+  - first:
+      213: -8239530685665312060
+    second: azulito_5
+  - first:
+      213: 3274860328621118459
+    second: azulito_6
+  - first:
+      213: -3816660087492420457
+    second: azulito_7
+  - first:
+      213: 5911770259364882393
+    second: azulito_8
+  - first:
+      213: -399194035551514940
+    second: azulito_9
+  - first:
+      213: -2216912682606098092
+    second: azulito_10
+  - first:
+      213: -4975102211230978184
+    second: azulito_11
+  - first:
+      213: 6528379663646888431
+    second: azulito_12
+  - first:
+      213: 8120875873943643612
+    second: azulito_13
+  - first:
+      213: 8316230112856183315
+    second: azulito_14
+  - first:
+      213: -9021188646048008146
+    second: azulito_15
+  - first:
+      213: 1297235559102621309
+    second: azulito_16
+  - first:
+      213: 7112240760894571716
+    second: azulito_17
+  - first:
+      213: 2418420601008097683
+    second: azulito_18
+  - first:
+      213: -4216236517051528221
+    second: azulito_19
+  - first:
+      213: 7718421097000164477
+    second: azulito_20
+  - first:
+      213: -5928289327242374948
+    second: azulito_21
+  - first:
+      213: -4557847468012383492
+    second: azulito_22
+  - first:
+      213: 1328333067142897857
+    second: azulito_23
+  - first:
+      213: -5749718111546019068
+    second: azulito_24
+  - first:
+      213: 3542509368480042162
+    second: azulito_25
+  - first:
+      213: -838506723894917468
+    second: azulito_26
+  - first:
+      213: -569897977539184302
+    second: azulito_27
+  - first:
+      213: -8552356862611368011
+    second: azulito_28
+  - first:
+      213: 5204384831872716548
+    second: azulito_29
+  - first:
+      213: 2777227810564443649
+    second: azulito_30
+  - first:
+      213: 7646116082799079292
+    second: azulito_31
+  - first:
+      213: 161506767265239294
+    second: azulito_32
+  - first:
+      213: -2264376426136435770
+    second: azulito_33
+  - first:
+      213: -5007862119382372046
+    second: azulito_34
+  - first:
+      213: 544454628539086748
+    second: azulito_35
+  - first:
+      213: -2158446081356975650
+    second: azulito_36
+  - first:
+      213: -8767411643054242962
+    second: azulito_37
+  - first:
+      213: 8076142483876590209
+    second: azulito_38
+  - first:
+      213: 4447185646406618353
+    second: azulito_39
+  - first:
+      213: -6507319564343923266
+    second: azulito_40
+  - first:
+      213: -2112144369189163346
+    second: azulito_41
+  - first:
+      213: -6469697206065232355
+    second: azulito_42
+  - first:
+      213: 1451789918011937201
+    second: azulito_43
+  - first:
+      213: -4199043869679385060
+    second: azulito_44
+  - first:
+      213: 8739289297748960200
+    second: azulito_45
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -32,7 +170,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -41,9 +179,9 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -75,9 +213,987 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: azulito_0
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 534
+        width: 35
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7101dc3e9937b2df0800000000000000
+      internalID: -203942253326168041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 533
+        width: 79
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0bd48122ddafc7d0800000000000000
+      internalID: -2895904917358847218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_2
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 533
+        width: 43
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 166b12e98bf312a70800000000000000
+      internalID: 8800385209018201697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_3
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 536
+        width: 41
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e8e99a3a6efce000800000000000000
+      internalID: 66707826706868454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 535
+        width: 43
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 057a28f984e9645f0800000000000000
+      internalID: -772756251296487600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_5
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 109
+        width: 484
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c20dfc0f7e47ad80800000000000000
+      internalID: -8239530685665312060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_6
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 501
+        width: 86
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf31b703e14a27d20800000000000000
+      internalID: 3274860328621118459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_7
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 501
+        width: 46
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79c5a983fdf780bc0800000000000000
+      internalID: -3816660087492420457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_8
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 501
+        width: 50
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d7a92f9ab3da0250800000000000000
+      internalID: 5911770259364882393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_9
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 501
+        width: 45
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ce4f72c327c57af0800000000000000
+      internalID: -399194035551514940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_10
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 501
+        width: 44
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 459843f29a1fb31e0800000000000000
+      internalID: -2216912682606098092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_11
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 403
+        width: 108
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87f215ae5e2e4fab0800000000000000
+      internalID: -4975102211230978184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_12
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 403
+        width: 109
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe19e8a17b6799a50800000000000000
+      internalID: 6528379663646888431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_13
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 403
+        width: 108
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd56373c49523b070800000000000000
+      internalID: 8120875873943643612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_14
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 401
+        width: 111
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3121333f93f296370800000000000000
+      internalID: 8316230112856183315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_15
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 403
+        width: 108
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e28758409bc4ec280800000000000000
+      internalID: -9021188646048008146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_16
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 403
+        width: 109
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7621523ed4b00210800000000000000
+      internalID: 1297235559102621309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_17
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 305
+        width: 111
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c4cc2e2a41c3b260800000000000000
+      internalID: 7112240760894571716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_18
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 305
+        width: 96
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 399039829b4ff8120800000000000000
+      internalID: 2418420601008097683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_19
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 303
+        width: 96
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eb0d10f93bec75c0800000000000000
+      internalID: -4216236517051528221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_20
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 305
+        width: 96
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7c539108175d1b60800000000000000
+      internalID: 7718421097000164477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_21
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 305
+        width: 96
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd09afb244c7abda0800000000000000
+      internalID: -5928289327242374948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_22
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 305
+        width: 96
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf255b850e54fb0c0800000000000000
+      internalID: -4557847468012383492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_23
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 305
+        width: 112
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c0257203ef2f6210800000000000000
+      internalID: 1328333067142897857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_24
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 212
+        width: 90
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4037ba247d5e430b0800000000000000
+      internalID: -5749718111546019068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_25
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 211
+        width: 99
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc0fb96085892130800000000000000
+      internalID: 3542509368480042162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_26
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 210
+        width: 90
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a68774c3960d54f0800000000000000
+      internalID: -838506723894917468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_27
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 211
+        width: 91
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25930921fc05718f0800000000000000
+      internalID: -569897977539184302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_28
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 211
+        width: 88
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b7dcabeebcef4980800000000000000
+      internalID: -8552356862611368011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_29
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 110
+        width: 107
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40f443a3e60b93840800000000000000
+      internalID: 5204384831872716548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_30
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 107
+        width: 108
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10e8705baf1ba8620800000000000000
+      internalID: 2777227810564443649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_31
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 109
+        width: 109
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7fe3a201167c1a60800000000000000
+      internalID: 7646116082799079292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_32
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 110
+        width: 109
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef09aa39c89cd3200800000000000000
+      internalID: 161506767265239294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_33
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 110
+        width: 109
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c38e5a33a15390e0800000000000000
+      internalID: -2264376426136435770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_34
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 110
+        width: 109
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 231341a6fef708ab0800000000000000
+      internalID: -5007862119382372046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_35
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 110
+        width: 109
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c97b36a999a4e8700800000000000000
+      internalID: 544454628539086748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_36
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 11
+        width: 108
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed132e599b8ab02e0800000000000000
+      internalID: -2158446081356975650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_37
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 11
+        width: 102
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e63c028ff85e35680800000000000000
+      internalID: -8767411643054242962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_38
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 11
+        width: 100
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 182b7e2ccc8341070800000000000000
+      internalID: 8076142483876590209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_39
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 11
+        width: 105
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fc484088c397bd30800000000000000
+      internalID: 4447185646406618353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_40
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 11
+        width: 109
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebda45f555b51b5a0800000000000000
+      internalID: -6507319564343923266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_41
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 11
+        width: 114
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eae632803e720b2e0800000000000000
+      internalID: -2112144369189163346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_42
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 11
+        width: 118
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1605244ba40736a0800000000000000
+      internalID: -6469697206065232355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_43
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 11
+        width: 122
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b1589f0d3bc52410800000000000000
+      internalID: 1451789918011937201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_44
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 11
+        width: 119
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c168a7719dff9b5c0800000000000000
+      internalID: -4199043869679385060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: azulito_45
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 11
+        width: 110
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c323b54051384970800000000000000
+      internalID: 8739289297748960200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
