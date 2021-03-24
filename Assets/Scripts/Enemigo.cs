@@ -12,6 +12,7 @@ using UnityEngine.SceneManagement;
  * Andrea Vianey Díaz Álvarez A01750147
  * Amy Murakami Tsutsumi A01750185
  */
+ 
 public class Enemigo : MonoBehaviour
 {
     public void OnTriggerEnter2D(Collider2D other)
