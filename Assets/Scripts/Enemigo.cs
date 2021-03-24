@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 /*
- * Detecta la colisiÛn del enemigo con el personaje
+ * Detecta la colisi√≥n del enemigo con el personaje
  * 
  * Autores: 
- * Jorge Ch·vez Badillo A01749448
- * Ariadna Jocelyn Guzm·n JimÈnez A01749373
+ * Jorge Ch√°vez Badillo A01749448
+ * Ariadna Jocelyn Guzm√°n Jim√©nez A01749373
  * Liam Garay Monroy A01750632
- * Andrea Vianey DÌaz ¡lvarez A01750147
+ * Andrea Vianey D√≠az √Ålvarez A01750147
  * Amy Murakami Tsutsumi A01750185
  */
 public class Enemigo : MonoBehaviour
@@ -19,13 +19,13 @@ public class Enemigo : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             //Descontar una vida 
-            //SaludPersonaje.instance.vidas--; 
-            //Actualizar los 'corazones'
-            //HUD.instance.ActualizarVidas();
-            //if (SaludPersonaje.instance.vidas == 0)
+            VidasPersonaje.instance.vidas--; 
+            //Actualizar las 'flechas'
+            HUD.instance.ActualizarVidas();
+            if (VidasPersonaje.instance.vidas == 0)
             {
                 Destroy(other.gameObject, 0.3f);
-                //SceneManager.LoadScene("EscenaMenu"); //Pierde, regresa al men˙
+                SceneManager.LoadScene("MapaNiveles"); //Pierde, regresa al mapa de niveles
             }
         }
     }
