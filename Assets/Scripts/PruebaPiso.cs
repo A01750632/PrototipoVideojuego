@@ -20,10 +20,10 @@ public class PruebaPiso : MonoBehaviour
     //Se ejecuta cuando el collider Entra a otro collider
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag != "Moneda")
+        if (other.gameObject.tag != "Oro")
         {
             estaEnPiso = true;
-            //print("Está en piso");
+            print("Está en piso");
         }
     }
 
@@ -31,6 +31,6 @@ public class PruebaPiso : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other)
     {
         estaEnPiso = false;
-        //print("No está en piso");
+        print("No está en piso");
     }
 }

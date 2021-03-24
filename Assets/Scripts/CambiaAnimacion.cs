@@ -39,4 +39,3 @@ public class CambiaAnimacion : MonoBehaviour
         anim.SetBool("saltando", !PruebaPiso.estaEnPiso);
     }
 }
-
