@@ -963,6 +963,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1566373248188333676, guid: 9739a51fa3cae4edbbdd6eaf14e65b78, type: 3}
+      propertyPath: m_Constraints
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1566373248188333677, guid: 9739a51fa3cae4edbbdd6eaf14e65b78, type: 3}
       propertyPath: m_Name
       value: AmigoReanimado
@@ -1012,12 +1016,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1566373248188333683, guid: 9739a51fa3cae4edbbdd6eaf14e65b78, type: 3}
+      propertyPath: m_Size.x
+      value: 1.791045
+      objectReference: {fileID: 0}
+    - target: {fileID: 1566373248188333683, guid: 9739a51fa3cae4edbbdd6eaf14e65b78, type: 3}
       propertyPath: m_Size.y
-      value: 5.1273127
+      value: 4.106535
+      objectReference: {fileID: 0}
+    - target: {fileID: 1566373248188333683, guid: 9739a51fa3cae4edbbdd6eaf14e65b78, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.30623636
       objectReference: {fileID: 0}
     - target: {fileID: 1566373248188333683, guid: 9739a51fa3cae4edbbdd6eaf14e65b78, type: 3}
       propertyPath: m_Offset.y
-      value: 0.21634352
+      value: -0.29404545
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9739a51fa3cae4edbbdd6eaf14e65b78, type: 3}
@@ -8197,7 +8209,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7491239740785986794, guid: 3acd1e2098bea724dbe8aa5ada49b2e9, type: 3}
       propertyPath: m_FlipX
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7491239740785986795, guid: 3acd1e2098bea724dbe8aa5ada49b2e9, type: 3}
       propertyPath: m_RootOrder
