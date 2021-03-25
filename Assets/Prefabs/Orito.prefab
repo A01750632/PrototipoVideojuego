@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6957021588738810114}
   - component: {fileID: 6957021588738810115}
-  - component: {fileID: 6957021588738810140}
   - component: {fileID: 6957021588738810141}
+  - component: {fileID: 6957021588738810140}
   m_Layer: 0
   m_Name: Orito
   m_TagString: Oro
@@ -84,18 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6957021588738810140
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6957021588738810142}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aa5d72bb8f6f8e4291bb689dc2f5f51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &6957021588738810141
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -122,3 +110,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.19712877, y: 0.17712903}
   m_EdgeRadius: 0
+--- !u!114 &6957021588738810140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6957021588738810142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa5d72bb8f6f8e4291bb689dc2f5f51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

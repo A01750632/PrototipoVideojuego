@@ -27,7 +27,10 @@ public class Moneda : MonoBehaviour
            //prender la explosión
            //moneda.transform.hijo del transform(transform de la explosion).explosion se hace activa
            //gameObject.transform.GetChild(0).gameObject.SetActive(true);
-           Destroy(gameObject, 0.8f);
+           Destroy(gameObject, 0.5f);
+           //Contar oritos
+           VidasPersonaje.instance.monedas += 10;
+           HUD.instance.ActualizarMonedas();
        }
    }
 }
