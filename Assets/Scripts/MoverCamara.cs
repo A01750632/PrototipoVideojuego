@@ -3,6 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 /*
  * Permite que la camara siga al personaje
+ * 
+ * Autores: 
+ * Jorge Chávez Badillo A01749448
+ * Ariadna Jocelyn Guzmán Jiménez A01749373
+ * Liam Garay Monroy A01750632
+ * Andrea Vianey Díaz Álvarez A01750147
+ * Amy Murakami Tsutsumi A01750185
  */
 
 public class MoverCamara : MonoBehaviour
