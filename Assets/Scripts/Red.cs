@@ -9,7 +9,11 @@ using UnityEngine.SceneManagement;
 
 /*
  * Muestra el uso de UnityWebRequest para comunicarse con un servidor en la red
- * Autor: Equipo1
+ * Jorge Chávez Badillo            A01749448
+ * Ariadna Jocelyn Guzmán Jiménez  A01749373
+ * Liam Garay Monroy               A01750632
+ * Amy Murakami Tsutsumi           A01750185
+ * Andrea Vianey Díaz Álvarez      A01750147
  */
 
 public class Red : MonoBehaviour
@@ -17,13 +21,13 @@ public class Red : MonoBehaviour
     //Para desplegar la información
     public Text resultado;
 
-    public static Red instance;
-    public static String tiempoInicio;
+    //public static Red instance;
+    //public static String tiempoInicio;
 
     //Campos con la información nombre y puntos
     public Text textoNombre;
-    public Text textoContraseña;
-    public static String nombre;
+    public Text textoContrasena;
+    //public static String nombre;
     //Escribir
     public void EscribirTextoPlano()     //Botón
     {
@@ -33,13 +37,16 @@ public class Red : MonoBehaviour
 
     private IEnumerator SubirTextoPlano()
     {
+        //print(textoNombre.text);
         //Encapsular los datos que se suben a la red con el método POST
         WWWForm forma = new WWWForm();
+        forma.AddField("usuarioUsuario", textoNombre.text);
+        forma.AddField("passwordUsuario", textoContrasena.text);
 
-        forma.AddField("usuarioUsuarioo", textoNombre.text);
-        forma.AddField("passwordUsuarioo", textoContraseña.text);
+        print(textoNombre.text);
+        print(forma.data);
 
-        UnityWebRequest request = UnityWebRequest.Post("http://Localhost:8080/BuscarUsuario", forma); //
+        UnityWebRequest request = UnityWebRequest.Post("http://Localhost:8080/jugador/BuscarJugador", forma); //
         yield return request.SendWebRequest();   //Regresa, ejecuta, espera...
         //...ya regresó a la línea 27 (terminó de ejecutar SendWebRequest())
 
@@ -49,9 +56,9 @@ public class Red : MonoBehaviour
             resultado.text = textoPlano;
             if (textoPlano == "")
             {
-                SceneManager.LoadScene("EscenaMapa");
-                tiempoInicio = System.DateTime.Now.TimeOfDay.ToString();
-                nombre = textoNombre.text;
+                SceneManager.LoadScene("EscenaMenu");
+                //tiempoInicio = System.DateTime.Now.TimeOfDay.ToString();
+                //nombre = textoNombre.text;
             }
         }
         else
