@@ -20,12 +20,12 @@ public class Red : MonoBehaviour
     public static Red instance;
     public static String tiempoInicio;
 
-    //Campos con la informaci�n nombre y puntos
+    //Campos con la informacion nombre y puntos
     public Text textoNombre;
     public Text textoContrasenia;
     public static String nombre;
     //Escribir
-    public void EscribirTextoPlano()     //Bot�n
+    public void EscribirTextoPlano()     //Boton
     {
         //Concurrente
         StartCoroutine(SubirTextoPlano());
@@ -33,15 +33,15 @@ public class Red : MonoBehaviour
 
     private IEnumerator SubirTextoPlano()
     {
-        //Encapsular los datos que se suben a la red con el m�todo POST
+        //Encapsular los datos que se suben a la red con el metodo POST
         WWWForm forma = new WWWForm();
 
         forma.AddField("usuarioUsuarioo", textoNombre.text);
         forma.AddField("passwordUsuarioo", textoContrasenia.text);
 
-        UnityWebRequest request = UnityWebRequest.Post("http://Localhost:8080/BuscarUsuario", forma); //
+        UnityWebRequest request = UnityWebRequest.Post("http://Localhost:8080/jugador/BuscarJugador", forma); //
         yield return request.SendWebRequest();   //Regresa, ejecuta, espera...
-        //...ya regres� a la l�nea 27 (termin� de ejecutar SendWebRequest())
+        //...ya regreso a la linea 27 (termino de ejecutar SendWebRequest())
 
         if (request.result == UnityWebRequest.Result.Success)  //200 OK
         {
@@ -49,9 +49,9 @@ public class Red : MonoBehaviour
             resultado.text = textoPlano;
             if (textoPlano == "")
             {
-                SceneManager.LoadScene("EscenaMapa");
-                tiempoInicio = System.DateTime.Now.TimeOfDay.ToString();
-                nombre = textoNombre.text;
+                SceneManager.LoadScene("EscenaMenu");
+                //tiempoInicio = System.DateTime.Now.TimeOfDay.ToString();
+                //nombre = textoNombre.text;
             }
         }
         else

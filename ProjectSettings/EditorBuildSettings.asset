@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MapaNiveles.unity
     guid: ad7cf34dae4e4454eaba375943181a9e
+  - enabled: 1
+    path: Assets/Scenes/EscenaMenu.unity
+    guid: 4d0afa5ec67a24478b98dbee83af95c9
+  - enabled: 1
+    path: Assets/Scenes/Nivel3.unity
+    guid: 572dadf71d779054f98a6775a3343e16
   m_configObjects: {}

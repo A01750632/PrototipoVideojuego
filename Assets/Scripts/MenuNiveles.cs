@@ -21,6 +21,10 @@ public class MenuNiveles : MonoBehaviour
     {
         SceneManager.LoadScene("Nivel1");
     }
+    public void niveTres()
+    {
+        SceneManager.LoadScene("Nivel3");
+    }
     /*
     public void nivelDos()
     {
