@@ -21,16 +21,13 @@ public class MenuNiveles : MonoBehaviour
     {
         SceneManager.LoadScene("Nivel1");
     }
-    public void niveTres()
-    {
-        SceneManager.LoadScene("Nivel3");
-    }
-    /*
+    
     public void nivelDos()
     {
         SceneManager.LoadScene("Nivel2");
             
     }
+    
     public void nivelTres()
     {
         SceneManager.LoadScene("Nivel3");
@@ -40,7 +37,7 @@ public class MenuNiveles : MonoBehaviour
     {
         SceneManager.LoadScene("Nivel4");
             
-    }*/
+    }
     public void nivelCinco()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("Nivel5");
