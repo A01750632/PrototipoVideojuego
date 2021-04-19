@@ -5,10 +5,10 @@ using UnityEngine;
  * Permite que la camara siga al personaje
  * 
  * Autores: 
- * Jorge Chávez Badillo A01749448
- * Ariadna Jocelyn Guzmán Jiménez A01749373
+ * Jorge Chï¿½vez Badillo A01749448
+ * Ariadna Jocelyn Guzmï¿½n Jimï¿½nez A01749373
  * Liam Garay Monroy A01750632
- * Andrea Vianey Díaz Álvarez A01750147
+ * Andrea Vianey Dï¿½az ï¿½lvarez A01750147
  * Amy Murakami Tsutsumi A01750185
  */
 
@@ -24,7 +24,7 @@ public class MoverCamara : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float x = Mathf.Clamp(personaje.transform.position.x, min: -3.2f, max: 55.4f);
+        float x = Mathf.Clamp(personaje.transform.position.x, min: -3.2f, max: 139.2f);
         float y = Mathf.Clamp(personaje.transform.position.y, min: 0, max: 6.6f);
         float z = transform.position.z;
         transform.position = new Vector3(x, y, z);
