@@ -26,11 +26,11 @@ public class CambiaAnimacion : MonoBehaviour
         anim.SetFloat("velocidad", velocidad);
 
         //Orientación
-        if (rb2D.velocity.x > 0)
+        if (rb2D.velocity.x > 0.001)
         {
             sprRenderer.flipX = false;
         }
-        else if (rb2D.velocity.x < 0)
+        else if (rb2D.velocity.x < -0.001)
         {
             sprRenderer.flipX = true;
         }
