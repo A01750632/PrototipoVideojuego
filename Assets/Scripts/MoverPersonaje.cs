@@ -22,7 +22,13 @@ public class MoverPersonaje : MonoBehaviour
 
     //CLONAR objetos
     public Proyectil proyectil;       //Prefabs
+
+    //clase amigo para indicar direccion
+    public MoverAmigo amigo;
+    
     private int direccion = 1;
+
+    //public AmigoMov amigo;
 
 
     //METODOS
@@ -55,6 +61,7 @@ public class MoverPersonaje : MonoBehaviour
         {
             rigidbody.velocity = new Vector2(rigidbody.velocity.x, maxVelocidadY);
         }
+        //amigo.transform.position = gameObject.transform.position;
 
         // DISPARA!!
         if(Input.GetButtonDown("Fire1"))
@@ -65,5 +72,7 @@ public class MoverPersonaje : MonoBehaviour
             
             nuevo.gameObject.SetActive(true);  //Start
         }
+        amigo.CambiarDireccion(direccion);
+
     }
 }

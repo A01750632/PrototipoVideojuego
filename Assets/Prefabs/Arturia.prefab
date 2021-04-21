@@ -168,6 +168,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxVelocidadX: 10
   maxVelocidadY: 7
+  proyectil: {fileID: 0}
+  amigo: {fileID: 0}
 --- !u!114 &7491239740785986791
 MonoBehaviour:
   m_ObjectHideFlags: 0

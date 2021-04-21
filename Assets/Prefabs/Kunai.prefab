@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3917849688213227717}
   - component: {fileID: 2368412880713814918}
-  - component: {fileID: 3858177763615912808}
   - component: {fileID: 6519041246516254099}
   - component: {fileID: 5372088255735236726}
+  - component: {fileID: 8154741210239801025}
   m_Layer: 0
   m_Name: Kunai
   m_TagString: proyectilArt
@@ -85,19 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3858177763615912808
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5979353440044189509}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20f9f06e0db01dd489b6b1a1830fd00d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  direccionDerecha: 1
 --- !u!50 &6519041246516254099
 Rigidbody2D:
   serializedVersion: 4
@@ -145,3 +132,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.64, y: 0.128}
   m_EdgeRadius: 0
+--- !u!114 &8154741210239801025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5979353440044189509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20f9f06e0db01dd489b6b1a1830fd00d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direccionDerecha: 1
