@@ -23,6 +23,10 @@ public class Enemigo : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
+        if(other.gameObject.CompareTag("proyectilArt"))
+        {
+            Destroy(gameObject);
+        }
         if (other.gameObject.CompareTag("Player"))
         {
             //Descontar una vida 

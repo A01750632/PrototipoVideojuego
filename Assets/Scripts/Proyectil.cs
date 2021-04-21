@@ -42,7 +42,15 @@ public class Proyectil : MonoBehaviour
         if(! rendererProyectil.isVisible)
         {
             Destroy(gameObject);
-        }    
+        }
+        if (direccionDerecha <= -1)
+        {
+            rendererProyectil.flipX = true;
+        }
+        else if (direccionDerecha >= 1)
+        {
+            rendererProyectil.flipX = false;
+        }
     
     }
 }

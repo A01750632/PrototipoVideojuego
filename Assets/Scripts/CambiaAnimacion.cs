@@ -37,5 +37,6 @@ public class CambiaAnimacion : MonoBehaviour
 
         // saltando
         anim.SetBool("saltando", !PruebaPiso.estaEnPiso);
+        anim.SetBool("disparando",Input.GetButtonDown("Fire1"));
     }
 }
