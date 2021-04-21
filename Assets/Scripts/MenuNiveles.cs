@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.SearchService;
+//using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -40,7 +40,6 @@ public class MenuNiveles : MonoBehaviour
     }
     public void nivelCinco()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Nivel5");
         SceneManager.LoadScene("Nivel5");
             
     }
