@@ -30,6 +30,10 @@ public class Red : MonoBehaviour
         //Concurrente
         StartCoroutine(SubirTextoPlano());
     }
+    public void CrearCuenta()     //Boton
+    {
+        SceneManager.LoadScene("EscenaRegistro");
+    }
 
     private IEnumerator SubirTextoPlano()
     {
