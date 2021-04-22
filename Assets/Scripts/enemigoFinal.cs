@@ -1,20 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
-//using UnityEditor.SearchService;
+using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 /*
  * Detecta la colisión del enemigo con el personaje
  * Autor: Roberto Mtz. Román
  */
-public class enemigoFinal : MonoBehaviour
+
+public class EnemigoFinal : MonoBehaviour
 {
+    //private PreguntasFinal preguntas; 
 
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene("PreguntaFinalNivel5");
+            SceneManager.LoadScene("PreguntaEnemigoFinal");
+            //PreguntasFinal.instance2.EscribirPregunta(); 
             // Reproducir el efecto 
             //efectoEnemigo.Play(); 
             // Descontar una vida
