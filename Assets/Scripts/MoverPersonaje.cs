@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /*
-
-Autores: 
+ * 
+Autores de equipo 1: 
 Jorge Chávez Badillo            A01749448
 Ariadna Jocelyn Guzmán Jiménez  A01749373
 Liam Garay Monroy               A01750632
@@ -73,6 +73,7 @@ public class MoverPersonaje : MonoBehaviour
             nuevo.gameObject.SetActive(true);  //Start
         }
         amigo.CambiarDireccion(direccion);
+        amigo.AnimarMovimiento(rigidbody.velocity.x);
 
     }
 }
