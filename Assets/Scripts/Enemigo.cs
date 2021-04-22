@@ -18,10 +18,10 @@ using UnityEngine.Networking;
 
 public class Enemigo : MonoBehaviour
 {
-    //public static String tiempoFinal;
-    //public static Enemigo instance;
+    public static Enemigo instance;
+    public static float tiempoTotal;
 
-    public void OnTriggerEnter2D(Collider2D other)
+    public IEnumerator OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.CompareTag("proyectilArt"))
         {
@@ -35,20 +35,25 @@ public class Enemigo : MonoBehaviour
             HUD.instance.ActualizarVidas();
             if (VidasPersonaje.instance.vidas == 0)
             {
+
+                tiempoTotal = Time.time - Menu.tiempoInicial;
                 Destroy(other.gameObject, 0.3f);
                 SceneManager.LoadScene("MapaNiveles"); //Pierde, regresa al mapa de niveles
 
-                /*   Para eviar los datos a la base de datos usando archivo Red
-                tiempoFinal = System.DateTime.Now.TimeOfDay.ToString(); //Declaramos la hora final en el momento que pierde las 3 vidas
-                String TiempoInicio2 = Red.tiempoInicio; //Traemos del archivo Red el tiempo inicio
-
                 WWWForm forma2 = new WWWForm();
 
-                forma2.AddField("TiempoInicio", TiempoInicio2);
-                forma2.AddField("TiempoFinal", tiempoFinal);
-                forma2.AddField("TiempoUsuario", Red.nombre);
+                forma2.AddField("tiempoTotal", tiempoTotal.ToString());
+                if (Red.nombre == null)
+                {
+                    forma2.AddField("Usuario", Registro.nombre);
+                }
+                else
+                {
+                    forma2.AddField("Usuario", Red.nombre);
+                }
+                
 
-                UnityWebRequest request = UnityWebRequest.Post("http://Localhost:8080/AgregarTiempo", forma2);
+                UnityWebRequest request = UnityWebRequest.Post("http://Localhost:8080/partida/agregarPartida", forma2);
                 yield return request.SendWebRequest();
                 if (request.result == UnityWebRequest.Result.Success)  //200 OK
                 {
@@ -59,7 +64,8 @@ public class Enemigo : MonoBehaviour
                 {
                     print("Error en la descarga: " + request.responseCode.ToString());
                 }
-                */
+
+             
             }
         }
     }

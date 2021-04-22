@@ -1655,7 +1655,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resultado: {fileID: 1917581015}
   textoNombre: {fileID: 1648119153}
-  textoContrasenia: {fileID: 559341121}
+  textoContrasena: {fileID: 559341121}
 --- !u!114 &1747001152
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -30,6 +30,8 @@ public class Registro : MonoBehaviour
     public Text textoMateria;
     public Text textoNivel;
     private String textoNacimiento;
+    public static Registro instance;
+    public static String nombre;
 
     public void volver()     //Botón
     {
@@ -51,6 +53,7 @@ public class Registro : MonoBehaviour
             if (email_bien_escrito(textoCorreo.text.ToString()) == true)
             {
                 //Revisar que el usuario no exita
+                nombre = textoUsuario.text;
                 WWWForm forma2 = new WWWForm();
                 forma2.AddField("usuarioUsuarioo", textoUsuario.text);
                 UnityWebRequest request2 = UnityWebRequest.Post("http://Localhost:8080/jugador/BuscarJugadorUnity", forma2); //

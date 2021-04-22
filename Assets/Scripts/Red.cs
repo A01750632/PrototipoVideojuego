@@ -22,8 +22,9 @@ public class Red : MonoBehaviour
 
     //Campos con la informacion nombre y puntos
     public Text textoNombre;
-    public Text textoContrasenia;
+    public Text textoContrasena;
     public static String nombre;
+
     //Escribir
     public void EscribirTextoPlano()     //Boton
     {
@@ -41,7 +42,7 @@ public class Red : MonoBehaviour
         WWWForm forma = new WWWForm();
 
         forma.AddField("usuarioUsuarioo", textoNombre.text);
-        forma.AddField("passwordUsuarioo", textoContrasenia.text);
+        forma.AddField("passwordUsuarioo", textoContrasena.text);
 
         UnityWebRequest request = UnityWebRequest.Post("http://Localhost:8080/jugador/BuscarJugador", forma); //
         yield return request.SendWebRequest();   //Regresa, ejecuta, espera...
@@ -54,8 +55,7 @@ public class Red : MonoBehaviour
             if (textoPlano == "")
             {
                 SceneManager.LoadScene("EscenaMenu");
-                //tiempoInicio = System.DateTime.Now.TimeOfDay.ToString();
-                //nombre = textoNombre.text;
+                nombre = textoNombre.text;
             }
         }
         else
