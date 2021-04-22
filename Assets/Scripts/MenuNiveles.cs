@@ -3,6 +3,7 @@ using System.Collections.Generic;
 //using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Scene = UnityEditor.SearchService.Scene;
 
 /*
 
@@ -42,6 +43,11 @@ public class MenuNiveles : MonoBehaviour
     {
         SceneManager.LoadScene("Nivel5");
             
+    }
+
+    public void Menu()
+    {
+        SceneManager.LoadScene("EscenaMenu");
     }
     
 };

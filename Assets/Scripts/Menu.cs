@@ -18,7 +18,7 @@ Andrea Vianey Díaz Álvarez      A01750147
 public class Menu : MonoBehaviour
 {
     public static float tiempoInicial;
-
+    
     public void Salir(){
         // Regresa al Sistema Operativo
         Application.Quit();

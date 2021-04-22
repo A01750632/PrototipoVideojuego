@@ -3786,7 +3786,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -13364,6 +13364,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2368412880713814918, guid: 602816f284b4a244b8e0524a1fa97d8a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a086328f12eca9a4fb61634c24bb4e48, type: 3}
     - target: {fileID: 3917849688213227717, guid: 602816f284b4a244b8e0524a1fa97d8a, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -13599,6 +13603,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7491239740785986794, guid: 3acd1e2098bea724dbe8aa5ada49b2e9, type: 3}
       propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491239740785986794, guid: 3acd1e2098bea724dbe8aa5ada49b2e9, type: 3}
+      propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7491239740785986795, guid: 3acd1e2098bea724dbe8aa5ada49b2e9, type: 3}
