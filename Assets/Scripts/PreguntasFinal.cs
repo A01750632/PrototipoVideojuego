@@ -1,8 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Networking;
+
+
 public class PreguntasFinal : MonoBehaviour
 {
     // Para desplegar la información
@@ -153,7 +156,8 @@ public class PreguntasFinal : MonoBehaviour
 
     public void Validar1()
     {
-        print(Registro.nombre);
+        //print(Red.nombre);
+        //print(Registro.nombre);
         if(opcion1.text == respuestaCorrecta.text){
             StartCoroutine(MandarOp1());
             pantallaWinner.SetActive(true);
@@ -167,9 +171,11 @@ public class PreguntasFinal : MonoBehaviour
     public void Validar2()
     {
         if(opcion2.text == respuestaCorrecta.text){
+            StartCoroutine(MandarOp2());
             pantallaWinner.SetActive(true);
         }
         else{
+            StartCoroutine(MandarOp2());
             pantallaGameOver.SetActive(true);
         }
     }
@@ -177,9 +183,11 @@ public class PreguntasFinal : MonoBehaviour
     public void Validar3() 
     {
         if(opcion3.text == respuestaCorrecta.text){
+            StartCoroutine(MandarOp3());
             pantallaWinner.SetActive(true);
         }
         else{
+            StartCoroutine(MandarOp3());
             pantallaGameOver.SetActive(true);
         }
     }
@@ -187,21 +195,119 @@ public class PreguntasFinal : MonoBehaviour
     public void Validar4()
     {
         if(opcion4.text == respuestaCorrecta.text){
+            StartCoroutine(MandarOp4());
             pantallaWinner.SetActive(true);
         }
         else{
+            StartCoroutine(MandarOp4());
             pantallaGameOver.SetActive(true);
         }
     }
 
     private IEnumerator MandarOp1()
     {
+        //Red.instance.textoNombre.text
         WWWForm forma = new  WWWForm();
         forma.AddField("opcionContestada", opcion1.text);
-        forma.AddField("jugadorUsername", Registro.instance.textoUsuario.text);
+        forma.AddField("preguntumIdPregunta", 1);
+        //forma.AddField("jugadorUsername", Registro.instance.textoUsuario.text);
+        if (String.IsNullOrEmpty(Registro.nombre))
+        { 
+            forma.AddField("jugadorUsername", Red.nombre);
+        }
+        else
+        {
+            forma.AddField("jugadorUsername", Registro.nombre);
+        }
         //forma.AddField('opcionContestada', opcion1.text);
         
         if(opcion1.text == respuestaCorrecta.text){
+            forma.AddField("estado", "Correcta");
+            
+        }
+        else{
+            forma.AddField("estado", "Incorrecto");
+
+        }
+        UnityWebRequest request = UnityWebRequest.Post("http://Localhost:8080/preguntaContestada/agregarPreguntaContestada", forma); 
+        yield return request.SendWebRequest(); 
+    }
+    
+    private IEnumerator MandarOp2()
+    {
+        //Red.instance.textoNombre.text
+        WWWForm forma = new  WWWForm();
+        forma.AddField("opcionContestada", opcion2.text);
+        forma.AddField("preguntumIdPregunta", 1);
+        //forma.AddField("jugadorUsername", Registro.instance.textoUsuario.text);
+        if (String.IsNullOrEmpty(Registro.nombre))
+        { 
+            forma.AddField("jugadorUsername", Red.nombre);
+        }
+        else
+        {
+            forma.AddField("jugadorUsername", Registro.nombre);
+        }
+        //forma.AddField('opcionContestada', opcion1.text);
+        
+        if(opcion2.text == respuestaCorrecta.text){
+            forma.AddField("estado", "Correcta");
+            
+        }
+        else{
+            forma.AddField("estado", "Incorrecto");
+
+        }
+        UnityWebRequest request = UnityWebRequest.Post("http://Localhost:8080/preguntaContestada/agregarPreguntaContestada", forma); 
+        yield return request.SendWebRequest(); 
+    }
+    private IEnumerator MandarOp3()
+    {
+        //Red.instance.textoNombre.text
+        WWWForm forma = new  WWWForm();
+        forma.AddField("opcionContestada", opcion3.text);
+        forma.AddField("preguntumIdPregunta", 1);
+        //forma.AddField("jugadorUsername", Registro.instance.textoUsuario.text);
+        if (String.IsNullOrEmpty(Registro.nombre))
+        { 
+            forma.AddField("jugadorUsername", Red.nombre);
+        }
+        else
+        {
+            forma.AddField("jugadorUsername", Registro.nombre);
+        }
+        //forma.AddField('opcionContestada', opcion1.text);
+        
+        if(opcion3.text == respuestaCorrecta.text){
+            forma.AddField("estado", "Correcta");
+            
+        }
+        else{
+            forma.AddField("estado", "Incorrecto");
+
+        }
+        UnityWebRequest request = UnityWebRequest.Post("http://Localhost:8080/preguntaContestada/agregarPreguntaContestada", forma); 
+        yield return request.SendWebRequest(); 
+    }
+    
+    private IEnumerator MandarOp4()
+    {
+        //Red.instance.textoNombre.text
+        WWWForm forma = new  WWWForm();
+        forma.AddField("opcionContestada", opcion4.text);
+        forma.AddField("preguntumIdPregunta", 1);
+        //forma.AddField("jugadorUsername", Registro.instance.textoUsuario.text);
+        if (String.IsNullOrEmpty(Registro.nombre))
+        { 
+            forma.AddField("jugadorUsername", Red.nombre);
+        }
+        else
+        {
+            forma.AddField("jugadorUsername", Registro.nombre);
+        }
+        //forma.AddField('opcionContestada', opcion1.text);
+        
+        if(opcion4.text == respuestaCorrecta.text){
             forma.AddField("estado", "Correcta");
             
         }
