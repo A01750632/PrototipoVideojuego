@@ -1,11 +1,9 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Networking;
-
-
+using System; 
 public class PreguntasFinal : MonoBehaviour
 {
     // Para desplegar la información
@@ -14,8 +12,8 @@ public class PreguntasFinal : MonoBehaviour
     public Text opcion2; 
     public Text opcion3;  
     public Text opcion4; 
-    public Text respuestaCorrecta;
-    //public Text idPregunta;
+    public Text respuestaCorrecta; 
+    public Text idPregunta; 
     public static Red instance;
     public static PreguntasFinal instance2; 
     public GameObject pantallaPregunta; 
@@ -35,7 +33,7 @@ public class PreguntasFinal : MonoBehaviour
         StartCoroutine(SubirOpcion3());
         StartCoroutine(SubirOpcion4());
         StartCoroutine(GuardarCorrecta());
-        //StartCoroutine(IdPregunta());
+        StartCoroutine(BuscarIdPregunta());
 
         hide = !hide; 
         pantallaPregunta.SetActive(hide);
@@ -47,7 +45,7 @@ public class PreguntasFinal : MonoBehaviour
         // Encapsular los datos que se suben a la red con el método POST
         WWWForm forma = new WWWForm();
 
-        UnityWebRequest request = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarPregunta"); 
+        UnityWebRequest request = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarPreguntaNivel4"); 
 
         yield return request.SendWebRequest();   //Regresa, ejecuta, espera...
         //...ya regresó a la línea 27 (terminó de ejecutar SendWebRequest())
@@ -67,7 +65,7 @@ public class PreguntasFinal : MonoBehaviour
     {
         WWWForm forma = new WWWForm();
 
-        UnityWebRequest request1 = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarOpcion1"); 
+        UnityWebRequest request1 = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarOpcion1Nivel4"); 
         
         yield return request1.SendWebRequest();
 
@@ -86,7 +84,7 @@ public class PreguntasFinal : MonoBehaviour
     {
         WWWForm forma = new WWWForm();
 
-        UnityWebRequest request2 = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarOpcion2"); 
+        UnityWebRequest request2 = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarOpcion2Nivel4"); 
         
         yield return request2.SendWebRequest();
 
@@ -105,7 +103,7 @@ public class PreguntasFinal : MonoBehaviour
     {
         WWWForm forma = new WWWForm();
 
-        UnityWebRequest request3 = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarOpcion3"); 
+        UnityWebRequest request3 = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarOpcion3Nivel4"); 
         
         yield return request3.SendWebRequest();
 
@@ -123,7 +121,7 @@ public class PreguntasFinal : MonoBehaviour
     private IEnumerator SubirOpcion4()
     {
         WWWForm forma = new WWWForm();
-        UnityWebRequest request4 = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarOpcion4"); 
+        UnityWebRequest request4 = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarOpcion4Nivel4"); 
 
         yield return request4.SendWebRequest();  
 
@@ -138,31 +136,10 @@ public class PreguntasFinal : MonoBehaviour
         }
     }
 
-    
-    /*
-    private IEnumerator IdPregunta()
-    {
-        WWWForm forma = new WWWForm();
-        UnityWebRequest request = UnityWebRequest.Get("http://Localhost:8080/pregunta/getIdPregunta"); 
-
-        yield return request.SendWebRequest();  
-
-        if (request.result == UnityWebRequest.Result.Success) 
-        {
-            string id = request.downloadHandler.text;
-            idPregunta.text = id;
-        }
-        else
-        {
-            idPregunta.text = "Error en la descarga: " + request.responseCode.ToString(); 
-        }
-        
-    }
-    */
     private IEnumerator GuardarCorrecta()
     {
         WWWForm forma = new WWWForm();
-        UnityWebRequest request6 = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarRespuestaCorrecta"); 
+        UnityWebRequest request6 = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarRespuestaCorrectaNivel4"); 
 
         yield return request6.SendWebRequest();  
 
@@ -179,8 +156,6 @@ public class PreguntasFinal : MonoBehaviour
 
     public void Validar1()
     {
-        //print(Red.nombre);
-        //print(Registro.nombre);
         if(opcion1.text == respuestaCorrecta.text){
             StartCoroutine(MandarOp1());
             pantallaWinner.SetActive(true);
@@ -227,13 +202,28 @@ public class PreguntasFinal : MonoBehaviour
         }
     }
 
+    public IEnumerator BuscarIdPregunta(){
+        WWWForm forma = new WWWForm();
+        UnityWebRequest request = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarIdPreguntaNivel4"); 
+
+        yield return request.SendWebRequest();  
+
+        if (request.result == UnityWebRequest.Result.Success) 
+        {
+            string id = request.downloadHandler.text;
+            idPregunta.text = id; 
+        }
+        else
+        {
+            idPregunta.text = "Error en la descarga: " + request.responseCode.ToString(); 
+        }
+    } 
+
     private IEnumerator MandarOp1()
     {
-        //Red.instance.textoNombre.text
         WWWForm forma = new  WWWForm();
         forma.AddField("opcionContestada", opcion1.text);
-        //forma.AddField("preguntumIdPregunta", Int32.Parse(idPregunta.text));
-        //forma.AddField("jugadorUsername", Registro.instance.textoUsuario.text);
+        forma.AddField("preguntumIdPregunta", Convert.ToInt32(idPregunta.text)); 
         if (String.IsNullOrEmpty(Registro.nombre))
         { 
             forma.AddField("jugadorUsername", Red.nombre);
@@ -241,9 +231,7 @@ public class PreguntasFinal : MonoBehaviour
         else
         {
             forma.AddField("jugadorUsername", Registro.nombre);
-        }
-        //forma.AddField('opcionContestada', opcion1.text);
-        
+        }        
         if(opcion1.text == respuestaCorrecta.text){
             forma.AddField("estado", "Correcta");
             
@@ -255,14 +243,12 @@ public class PreguntasFinal : MonoBehaviour
         UnityWebRequest request = UnityWebRequest.Post("http://Localhost:8080/preguntaContestada/agregarPreguntaContestada", forma); 
         yield return request.SendWebRequest(); 
     }
-    
+
     private IEnumerator MandarOp2()
     {
-        //Red.instance.textoNombre.text
         WWWForm forma = new  WWWForm();
         forma.AddField("opcionContestada", opcion2.text);
-        //forma.AddField("preguntumIdPregunta", 1);
-        //forma.AddField("jugadorUsername", Registro.instance.textoUsuario.text);
+        forma.AddField("preguntumIdPregunta", Convert.ToInt32(idPregunta.text)); 
         if (String.IsNullOrEmpty(Registro.nombre))
         { 
             forma.AddField("jugadorUsername", Red.nombre);
@@ -270,9 +256,7 @@ public class PreguntasFinal : MonoBehaviour
         else
         {
             forma.AddField("jugadorUsername", Registro.nombre);
-        }
-        //forma.AddField('opcionContestada', opcion1.text);
-        
+        }        
         if(opcion2.text == respuestaCorrecta.text){
             forma.AddField("estado", "Correcta");
             
@@ -284,13 +268,12 @@ public class PreguntasFinal : MonoBehaviour
         UnityWebRequest request = UnityWebRequest.Post("http://Localhost:8080/preguntaContestada/agregarPreguntaContestada", forma); 
         yield return request.SendWebRequest(); 
     }
+
     private IEnumerator MandarOp3()
     {
-        //Red.instance.textoNombre.text
         WWWForm forma = new  WWWForm();
         forma.AddField("opcionContestada", opcion3.text);
-        forma.AddField("preguntumIdPregunta", 1);
-        //forma.AddField("jugadorUsername", Registro.instance.textoUsuario.text);
+        forma.AddField("preguntumIdPregunta", Convert.ToInt32(idPregunta.text)); 
         if (String.IsNullOrEmpty(Registro.nombre))
         { 
             forma.AddField("jugadorUsername", Red.nombre);
@@ -298,9 +281,7 @@ public class PreguntasFinal : MonoBehaviour
         else
         {
             forma.AddField("jugadorUsername", Registro.nombre);
-        }
-        //forma.AddField('opcionContestada', opcion1.text);
-        
+        }        
         if(opcion3.text == respuestaCorrecta.text){
             forma.AddField("estado", "Correcta");
             
@@ -312,14 +293,12 @@ public class PreguntasFinal : MonoBehaviour
         UnityWebRequest request = UnityWebRequest.Post("http://Localhost:8080/preguntaContestada/agregarPreguntaContestada", forma); 
         yield return request.SendWebRequest(); 
     }
-    
+
     private IEnumerator MandarOp4()
     {
-        //Red.instance.textoNombre.text
         WWWForm forma = new  WWWForm();
         forma.AddField("opcionContestada", opcion4.text);
-        forma.AddField("preguntumIdPregunta", 1);
-        //forma.AddField("jugadorUsername", Registro.instance.textoUsuario.text);
+        forma.AddField("preguntumIdPregunta", Convert.ToInt32(idPregunta.text)); 
         if (String.IsNullOrEmpty(Registro.nombre))
         { 
             forma.AddField("jugadorUsername", Red.nombre);
@@ -327,12 +306,10 @@ public class PreguntasFinal : MonoBehaviour
         else
         {
             forma.AddField("jugadorUsername", Registro.nombre);
-        }
-        //forma.AddField('opcionContestada', opcion1.text);
-        
+        }        
         if(opcion4.text == respuestaCorrecta.text){
             forma.AddField("estado", "Correcta");
-            
+             
         }
         else{
             forma.AddField("estado", "Incorrecto");
