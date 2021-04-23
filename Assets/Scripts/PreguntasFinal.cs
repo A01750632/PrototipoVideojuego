@@ -14,7 +14,8 @@ public class PreguntasFinal : MonoBehaviour
     public Text opcion2; 
     public Text opcion3;  
     public Text opcion4; 
-    public Text respuestaCorrecta; 
+    public Text respuestaCorrecta;
+    //public Text idPregunta;
     public static Red instance;
     public static PreguntasFinal instance2; 
     public GameObject pantallaPregunta; 
@@ -34,6 +35,7 @@ public class PreguntasFinal : MonoBehaviour
         StartCoroutine(SubirOpcion3());
         StartCoroutine(SubirOpcion4());
         StartCoroutine(GuardarCorrecta());
+        StartCoroutine(IdPregunta());
 
         hide = !hide; 
         pantallaPregunta.SetActive(hide);
@@ -136,6 +138,27 @@ public class PreguntasFinal : MonoBehaviour
         }
     }
 
+    
+    /*
+    private IEnumerator IdPregunta()
+    {
+        WWWForm forma = new WWWForm();
+        UnityWebRequest request = UnityWebRequest.Get("http://Localhost:8080/pregunta/getIdPregunta"); 
+
+        yield return request.SendWebRequest();  
+
+        if (request.result == UnityWebRequest.Result.Success) 
+        {
+            string id = request.downloadHandler.text;
+            idPregunta.text = id;
+        }
+        else
+        {
+            idPregunta.text = "Error en la descarga: " + request.responseCode.ToString(); 
+        }
+        
+    }
+    */
     private IEnumerator GuardarCorrecta()
     {
         WWWForm forma = new WWWForm();
@@ -209,7 +232,7 @@ public class PreguntasFinal : MonoBehaviour
         //Red.instance.textoNombre.text
         WWWForm forma = new  WWWForm();
         forma.AddField("opcionContestada", opcion1.text);
-        forma.AddField("preguntumIdPregunta", 1);
+        //forma.AddField("preguntumIdPregunta", Int32.Parse(idPregunta.text));
         //forma.AddField("jugadorUsername", Registro.instance.textoUsuario.text);
         if (String.IsNullOrEmpty(Registro.nombre))
         { 
@@ -238,7 +261,7 @@ public class PreguntasFinal : MonoBehaviour
         //Red.instance.textoNombre.text
         WWWForm forma = new  WWWForm();
         forma.AddField("opcionContestada", opcion2.text);
-        forma.AddField("preguntumIdPregunta", 1);
+        //forma.AddField("preguntumIdPregunta", 1);
         //forma.AddField("jugadorUsername", Registro.instance.textoUsuario.text);
         if (String.IsNullOrEmpty(Registro.nombre))
         { 
