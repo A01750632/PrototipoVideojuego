@@ -43,6 +43,7 @@ public class Proyectil : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        /*
         if (direccionDerecha <= -1)
         {
             rendererProyectil.flipX = true;
@@ -51,6 +52,6 @@ public class Proyectil : MonoBehaviour
         {
             rendererProyectil.flipX = false;
         }
-    
+        */
     }
 }
