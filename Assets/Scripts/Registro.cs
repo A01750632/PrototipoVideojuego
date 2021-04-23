@@ -13,9 +13,9 @@ using System.Text.RegularExpressions;
 
 public class Registro : MonoBehaviour
 {
-    //Para desplegar la información
+    //Para desplegar la informaciï¿½n
     public Text resultado;
-    //Campos con la información nombre y puntos
+    //Campos con la informaciï¿½n nombre y puntos
     public Text textoNombre;
     public Text textoContrasena;
     public Text textoCorreo;
@@ -33,13 +33,19 @@ public class Registro : MonoBehaviour
     public static Registro instance;
     public static String nombre;
 
-    public void volver()     //Botón
+    // -------
+    private void Awake(){
+        instance = this; 
+    }
+    // -------
+
+    public void volver()     //Botï¿½n
     {
         SceneManager.LoadScene("InicioSesion");
     }
 
     //Escribir
-    public void EscribirRegistro()     //Botón
+    public void EscribirRegistro()     //Botï¿½n
     {
         //Concurrente
         StartCoroutine(SubirRegistro());
@@ -58,7 +64,7 @@ public class Registro : MonoBehaviour
                 forma2.AddField("usuarioUsuarioo", textoUsuario.text);
                 UnityWebRequest request2 = UnityWebRequest.Post("http://Localhost:8080/jugador/BuscarJugadorUnity", forma2); //
                 yield return request2.SendWebRequest();   //Regresa, ejecuta, espera...
-                                                          //...ya regresó a la línea 27 (terminó de ejecutar SendWebRequest())
+                                                          //...ya regresï¿½ a la lï¿½nea 27 (terminï¿½ de ejecutar SendWebRequest())
                 if (request2.result == UnityWebRequest.Result.Success)  //200 OK
                 {
                     string textoPlano2 = request2.downloadHandler.text;  //Datos descargados de la red
@@ -69,7 +75,7 @@ public class Registro : MonoBehaviour
                         textoNacimiento = textoYear.text.ToString() + "-" + textoMes.text.ToString() + "-" + textoDia.text.ToString();
                         print(textoNacimiento);
 
-                        //Encapsular los datos que se suben a la red con el método POST
+                        //Encapsular los datos que se suben a la red con el mï¿½todo POST
                         WWWForm forma = new WWWForm();
 
                         forma.AddField("Username", textoUsuario.text);
@@ -110,7 +116,7 @@ public class Registro : MonoBehaviour
             }
             else
             {
-                resultado.text = "Correo inválido";
+                resultado.text = "Correo invï¿½lido";
             }
         }
         else

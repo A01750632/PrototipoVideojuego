@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Networking;
-
 public class PreguntasFinal : MonoBehaviour
 {
     // Para desplegar la información
@@ -154,10 +153,13 @@ public class PreguntasFinal : MonoBehaviour
 
     public void Validar1()
     {
+        print(Registro.nombre);
         if(opcion1.text == respuestaCorrecta.text){
+            StartCoroutine(MandarOp1());
             pantallaWinner.SetActive(true);
         }
         else{
+            StartCoroutine(MandarOp1());
             pantallaGameOver.SetActive(true);
         }
     }
@@ -172,7 +174,7 @@ public class PreguntasFinal : MonoBehaviour
         }
     }
 
-    public void Validar3()
+    public void Validar3() 
     {
         if(opcion3.text == respuestaCorrecta.text){
             pantallaWinner.SetActive(true);
@@ -190,5 +192,24 @@ public class PreguntasFinal : MonoBehaviour
         else{
             pantallaGameOver.SetActive(true);
         }
+    }
+
+    private IEnumerator MandarOp1()
+    {
+        WWWForm forma = new  WWWForm();
+        forma.AddField("opcionContestada", opcion1.text);
+        forma.AddField("jugadorUsername", Registro.instance.textoUsuario.text);
+        //forma.AddField('opcionContestada', opcion1.text);
+        
+        if(opcion1.text == respuestaCorrecta.text){
+            forma.AddField("estado", "Correcta");
+            
+        }
+        else{
+            forma.AddField("estado", "Incorrecto");
+
+        }
+        UnityWebRequest request = UnityWebRequest.Post("http://Localhost:8080/preguntaContestada/agregarPreguntaContestada", forma); 
+        yield return request.SendWebRequest(); 
     }
 }
