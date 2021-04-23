@@ -35,7 +35,7 @@ public class PreguntasFinal : MonoBehaviour
         StartCoroutine(SubirOpcion3());
         StartCoroutine(SubirOpcion4());
         StartCoroutine(GuardarCorrecta());
-        StartCoroutine(IdPregunta());
+        //StartCoroutine(IdPregunta());
 
         hide = !hide; 
         pantallaPregunta.SetActive(hide);
