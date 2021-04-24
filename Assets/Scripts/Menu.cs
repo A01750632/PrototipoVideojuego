@@ -18,6 +18,8 @@ Andrea Vianey Díaz Álvarez      A01750147
 public class Menu : MonoBehaviour
 {
     public static float tiempoInicial;
+    public bool hide;
+    public GameObject opciones;
     
     public void Salir(){
         // Regresa al Sistema Operativo
@@ -28,5 +30,11 @@ public class Menu : MonoBehaviour
         // Cambiar escena
         tiempoInicial = Time.time;
         SceneManager.LoadScene("MapaNiveles");
+    }
+
+    public void Opciones()
+    {
+        hide = !hide;
+        opciones.SetActive(hide);
     }
 }
