@@ -19,6 +19,8 @@ public class HUD : MonoBehaviour
     public Image imagen3;
     public static HUD instance;
     public Text textoMonedas;
+
+
     private void Awake()
     {
         instance = this;
