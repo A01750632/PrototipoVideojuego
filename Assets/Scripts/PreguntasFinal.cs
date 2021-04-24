@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.Networking;
 using System; 
@@ -21,6 +22,24 @@ public class PreguntasFinal : MonoBehaviour
     private bool hide; 
     public GameObject pantallaGameOver;
     public GameObject pantallaWinner;
+    /*--------------------------CAMBIOS----------------------------------*/
+    public GameObject PantallaWinner2;
+    public GameObject PantallaGameOver2;
+    public Text textoPregunta2;
+    public Text opcion1_2; 
+    public Text opcion2_2; 
+    public Text opcion3_2;  
+    public Text opcion4_2;
+    public GameObject PantallaPregunta2;
+    public GameObject PantallaWinnerFinal;
+    public GameObject PantallaGameOverFinal;
+    public Text textoPreguntaFinal;
+    public Text opcion1Final; 
+    public Text opcion2Final; 
+    public Text opcion3Final;  
+    public Text opcion4Final;
+    public GameObject PantallaPregunta3;
+
 
     // Campos con la información de respuestas
     // Leer textoPregunta de la base de datos 
@@ -35,10 +54,73 @@ public class PreguntasFinal : MonoBehaviour
         StartCoroutine(GuardarCorrecta());
         StartCoroutine(BuscarIdPregunta());
 
-        hide = !hide; 
-        pantallaPregunta.SetActive(hide);
+        //hide = !hide; 
+        pantallaPregunta.SetActive(true);
         pantallaContestar.SetActive(false); 
-        Time.timeScale = hide ? 0 : 1f;
+        //Time.timeScale = hide ? 0 : 1f;
+    }
+    
+    /*-------------------------------Cambios -----------------------------------------------------*/
+    public void EscribirPregunta2()
+    {
+        pantallaWinner.SetActive(false);
+        pantallaGameOver.SetActive(false);
+        pantallaWinner = PantallaWinner2;
+        pantallaGameOver = PantallaGameOver2;
+        
+        
+        StartCoroutine(SubirPregunta());
+        StartCoroutine(SubirOpcion1());
+        StartCoroutine(SubirOpcion2());
+        StartCoroutine(SubirOpcion3());
+        StartCoroutine(SubirOpcion4());
+        StartCoroutine(GuardarCorrecta());
+        StartCoroutine(BuscarIdPregunta());
+        
+        textoPregunta = textoPregunta2;
+        opcion1 = opcion1_2;
+        opcion2 = opcion2_2;
+        opcion3 = opcion3_2;
+        opcion4 = opcion4_2;
+        
+        PantallaPregunta2.SetActive(true);
+        pantallaWinner.SetActive(false);
+        pantallaGameOver.SetActive(false);
+        pantallaContestar.SetActive(false); 
+    }
+
+    public void EscribirPregunta3()
+    {
+        PantallaWinner2.SetActive(false);
+        PantallaGameOver2.SetActive(false);
+        PantallaPregunta2.SetActive(false);
+        pantallaWinner = PantallaWinnerFinal;
+        pantallaGameOver = PantallaGameOverFinal;
+
+        StartCoroutine(SubirPregunta());
+        StartCoroutine(SubirOpcion1());
+        StartCoroutine(SubirOpcion2());
+        StartCoroutine(SubirOpcion3());
+        StartCoroutine(SubirOpcion4());
+        StartCoroutine(GuardarCorrecta());
+        StartCoroutine(BuscarIdPregunta());
+        
+        textoPregunta = textoPreguntaFinal;
+        opcion1 = opcion1Final;
+        opcion2 = opcion2Final;
+        opcion3 = opcion3Final;
+        opcion4 = opcion4Final;
+        
+        PantallaPregunta3.SetActive(true);
+        pantallaWinner.SetActive(false);
+        pantallaGameOver.SetActive(false);
+        pantallaContestar.SetActive(false); 
+        
+    }
+
+    public void Pasar()
+    {
+        SceneManager.LoadScene("Nivel3");
     }
     private IEnumerator SubirPregunta()
     {
