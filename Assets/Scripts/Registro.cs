@@ -54,8 +54,9 @@ public class Registro : MonoBehaviour
 
     private IEnumerator SubirRegistro()
     {
-        if (textoNombre.text != "" || textoContrasena.text != "" || textoCorreo.text != "" || textoYear.text != "" || textoMes.text != "" || textoDia.text != "" || textoUsuario.text != "" || textoEstudiar.text != "" || textoGenero.text != "" || textoPais.text != "" || textoMateria.text != "" || textoNivel.text != "")
+        if (textoNombre.text != "" && textoContrasena.text != "" && textoCorreo.text != "" && textoYear.text != "" && textoMes.text != "" && textoDia.text != "" && textoUsuario.text != "" && textoEstudiar.text != "" && textoGenero.text != "" && textoPais.text != "" && textoMateria.text != "" && textoNivel.text != "")
         {
+            print(textoNombre.text);
             if (email_bien_escrito(textoCorreo.text.ToString()) == true)
             {
                 //Revisar que el usuario no exita
@@ -81,7 +82,7 @@ public class Registro : MonoBehaviour
                         forma.AddField("Username", textoUsuario.text);
                         forma.AddField("CorreoElectronico", textoCorreo.text);
                         forma.AddField("password", textoContrasena.text);
-                        forma.AddField("nombreUsuario", textoUsuario.text);
+                        forma.AddField("nombreUsuario", textoNombre.text);
                         forma.AddField("FechaNacimiento", textoNacimiento);
                         forma.AddField("genero", textoGenero.text);
                         forma.AddField("pais", textoPais.text);
@@ -116,7 +117,7 @@ public class Registro : MonoBehaviour
             }
             else
             {
-                resultado.text = "Correo inv�lido";
+                resultado.text = "Correo inválido";
             }
         }
         else
