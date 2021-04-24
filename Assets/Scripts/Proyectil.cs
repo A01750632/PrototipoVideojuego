@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -21,10 +22,12 @@ public class Proyectil : MonoBehaviour
 
     public int direccionDerecha = +1;       //Factor de la velocidad
 
+    private float veloz1 = +0.1f;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.velocity = new Vector2(direccionDerecha * velocidadX, 0);
+        rb.velocity = new Vector2(direccionDerecha * (velocidadX*1.6f), 0);
         rendererProyectil = GetComponent<SpriteRenderer>();
     }
 
@@ -33,15 +36,37 @@ public class Proyectil : MonoBehaviour
         direccionDerecha = velocidad < 0 ? -1 : +1;
     }
 
+    public void velocidad(float veloz)
+    {
+        veloz1 = veloz;
+    }
+
     // Update is called once per frame
     void Update()
     {
         // Rotar
         //gameObject.transform.Rotate(Vector3.forward, 5);
         // Revisas si debo destruir el proyectil (sale de la pantalla)
+        /*
         if(! rendererProyectil.isVisible)
         {
             Destroy(gameObject);
+        }
+        */
+        //Detectar velocidad para destruir proyectil
+        if (veloz1 == 0)
+        {
+            Destroy(gameObject,0.6f);
+        }
+        else if(veloz1 != 0)
+        {
+            if(!rendererProyectil.isVisible)
+            {
+                Destroy(gameObject);
+            }
+            else{
+                Destroy(gameObject,1.4f);
+            }
         }
         /*
         if (direccionDerecha <= -1)

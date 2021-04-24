@@ -32,9 +32,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Nivel5.unity
     guid: da5243674ff947945b2f84681ca2f0db
-  - enabled: 1
-    path: Assets/Scenes/PreguntaFinalNivel5.unity
-    guid: b65d2a6c35549e34da1e0f0a637ef29a
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/PreguntaEnemigoFinal.unity
     guid: c772708068ac841c3a4cc6e01f6b1a1b

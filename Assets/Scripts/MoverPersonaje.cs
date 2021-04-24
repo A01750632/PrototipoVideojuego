@@ -25,6 +25,8 @@ public class MoverPersonaje : MonoBehaviour
 
     //clase amigo para indicar direccion
     public MoverAmigo amigo;
+
+    public AmigoDispara disparoAmigo;
     
     private int direccion = 1;
 
@@ -71,9 +73,15 @@ public class MoverPersonaje : MonoBehaviour
             nuevo.CambiarDireccion(direccion);
             
             nuevo.gameObject.SetActive(true);  //Start
+            //proyectil amigo
         }
+
+        if(amigo.gameObject.activeSelf)
+        {
         amigo.CambiarDireccion(direccion);
         amigo.AnimarMovimiento(rigidbody.velocity.x);
-
+        disparoAmigo.CambiarDireccion(direccion);
+        }
+        
     }
 }

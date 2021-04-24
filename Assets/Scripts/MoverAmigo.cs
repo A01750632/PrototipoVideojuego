@@ -14,9 +14,9 @@ public class MoverAmigo : MonoBehaviour
 
     private MoverPersonaje personaje;
 
-    //Animator para actualizar el párametro velocidad
+    //Animator para actualizar el pï¿½rametro velocidad
     private Animator anim; 
-    //SpriteRenderer para cambiar la orientación. FlipX, FlipY 
+    //SpriteRenderer para cambiar la orientaciï¿½n. FlipX, FlipY 
     private SpriteRenderer sprRenderer;
 
     void Start()

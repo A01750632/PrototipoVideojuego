@@ -24,6 +24,12 @@ public class CanvasAmigo : MonoBehaviour
     public GameObject pantallaGameOver;
     public GameObject pantallaWinner;
 
+    public GameObject fondo;
+
+    public MoverAmigo amigo;
+
+    
+
     // Campos con la información de respuestas
     // Leer textoPregunta de la base de datos 
 
@@ -31,6 +37,7 @@ public class CanvasAmigo : MonoBehaviour
     {
      if(col == 1){
          pantallaContestar.SetActive(true);
+         fondo.SetActive(true);
      }   
     }
     public void EscribirPregunta()     // Botón EscribirTextoPlano
@@ -170,11 +177,14 @@ public class CanvasAmigo : MonoBehaviour
             pantallaWinner.SetActive(true);
             Time.timeScale = 1;
             Destroy(gameObject, 1);
+            amigo.gameObject.SetActive(true);
             
         }
         else{
             StartCoroutine(MandarOp1());
             pantallaGameOver.SetActive(true);
+            Time.timeScale = 1;
+            Destroy(gameObject, 1);
         }
     }
 
@@ -185,11 +195,14 @@ public class CanvasAmigo : MonoBehaviour
             pantallaWinner.SetActive(true);
             Time.timeScale = 1;
             Destroy(gameObject, 1);
+            amigo.gameObject.SetActive(true);
 
         }
         else{
             StartCoroutine(MandarOp2());
             pantallaGameOver.SetActive(true);
+            Time.timeScale = 1;
+            Destroy(gameObject, 1);
         }
     }
 
@@ -200,11 +213,14 @@ public class CanvasAmigo : MonoBehaviour
             pantallaWinner.SetActive(true);
             Time.timeScale = 1;
             Destroy(gameObject, 1);
+            amigo.gameObject.SetActive(true);
             
         }
         else{
             StartCoroutine(MandarOp3());
             pantallaGameOver.SetActive(true);
+            Time.timeScale = 1;
+            Destroy(gameObject, 1);
         }
     }
 
@@ -215,10 +231,13 @@ public class CanvasAmigo : MonoBehaviour
             pantallaWinner.SetActive(true);
             Time.timeScale = 1;
             Destroy(gameObject, 1);
+            amigo.gameObject.SetActive(true);
         }
         else{
             StartCoroutine(MandarOp4());
             pantallaGameOver.SetActive(true);
+            Time.timeScale = 1;
+            Destroy(gameObject, 1);
         }
     }
 
