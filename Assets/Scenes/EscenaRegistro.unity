@@ -9613,7 +9613,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Vivel de Estudios Actual:'
+  m_Text: 'Nivel de Estudios Actual:'
 --- !u!222 &1809365490
 CanvasRenderer:
   m_ObjectHideFlags: 0
