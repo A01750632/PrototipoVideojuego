@@ -41,6 +41,11 @@ public class Proyectil : MonoBehaviour
         veloz1 = veloz;
     }
 
+    public void Destruir(float segundos)
+    {
+        Destroy(gameObject,segundos);
+    }
+
     // Update is called once per frame
     void Update()
     {

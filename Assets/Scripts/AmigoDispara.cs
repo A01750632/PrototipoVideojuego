@@ -28,7 +28,7 @@ public class AmigoDispara : MonoBehaviour
     {
         while(true)     //Ciclo infinito
         {
-            yield  return new WaitForSeconds(5f);
+            yield  return new WaitForSeconds(1.5f);
             //Continuar..
             Proyectil nuevo = Instantiate(proyectil);  //COPIA, clona
             nuevo.transform.position = gameObject.transform.position;

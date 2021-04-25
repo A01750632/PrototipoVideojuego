@@ -11,11 +11,16 @@ using UnityEngine;
 */
 public class EnemigoDispara : MonoBehaviour
 {
-    public GameObject proyectil;
+    public Proyectil proyectil;
+
+    //render del enemigo
+    private SpriteRenderer rendererEnemigo;
+
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(GenerarDisparo());   
+        StartCoroutine(GenerarDisparo());
+        rendererEnemigo = GetComponent<SpriteRenderer>();   
     }
 
     private IEnumerator GenerarDisparo()
@@ -24,9 +29,17 @@ public class EnemigoDispara : MonoBehaviour
         {
             yield  return new WaitForSeconds(1.35f);
             //Continuar..
-            GameObject nuevo = Instantiate(proyectil);
+            Proyectil nuevo = Instantiate(proyectil);
             nuevo.transform.position = gameObject.transform.position;
-            nuevo.SetActive(true);
+            nuevo.gameObject.SetActive(true);
+            if(rendererEnemigo.flipX == false)
+            {
+                nuevo.CambiarDireccion(-1);
+            }else
+            {
+                nuevo.CambiarDireccion(1);
+            }
+            nuevo.Destruir(0.45f);
         }
     }
 }
