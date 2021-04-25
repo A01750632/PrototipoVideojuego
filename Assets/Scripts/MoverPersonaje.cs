@@ -30,6 +30,9 @@ public class MoverPersonaje : MonoBehaviour
     
     private int direccion = 1;
 
+    //Referencia al Audio Source
+    public AudioSource armaDisparo;
+
     //public AmigoMov amigo;
 
 
@@ -68,6 +71,8 @@ public class MoverPersonaje : MonoBehaviour
         // DISPARA!!
         if(Input.GetButtonDown("Fire1"))
         {
+            //Reproducir un efecto de sonido
+            armaDisparo.Play();
             Proyectil nuevo = Instantiate(proyectil);  //COPIA, clona
             nuevo.transform.position = gameObject.transform.position;
             nuevo.CambiarDireccion(direccion);

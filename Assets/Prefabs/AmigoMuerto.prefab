@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8308009386772149817}
   - component: {fileID: 4332809059309071442}
   - component: {fileID: 5088607612155679315}
+  - component: {fileID: 7164609820907069320}
   m_Layer: 0
   m_Name: AmigoMuerto
   m_TagString: Untagged
@@ -115,3 +116,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38db61e65bb09e34a9f359e2c89dc2b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  colision: 0
+  canvasA: {fileID: 0}
+  canvasV: {fileID: 0}
+--- !u!61 &7164609820907069320
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2532975962369028356}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.1695404, y: -0.37593865}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.248, y: 2.076}
+    newSize: {x: 2.248, y: 2.076}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.6730347, y: 0.7639017}
+  m_EdgeRadius: 0
