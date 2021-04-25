@@ -26,6 +26,8 @@ public class Enemigo : MonoBehaviour
         if(other.gameObject.CompareTag("proyectilArt"))
         {
             Destroy(gameObject);
+            VidasPersonaje.instance.monedas += 10;
+            HUD.instance.ActualizarMonedas();
         }
         if (other.gameObject.CompareTag("Player"))
         {

@@ -120,7 +120,7 @@ public class PreguntasFinal : MonoBehaviour
 
     public void Pasar()
     {
-        SceneManager.LoadScene("Nivel3");
+        SceneManager.LoadScene("MapaNiveles");
     }
     private IEnumerator SubirPregunta()
     {

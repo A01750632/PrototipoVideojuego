@@ -172,13 +172,15 @@ public class CanvasAmigo : MonoBehaviour
 
     public void Validar1()
     {
-        if(opcion1.text == respuestaCorrecta.text){
+        if (opcion1.text == respuestaCorrecta.text) {
             StartCoroutine(MandarOp1());
             pantallaWinner.SetActive(true);
             Time.timeScale = 1;
             Destroy(gameObject, 1);
             amigo.gameObject.SetActive(true);
-            
+            VidasPersonaje.instance.monedas += 10;
+            HUD.instance.ActualizarMonedas();
+
         }
         else{
             StartCoroutine(MandarOp1());
@@ -196,6 +198,8 @@ public class CanvasAmigo : MonoBehaviour
             Time.timeScale = 1;
             Destroy(gameObject, 1);
             amigo.gameObject.SetActive(true);
+            VidasPersonaje.instance.monedas += 10;
+            HUD.instance.ActualizarMonedas();
 
         }
         else{
@@ -214,7 +218,8 @@ public class CanvasAmigo : MonoBehaviour
             Time.timeScale = 1;
             Destroy(gameObject, 1);
             amigo.gameObject.SetActive(true);
-            
+            VidasPersonaje.instance.monedas += 10;
+            HUD.instance.ActualizarMonedas();
         }
         else{
             StartCoroutine(MandarOp3());
@@ -232,6 +237,8 @@ public class CanvasAmigo : MonoBehaviour
             Time.timeScale = 1;
             Destroy(gameObject, 1);
             amigo.gameObject.SetActive(true);
+            VidasPersonaje.instance.monedas += 10;
+            HUD.instance.ActualizarMonedas();
         }
         else{
             StartCoroutine(MandarOp4());
