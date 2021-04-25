@@ -20,11 +20,7 @@ public class Menu : MonoBehaviour
     public static float tiempoInicial;
     public bool hide;
     public GameObject opciones;
-    
-    public void Salir(){
-        // Regresa al Sistema Operativo
-        Application.Quit();
-    }
+    public GameObject creditos; 
     
     public void IniciarJuego(){
         // Cambiar escena
@@ -36,5 +32,15 @@ public class Menu : MonoBehaviour
     {
         hide = !hide;
         opciones.SetActive(hide);
+    }
+
+    public void Creditos(){
+        hide = !hide; 
+        creditos.SetActive(hide); 
+    }
+
+    public void Salir(){
+        // Regresa al Sistema Operativo
+        Application.Quit();
     }
 }
