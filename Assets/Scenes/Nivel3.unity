@@ -6298,7 +6298,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: LEVEL UP
+  m_Text: NUEVO AMIGO
 --- !u!222 &1325298821
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6839,8 +6839,17 @@ MonoBehaviour:
   pantallaContestar: {fileID: 1615869182}
   pantallaGameOver: {fileID: 591446481}
   pantallaWinner: {fileID: 1118540939}
+  instanceAmigo: {fileID: 0}
   fondo: {fileID: 746756852}
   amigo: {fileID: 144774770}
+  categoria: {fileID: 0}
+  textoPista: {fileID: 0}
+  pista: {fileID: 0}
+  botonCiencias: {fileID: 0}
+  botonTecnologia: {fileID: 0}
+  botonArtes: {fileID: 0}
+  botonMate: {fileID: 0}
+  intentos: 0
 --- !u!114 &1383526467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9439,7 +9448,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1857772071}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -29.756968, y: 4.949479, z: 11.311412}
+  m_LocalPosition: {x: -41.05, y: 6.49, z: 11.311412}
   m_LocalScale: {x: 1.4648764, y: 1.4551374, z: 1}
   m_Children: []
   m_Father: {fileID: 237582656}
@@ -9490,11 +9499,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8756377891496616319, guid: e0e2eb93b0768d94989adf1962a1ccfe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.5
+      value: 61.1
       objectReference: {fileID: 0}
     - target: {fileID: 8756377891496616319, guid: e0e2eb93b0768d94989adf1962a1ccfe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.6
+      value: -0.4
       objectReference: {fileID: 0}
     - target: {fileID: 8756377891496616319, guid: e0e2eb93b0768d94989adf1962a1ccfe, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9869,8 +9878,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -31.9586, y: -11.3149}
-  m_SizeDelta: {x: 796.3149, y: 252.4162}
+  m_AnchoredPosition: {x: 3.0171, y: -9.7942}
+  m_SizeDelta: {x: 866.2664, y: 249.3748}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1895217160
 MonoBehaviour:
@@ -9905,7 +9914,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: GAME OVER
+  m_Text: Incorrecto
 --- !u!222 &1895217161
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -13,7 +13,7 @@ public class SeleccionarNivel : MonoBehaviour
     {
         if(CanvasEnemigo.niveel == 0)
         {
-            nivel = 4; //Posiciona en el primer Nivel
+            nivel = 2; //Posiciona en el primer Nivel
         }
         else
         {
