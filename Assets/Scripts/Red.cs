@@ -25,6 +25,7 @@ public class Red : MonoBehaviour
     public Text textoContrasena;
     public static String nombre;
     public static float tiempoTotal;
+    public int nivel; //Para agregar el IDNivel
 
     //Escribir
     public void EscribirTextoPlano()     //Boton
@@ -66,12 +67,16 @@ public class Red : MonoBehaviour
         }
     }
 
-    private IEnumerator subirTiempoPuntaje()
+    private IEnumerator subirTiempoPuntaje(int puntajeTotal)
     {
         tiempoTotal = Time.time - Menu.tiempoInicial;
+
         WWWForm forma2 = new WWWForm();
 
         forma2.AddField("tiempoTotal", tiempoTotal.ToString());
+        forma2.AddField("puntajeTotal", puntajeTotal);
+        forma2.AddField("nivelID", nivel);
+
         if (Red.nombre == null)
         {
             forma2.AddField("Usuario", Registro.nombre);
@@ -95,9 +100,9 @@ public class Red : MonoBehaviour
         }
     }
 
-    public void tiempopuntaje()
+    public void tiempopuntaje(int puntajeTotal)
     {
-        StartCoroutine(subirTiempoPuntaje());
+        StartCoroutine(subirTiempoPuntaje(puntajeTotal));
     }
 
 }

@@ -40,7 +40,7 @@ public class Enemigo : MonoBehaviour
             {
                 Destroy(other.gameObject, 0.3f);
                 SceneManager.LoadScene("MapaNiveles"); //Pierde, regresa al mapa de niveles
-                red.tiempopuntaje();
+                red.tiempopuntaje(VidasPersonaje.instance.monedas);
 
             }
         }
