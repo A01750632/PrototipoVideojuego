@@ -17,13 +17,14 @@ public class Red : MonoBehaviour
     //Para desplegar la informaci�n
     public Text resultado;
 
-    public static Red instance;
+    //public static Red instance;
     public static String tiempoInicio;
 
     //Campos con la informacion nombre y puntos
     public Text textoNombre;
     public Text textoContrasena;
     public static String nombre;
+    public static float tiempoTotal;
 
     //Escribir
     public void EscribirTextoPlano()     //Boton
@@ -38,6 +39,7 @@ public class Red : MonoBehaviour
 
     private IEnumerator SubirTextoPlano()
     {
+
         //Encapsular los datos que se suben a la red con el metodo POST
         WWWForm forma = new WWWForm();
 
@@ -63,4 +65,39 @@ public class Red : MonoBehaviour
             resultado.text = "Error en la descarga: " + request.responseCode.ToString();
         }
     }
+
+    private IEnumerator subirTiempoPuntaje()
+    {
+        tiempoTotal = Time.time - Menu.tiempoInicial;
+        WWWForm forma2 = new WWWForm();
+
+        forma2.AddField("tiempoTotal", tiempoTotal.ToString());
+        if (Red.nombre == null)
+        {
+            forma2.AddField("Usuario", Registro.nombre);
+        }
+        else
+        {
+            forma2.AddField("Usuario", Red.nombre);
+        }
+
+
+        UnityWebRequest request = UnityWebRequest.Post("http://Localhost:8080/partida/agregarPartida", forma2);
+        yield return request.SendWebRequest();
+        if (request.result == UnityWebRequest.Result.Success)  //200 OK
+        {
+            string textoPlano = request.downloadHandler.text;  //Datos descargados de la red
+            print(textoPlano);
+        }
+        else
+        {
+            print("Error en la descarga: " + request.responseCode.ToString());
+        }
+    }
+
+    public void tiempopuntaje()
+    {
+        StartCoroutine(subirTiempoPuntaje());
+    }
+
 }

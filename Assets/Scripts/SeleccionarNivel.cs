@@ -6,11 +6,20 @@ using UnityEngine.UI;
 public class SeleccionarNivel : MonoBehaviour
 {
     public Button[] nivBotones;
+    private int nivel;
 
     // Start is called before the first frame update
     void Start()
     {
-        int posNiv = PlayerPrefs.GetInt("posNiv", CanvasEnemigo.niveel); //Posicion de escena primer nivel
+        if(CanvasEnemigo.niveel == 0)
+        {
+            nivel = 4; //Posiciona en el primer Nivel
+        }
+        else
+        {
+            nivel = CanvasEnemigo.niveel;
+        }
+        int posNiv = PlayerPrefs.GetInt("posNiv", nivel); //Posiciona en el Nivel indicado
 
         for (int i = 0; i < nivBotones.Length; i++)
         {

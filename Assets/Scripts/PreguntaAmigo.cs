@@ -21,6 +21,7 @@ public class PreguntaAmigo : MonoBehaviour
         {
             colision = 1;
             canvasA.colisiono(colision);
+            Destroy(gameObject);
             if (VidasPersonaje.instance.vidas > 10) {
                 Destroy(gameObject);
             }

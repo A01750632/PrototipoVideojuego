@@ -20,8 +20,9 @@ public class Enemigo : MonoBehaviour
 {
     public static Enemigo instance;
     public static float tiempoTotal;
+    public Red red;
 
-    public IEnumerator OnTriggerEnter2D(Collider2D other)
+    public void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.CompareTag("proyectilArt"))
         {
@@ -37,37 +38,10 @@ public class Enemigo : MonoBehaviour
             HUD.instance.ActualizarVidas();
             if (VidasPersonaje.instance.vidas == 0)
             {
-
-                tiempoTotal = Time.time - Menu.tiempoInicial;
                 Destroy(other.gameObject, 0.3f);
                 SceneManager.LoadScene("MapaNiveles"); //Pierde, regresa al mapa de niveles
+                red.tiempopuntaje();
 
-                WWWForm forma2 = new WWWForm();
-
-                forma2.AddField("tiempoTotal", tiempoTotal.ToString());
-                if (Red.nombre == null)
-                {
-                    forma2.AddField("Usuario", Registro.nombre);
-                }
-                else
-                {
-                    forma2.AddField("Usuario", Red.nombre);
-                }
-                
-
-                UnityWebRequest request = UnityWebRequest.Post("http://Localhost:8080/partida/agregarPartida", forma2);
-                yield return request.SendWebRequest();
-                if (request.result == UnityWebRequest.Result.Success)  //200 OK
-                {
-                    string textoPlano = request.downloadHandler.text;  //Datos descargados de la red
-                    print(textoPlano);
-                }
-                else
-                {
-                    print("Error en la descarga: " + request.responseCode.ToString());
-                }
-
-             
             }
         }
     }

@@ -25,16 +25,14 @@ public class CanvasEnemigo : MonoBehaviour
     public GameObject pantallaGameOver;
     public GameObject pantallaWinner;
 
-
-
     public GameObject fondo;
 
-    public GameObject objeto;
+    public GameObject objeto; //Enemigo Final
 
-    public int nivel;
-    public int sigNivel;
+    public int nivel; //Nivel actual
+    public int sigNivel; //Siguiente nivel.
     public static int niveel;
-
+    public Red red;
 
 
     // Campos con la información de respuestas
@@ -49,7 +47,7 @@ public class CanvasEnemigo : MonoBehaviour
             fondo.SetActive(true);
         }
     }
-    public void EscribirPregunta()     // Botón EscribirTextoPlano
+    public void EscribirPregunta()     // Botón EscribirPregunta
     {
         // Concurrente
         StartCoroutine(SubirPregunta());
@@ -261,19 +259,22 @@ public class CanvasEnemigo : MonoBehaviour
         PasarNivel();
     }
 
+    //Revisa el puntaje para comprobar que se tenga un mínimo para poder desbloquear el siguiente nivel.
     public void PasarNivel()
     {
         if (VidasPersonaje.instance.monedas > -1)
         {
-            pantallaWinner.SetActive(true);
+            pantallaWinner.SetActive(true); //Se activa el panel de ganador
             niveel = sigNivel;
-            SceneManager.LoadScene("MapaNiveles");
+            SceneManager.LoadScene("MapaNiveles"); //Desbloquea el siguiente nivel
+            red.tiempopuntaje();
         }
         else
         {
-            pantallaGameOver.SetActive(true);
+            pantallaGameOver.SetActive(true); //Se activa panel de juego perdido
             niveel = nivel;
-            SceneManager.LoadScene("MapaNiveles");
+            SceneManager.LoadScene("MapaNiveles"); //Regresa al mapa de niveles.
+            red.tiempopuntaje();
         }
     }
 
