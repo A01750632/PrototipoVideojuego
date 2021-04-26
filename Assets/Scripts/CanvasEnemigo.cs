@@ -252,14 +252,14 @@ public class CanvasEnemigo : MonoBehaviour
             pantallaWinner.SetActive(true); //Se activa el panel de ganador
             niveel = sigNivel;
             SceneManager.LoadScene("MapaNiveles"); //Desbloquea el siguiente nivel
-            red.tiempopuntaje();
+            red.tiempopuntaje(VidasPersonaje.instance.monedas);
         }
         else
         {
             pantallaGameOver.SetActive(true); //Se activa panel de juego perdido
             niveel = nivel;
             SceneManager.LoadScene("MapaNiveles"); //Regresa al mapa de niveles.
-            red.tiempopuntaje();
+            red.tiempopuntaje(VidasPersonaje.instance.monedas);
         }
     }
     
