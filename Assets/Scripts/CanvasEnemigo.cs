@@ -47,20 +47,14 @@ public class CanvasEnemigo : MonoBehaviour
             fondo.SetActive(true);
         }
     }
-    public void EscribirPregunta()     // Botón EscribirPregunta
+    public void EscribirPregunta()     // Botón EscribirTextoPlano
     {
         // Concurrente
         StartCoroutine(SubirPregunta());
-        StartCoroutine(SubirOpcion1());
-        StartCoroutine(SubirOpcion2());
-        StartCoroutine(SubirOpcion3());
-        StartCoroutine(SubirOpcion4());
-        StartCoroutine(GuardarCorrecta());
-        StartCoroutine(BuscarIdPregunta());
-
-        hide = !hide;
+        
+        hide = !hide; 
         pantallaPregunta.SetActive(hide);
-        pantallaContestar.SetActive(false);
+        pantallaContestar.SetActive(false); 
         Time.timeScale = hide ? 0 : 1f;
     }
     private IEnumerator SubirPregunta()
@@ -68,7 +62,7 @@ public class CanvasEnemigo : MonoBehaviour
         // Encapsular los datos que se suben a la red con el método POST
         WWWForm forma = new WWWForm();
 
-        UnityWebRequest request = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarPreguntaNivel4");
+        UnityWebRequest request = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarPreguntaNivel1"); 
 
         yield return request.SendWebRequest();   //Regresa, ejecuta, espera...
         //...ya regresó a la línea 27 (terminó de ejecutar SendWebRequest())
@@ -76,13 +70,21 @@ public class CanvasEnemigo : MonoBehaviour
         if (request.result == UnityWebRequest.Result.Success)  //200 OK
         {
             string pregunta = request.downloadHandler.text;  //Datos descargados de la red
-            textoPregunta.text = pregunta;
+            string[] arregloP = pregunta.Split('&');
+            textoPregunta.text = arregloP[0];
+            opcion1.text = arregloP[1];
+            opcion2.text = arregloP[2];
+            opcion3.text = arregloP[3];
+            opcion4.text = arregloP[4];
+            respuestaCorrecta.text = arregloP[5];
+            idPregunta.text = arregloP[6];
         }
         else
         {
-            textoPregunta.text = "Error en la descarga: " + request.responseCode.ToString();
+            textoPregunta.text = "Error en la descarga: " + request.responseCode.ToString(); 
         }
     }
+
 
     private IEnumerator SubirOpcion1()
     {
@@ -159,23 +161,6 @@ public class CanvasEnemigo : MonoBehaviour
         }
     }
 
-    private IEnumerator GuardarCorrecta()
-    {
-        WWWForm forma = new WWWForm();
-        UnityWebRequest request6 = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarRespuestaCorrectaNivel4");
-
-        yield return request6.SendWebRequest();
-
-        if (request6.result == UnityWebRequest.Result.Success)
-        {
-            string respuesta = request6.downloadHandler.text;
-            respuestaCorrecta.text = respuesta;
-        }
-        else
-        {
-            respuestaCorrecta.text = "Error en la descarga: " + request6.responseCode.ToString();
-        }
-    }
 
     public void Validar1()
     {
@@ -277,24 +262,7 @@ public class CanvasEnemigo : MonoBehaviour
             red.tiempopuntaje();
         }
     }
-
-    public IEnumerator BuscarIdPregunta()
-    {
-        WWWForm forma = new WWWForm();
-        UnityWebRequest request = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarIdPreguntaNivel4");
-
-        yield return request.SendWebRequest();
-
-        if (request.result == UnityWebRequest.Result.Success)
-        {
-            string id = request.downloadHandler.text;
-            idPregunta.text = id;
-        }
-        else
-        {
-            idPregunta.text = "Error en la descarga: " + request.responseCode.ToString();
-        }
-    }
+    
 
     private IEnumerator MandarOp1()
     {

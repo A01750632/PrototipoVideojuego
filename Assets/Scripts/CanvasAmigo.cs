@@ -15,7 +15,7 @@ public class CanvasAmigo : MonoBehaviour
     public Text opcion3;  
     public Text opcion4; 
     public Text respuestaCorrecta; 
-    public Text idPregunta; 
+    public Text idPregunta;
     public static Red instance;
     public static PreguntasFinal instance2; 
     public GameObject pantallaPregunta; 
@@ -23,12 +23,21 @@ public class CanvasAmigo : MonoBehaviour
     private bool hide; 
     public GameObject pantallaGameOver;
     public GameObject pantallaWinner;
+    public CanvasAmigo instanceAmigo;
 
     public GameObject fondo;
 
     public MoverAmigo amigo;
 
-    
+    public Text categoria;
+    public Text textoPista;
+    public GameObject pista;
+    public GameObject botonCiencias;
+    public GameObject botonTecnologia;
+    public GameObject botonArtes;
+    public GameObject botonMate;
+
+    public int intentos;
 
     // Campos con la información de respuestas
     // Leer textoPregunta de la base de datos 
@@ -44,131 +53,75 @@ public class CanvasAmigo : MonoBehaviour
     {
         // Concurrente
         StartCoroutine(SubirPregunta());
-        StartCoroutine(SubirOpcion1());
-        StartCoroutine(SubirOpcion2());
-        StartCoroutine(SubirOpcion3());
-        StartCoroutine(SubirOpcion4());
-        StartCoroutine(GuardarCorrecta());
-        StartCoroutine(BuscarIdPregunta());
-
+        
+        
         hide = !hide; 
         pantallaPregunta.SetActive(hide);
         pantallaContestar.SetActive(false); 
         Time.timeScale = hide ? 0 : 1f;
+    }
+    public void Pista()
+    {
+        pista.SetActive(true);
+        intentos--;
+        //PlayerPrefs.SetInt("intentos", intentos);
+        //PlayerPrefs.Save();
+        print(intentos);
     }
     private IEnumerator SubirPregunta()
     {
         // Encapsular los datos que se suben a la red con el método POST
         WWWForm forma = new WWWForm();
 
-        UnityWebRequest request = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarPreguntaNivel4"); 
+        UnityWebRequest request = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarPreguntaNivel1"); 
 
         yield return request.SendWebRequest();   //Regresa, ejecuta, espera...
         //...ya regresó a la línea 27 (terminó de ejecutar SendWebRequest())
 
-        if (request.result == UnityWebRequest.Result.Success)  //200 OK
+        if (request.result == UnityWebRequest.Result.Success) //200 OK
         {
-            string pregunta = request.downloadHandler.text;  //Datos descargados de la red
-            textoPregunta.text = pregunta;
+            string pregunta = request.downloadHandler.text; //Datos descargados de la red
+            string[] arregloP = pregunta.Split('&');
+            textoPregunta.text = arregloP[0];
+            opcion1.text = arregloP[1];
+            opcion2.text = arregloP[2];
+            opcion3.text = arregloP[3];
+            opcion4.text = arregloP[4];
+            respuestaCorrecta.text = arregloP[5];
+            idPregunta.text = arregloP[6];
+            categoria.text = arregloP[7];
+            textoPista.text = arregloP[8];
+
+            if (intentos > 0){
+                if(categoria.text == "Ciencias"){
+                    botonCiencias.SetActive(true);
+
+                }
+                else if(categoria.text == "Tecnología"){
+                    botonTecnologia.SetActive(true); 
+                }
+                else if(categoria.text == "Artes"){
+                    botonArtes.SetActive(true); 
+           
+                }
+                else{
+                    botonMate.SetActive(true); 
+                }
+            }
+            else
+            {
+                textoPista.text = "Ya no tienes pistas";
+                pista.SetActive(true);
+                
+            }
+            
         }
         else
         {
             textoPregunta.text = "Error en la descarga: " + request.responseCode.ToString(); 
         }
     }
-
-    private IEnumerator SubirOpcion1()
-    {
-        WWWForm forma = new WWWForm();
-
-        UnityWebRequest request1 = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarOpcion1Nivel4"); 
-        
-        yield return request1.SendWebRequest();
-
-        if (request1.result == UnityWebRequest.Result.Success)
-        {
-            string op1 = request1.downloadHandler.text;
-            opcion1.text = op1; 
-        }
-        else
-        {
-            opcion1.text = "Error en la descarga: " + request1.responseCode.ToString(); 
-        }
-    }
-
-    private IEnumerator SubirOpcion2()
-    {
-        WWWForm forma = new WWWForm();
-
-        UnityWebRequest request2 = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarOpcion2Nivel4"); 
-        
-        yield return request2.SendWebRequest();
-
-        if (request2.result == UnityWebRequest.Result.Success)
-        {
-            string op2 = request2.downloadHandler.text;
-            opcion2.text = op2; 
-        }
-        else
-        {
-            opcion2.text = "Error en la descarga: " + request2.responseCode.ToString(); 
-        }
-    }
-
-    private IEnumerator SubirOpcion3()
-    {
-        WWWForm forma = new WWWForm();
-
-        UnityWebRequest request3 = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarOpcion3Nivel4"); 
-        
-        yield return request3.SendWebRequest();
-
-        if (request3.result == UnityWebRequest.Result.Success)
-        {
-            string op3 = request3.downloadHandler.text;
-            opcion3.text = op3; 
-        }
-        else
-        {
-            opcion3.text = "Error en la descarga: " + request3.responseCode.ToString(); 
-        }
-    }
     
-    private IEnumerator SubirOpcion4()
-    {
-        WWWForm forma = new WWWForm();
-        UnityWebRequest request4 = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarOpcion4Nivel4"); 
-
-        yield return request4.SendWebRequest();  
-
-        if (request4.result == UnityWebRequest.Result.Success)
-        {
-            string op4 = request4.downloadHandler.text;
-            opcion4.text = op4; 
-        }
-        else
-        {
-            opcion4.text = "Error en la descarga: " + request4.responseCode.ToString(); 
-        }
-    }
-
-    private IEnumerator GuardarCorrecta()
-    {
-        WWWForm forma = new WWWForm();
-        UnityWebRequest request6 = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarRespuestaCorrectaNivel4"); 
-
-        yield return request6.SendWebRequest();  
-
-        if (request6.result == UnityWebRequest.Result.Success) 
-        {
-            string respuesta = request6.downloadHandler.text;
-            respuestaCorrecta.text = respuesta; 
-        }
-        else
-        {
-            respuestaCorrecta.text = "Error en la descarga: " + request6.responseCode.ToString(); 
-        }
-    }
 
     public void Validar1()
     {
@@ -247,24 +200,7 @@ public class CanvasAmigo : MonoBehaviour
             Destroy(gameObject, 1);
         }
     }
-
-    public IEnumerator BuscarIdPregunta(){
-        WWWForm forma = new WWWForm();
-        UnityWebRequest request = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarIdPreguntaNivel4"); 
-
-        yield return request.SendWebRequest();  
-
-        if (request.result == UnityWebRequest.Result.Success) 
-        {
-            string id = request.downloadHandler.text;
-            idPregunta.text = id; 
-        }
-        else
-        {
-            idPregunta.text = "Error en la descarga: " + request.responseCode.ToString(); 
-        }
-    } 
-
+    
     private IEnumerator MandarOp1()
     {
         WWWForm forma = new  WWWForm();

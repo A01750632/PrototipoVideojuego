@@ -127,7 +127,7 @@ public class PreguntasFinal : MonoBehaviour
         // Encapsular los datos que se suben a la red con el método POST
         WWWForm forma = new WWWForm();
 
-        UnityWebRequest request = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarPreguntaNivel4"); 
+        UnityWebRequest request = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarPreguntaNivel1"); 
 
         yield return request.SendWebRequest();   //Regresa, ejecuta, espera...
         //...ya regresó a la línea 27 (terminó de ejecutar SendWebRequest())
@@ -147,7 +147,7 @@ public class PreguntasFinal : MonoBehaviour
     {
         WWWForm forma = new WWWForm();
 
-        UnityWebRequest request1 = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarOpcion1Nivel4"); 
+        UnityWebRequest request1 = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarOpcion1Nivel1"); 
         
         yield return request1.SendWebRequest();
 
@@ -166,7 +166,7 @@ public class PreguntasFinal : MonoBehaviour
     {
         WWWForm forma = new WWWForm();
 
-        UnityWebRequest request2 = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarOpcion2Nivel4"); 
+        UnityWebRequest request2 = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarOpcion2Nivel1"); 
         
         yield return request2.SendWebRequest();
 
@@ -185,7 +185,7 @@ public class PreguntasFinal : MonoBehaviour
     {
         WWWForm forma = new WWWForm();
 
-        UnityWebRequest request3 = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarOpcion3Nivel4"); 
+        UnityWebRequest request3 = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarOpcion3Nivel1"); 
         
         yield return request3.SendWebRequest();
 
@@ -203,7 +203,7 @@ public class PreguntasFinal : MonoBehaviour
     private IEnumerator SubirOpcion4()
     {
         WWWForm forma = new WWWForm();
-        UnityWebRequest request4 = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarOpcion4Nivel4"); 
+        UnityWebRequest request4 = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarOpcion4Nivel1"); 
 
         yield return request4.SendWebRequest();  
 
@@ -221,7 +221,7 @@ public class PreguntasFinal : MonoBehaviour
     private IEnumerator GuardarCorrecta()
     {
         WWWForm forma = new WWWForm();
-        UnityWebRequest request6 = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarRespuestaCorrectaNivel4"); 
+        UnityWebRequest request6 = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarRespuestaCorrectaNivel1"); 
 
         yield return request6.SendWebRequest();  
 
@@ -286,7 +286,7 @@ public class PreguntasFinal : MonoBehaviour
 
     public IEnumerator BuscarIdPregunta(){
         WWWForm forma = new WWWForm();
-        UnityWebRequest request = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarIdPreguntaNivel4"); 
+        UnityWebRequest request = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarIdPreguntaNivel1"); 
 
         yield return request.SendWebRequest();  
 
