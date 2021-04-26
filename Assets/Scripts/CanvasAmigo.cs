@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Networking;
@@ -76,14 +77,28 @@ public class CanvasAmigo : MonoBehaviour
     }
     private IEnumerator SubirPregunta()
     {
-        // Encapsular los datos que se suben a la red con el método POST
         WWWForm forma = new WWWForm();
-
-        UnityWebRequest request = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarPreguntaNivel1"); 
+        UnityWebRequest request;
+        if (SceneManager.GetActiveScene().name == "Nivel1")
+        {
+            request = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarPreguntaNivel1");   
+        } else if (SceneManager.GetActiveScene().name == "Nivel2")
+        {
+            request = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarPreguntaNivel2");   
+        } else if (SceneManager.GetActiveScene().name == "Nivel3")
+        {
+            request = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarPreguntaNivel3");
+        }else if (SceneManager.GetActiveScene().name == "Nivel4")
+        {
+            request = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarPreguntaNivel4");   
+        }
+        else
+        {
+            request = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarPreguntaNivel5");   
+        }
 
         yield return request.SendWebRequest();   //Regresa, ejecuta, espera...
-        //...ya regresó a la línea 27 (terminó de ejecutar SendWebRequest())
-
+        
         if (request.result == UnityWebRequest.Result.Success) //200 OK
         {
             string pregunta = request.downloadHandler.text; //Datos descargados de la red
