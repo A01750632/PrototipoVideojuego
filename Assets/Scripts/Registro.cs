@@ -33,6 +33,12 @@ public class Registro : MonoBehaviour
     public static Registro instance;
     public static String nombre;
 
+    //Inicializar los intentos para pista
+    void Start()
+    {
+        PlayerPrefs.SetInt("intentos", 2);
+        PlayerPrefs.Save();
+    }
     // -------
     private void Awake(){
         instance = this; 

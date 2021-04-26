@@ -27,6 +27,12 @@ public class Red : MonoBehaviour
     public static float tiempoTotal;
     public int nivel; //Para agregar el IDNivel
 
+    //Inicializar los intentos para pista
+    void Start()
+    {
+        PlayerPrefs.SetInt("intentos", 2);
+        PlayerPrefs.Save();
+    }
     //Escribir
     public void EscribirTextoPlano()     //Boton
     {

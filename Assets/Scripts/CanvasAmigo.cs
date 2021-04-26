@@ -31,6 +31,7 @@ public class CanvasAmigo : MonoBehaviour
 
     public Text categoria;
     public Text textoPista;
+    public GameObject textPista;
     public GameObject pista;
     public GameObject botonCiencias;
     public GameObject botonTecnologia;
@@ -42,6 +43,10 @@ public class CanvasAmigo : MonoBehaviour
     // Campos con la información de respuestas
     // Leer textoPregunta de la base de datos 
 
+    void Start()
+    {
+        intentos = PlayerPrefs.GetInt("intentos");
+    }
     public void colisiono(int col)
     {
      if(col == 1){
@@ -63,9 +68,10 @@ public class CanvasAmigo : MonoBehaviour
     public void Pista()
     {
         pista.SetActive(true);
-        intentos--;
-        //PlayerPrefs.SetInt("intentos", intentos);
-        //PlayerPrefs.Save();
+        textPista.SetActive(true);
+        intentos=intentos-1;
+        PlayerPrefs.SetInt("intentos", intentos);
+        PlayerPrefs.Save();
         print(intentos);
     }
     private IEnumerator SubirPregunta()
@@ -93,7 +99,7 @@ public class CanvasAmigo : MonoBehaviour
             textoPista.text = arregloP[8];
 
             if (intentos > 0){
-                if(categoria.text == "Ciencias"){
+                if(categoria.text == "Ciencia"){
                     botonCiencias.SetActive(true);
 
                 }
