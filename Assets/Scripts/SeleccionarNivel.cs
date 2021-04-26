@@ -10,7 +10,7 @@ public class SeleccionarNivel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        int posNiv = PlayerPrefs.GetInt("posNiv",2); //Posicion de escena primer nivel
+        int posNiv = PlayerPrefs.GetInt("posNiv", CanvasEnemigo.niveel); //Posicion de escena primer nivel
 
         for (int i = 0; i < nivBotones.Length; i++)
         {
