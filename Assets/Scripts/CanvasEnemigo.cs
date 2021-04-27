@@ -52,10 +52,37 @@ public class CanvasEnemigo : MonoBehaviour
     public static int niveel;
     public Red red;
 
+    
+    public Text categoria;
+    public Text categoria2;
+    public Text categoría3;
+    public Text textoPista; //Texto que guarda la pista
+    public GameObject textPista; //Activar el objeto texto
+    public GameObject pista; //Panel con imagen
+    public GameObject botonCiencias;
+    public GameObject botonTecnologia;
+    public GameObject botonArtes;
+    public GameObject botonMate;
+    public Text textoPista2;
+    public GameObject botonCiencias2;
+    public GameObject botonTecnologia2;
+    public GameObject botonArtes2;
+    public GameObject botonMate2;
+    public Text textoPista3;
+    public GameObject botonCiencias3;
+    public GameObject botonTecnologia3;
+    public GameObject botonArtes3;
+    public GameObject botonMate3;
+
+    public int intentos;
 
     // Campos con la informaci�n de respuestas
     // Leer textoPregunta de la base de datos 
 
+    void Start()
+    {
+        intentos = PlayerPrefs.GetInt("intentos");
+    }
     public void colisiono(int col)
     {
         niveel = nivel;
@@ -91,6 +118,12 @@ public class CanvasEnemigo : MonoBehaviour
         opcion2 = opcion2_2;
         opcion3 = opcion3_2;
         opcion4 = opcion4_2;
+        categoria = categoria2;
+        textoPista = textoPista2;
+        botonCiencias = botonCiencias2;
+        botonTecnologia = botonTecnologia2;
+        botonArtes = botonArtes2;
+        botonMate = botonMate2;
         
         PantallaPregunta2.SetActive(true);
         pantallaWinner.SetActive(false);
@@ -113,12 +146,28 @@ public class CanvasEnemigo : MonoBehaviour
         opcion2 = opcion2Final;
         opcion3 = opcion3Final;
         opcion4 = opcion4Final;
+        categoria = categoría3;
+        textoPista = textoPista3;
+        botonCiencias = botonCiencias3;
+        botonTecnologia = botonTecnologia3;
+        botonArtes = botonArtes3;
+        botonMate = botonMate3;
         
         PantallaPregunta3.SetActive(true);
         pantallaWinner.SetActive(false);
         pantallaGameOver.SetActive(false);
         pantallaContestar.SetActive(false); 
         
+    }
+    
+    public void Pista()
+    {
+        pista.SetActive(true);
+        textPista.SetActive(true);
+        intentos=intentos-1;
+        PlayerPrefs.SetInt("intentos", intentos);
+        PlayerPrefs.Save();
+        print(intentos);
     }
     private IEnumerator SubirPregunta()
     {
@@ -155,6 +204,31 @@ public class CanvasEnemigo : MonoBehaviour
             opcion4.text = arregloP[4];
             respuestaCorrecta.text = arregloP[5];
             idPregunta.text = arregloP[6];
+            categoria.text = arregloP[7];
+            textoPista.text = arregloP[8];
+            
+            if (intentos > 0){
+                if(categoria.text == "Ciencia"){
+                    botonCiencias.SetActive(true);
+
+                }
+                else if(categoria.text == "Tecnología"){
+                    botonTecnologia.SetActive(true); 
+                }
+                else if(categoria.text == "Artes"){
+                    botonArtes.SetActive(true); 
+           
+                }
+                else{
+                    botonMate.SetActive(true); 
+                }
+            }
+            else
+            {
+                textoPista.text = "Ya no tienes pistas";
+                pista.SetActive(true);
+                
+            }
         }
         else
         {
