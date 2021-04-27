@@ -58,7 +58,14 @@ public class CanvasEnemigo : MonoBehaviour
     public Text categoría3;
     public Text textoPista; //Texto que guarda la pista
     public GameObject textPista; //Activar el objeto texto
-    public GameObject pista; //Panel con imagen
+    public GameObject panelPista; //Panel con imagen
+    
+    public GameObject textPista2; //Activar el objeto texto
+    public GameObject panelPista2; //Panel con imagen
+    
+    public GameObject textPista3; //Activar el objeto texto
+    public GameObject panelPista3; //Panel con imagen
+    
     public GameObject botonCiencias;
     public GameObject botonTecnologia;
     public GameObject botonArtes;
@@ -120,6 +127,8 @@ public class CanvasEnemigo : MonoBehaviour
         opcion4 = opcion4_2;
         categoria = categoria2;
         textoPista = textoPista2;
+        textPista = textPista2;
+        panelPista = panelPista2;
         botonCiencias = botonCiencias2;
         botonTecnologia = botonTecnologia2;
         botonArtes = botonArtes2;
@@ -148,6 +157,8 @@ public class CanvasEnemigo : MonoBehaviour
         opcion4 = opcion4Final;
         categoria = categoría3;
         textoPista = textoPista3;
+        textPista = textPista3;
+        panelPista = panelPista3;
         botonCiencias = botonCiencias3;
         botonTecnologia = botonTecnologia3;
         botonArtes = botonArtes3;
@@ -162,7 +173,7 @@ public class CanvasEnemigo : MonoBehaviour
     
     public void Pista()
     {
-        pista.SetActive(true);
+        panelPista.SetActive(true);
         textPista.SetActive(true);
         intentos=intentos-1;
         PlayerPrefs.SetInt("intentos", intentos);
@@ -226,7 +237,7 @@ public class CanvasEnemigo : MonoBehaviour
             else
             {
                 textoPista.text = "Ya no tienes pistas";
-                pista.SetActive(true);
+                textPista.SetActive(true);
                 
             }
         }

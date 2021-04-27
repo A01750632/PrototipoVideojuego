@@ -112,7 +112,7 @@ public class CanvasAmigo : MonoBehaviour
             idPregunta.text = arregloP[6];
             categoria.text = arregloP[7];
             textoPista.text = arregloP[8];
-
+    
             if (intentos > 0){
                 if(categoria.text == "Ciencia"){
                     botonCiencias.SetActive(true);
@@ -132,9 +132,9 @@ public class CanvasAmigo : MonoBehaviour
             else
             {
                 textoPista.text = "Ya no tienes pistas";
-                pista.SetActive(true);
-                
+                textPista.SetActive(true);
             }
+
             
         }
         else
