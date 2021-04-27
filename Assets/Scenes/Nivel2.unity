@@ -237,7 +237,7 @@ RectTransform:
   m_Children:
   - {fileID: 1635061075}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -323,7 +323,7 @@ Transform:
   - {fileID: 1542974808}
   - {fileID: 1192498221}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &81644245 stripped
 Transform:
@@ -737,7 +737,7 @@ RectTransform:
   m_Children:
   - {fileID: 395180826}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2139,7 +2139,7 @@ Transform:
   - {fileID: 739415390}
   - {fileID: 501111383}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &315263466 stripped
 Transform:
@@ -3869,8 +3869,8 @@ MonoBehaviour:
   opcion3Final: {fileID: 1339557797}
   opcion4Final: {fileID: 1860059621}
   PantallaPregunta3: {fileID: 694348661}
-  nivel: 2
-  sigNivel: 3
+  nivel: 3
+  sigNivel: 4
   red: {fileID: 739415389}
 --- !u!114 &476938443
 MonoBehaviour:
@@ -3931,7 +3931,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_TargetDisplay: 0
 --- !u!224 &476938446
 RectTransform:
@@ -3950,7 +3950,7 @@ RectTransform:
   - {fileID: 571214438}
   - {fileID: 694348664}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4287,7 +4287,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &505275397
 GameObject:
@@ -4583,8 +4583,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PreguntasFinal, Assembly-CSharp
+      - m_Target: {fileID: 476938442}
+        m_TargetAssemblyTypeName: CanvasEnemigo, Assembly-CSharp
         m_MethodName: Validar4
         m_Mode: 1
         m_Arguments:
@@ -4913,7 +4913,7 @@ Transform:
   m_Children:
   - {fileID: 575145276}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &544964051
 GameObject:
@@ -5192,7 +5192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0.08852029, a: 0.69411767}
+  m_Color: {r: 0, g: 1, b: 0.08852029, a: 0.93333334}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -12385,8 +12385,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PreguntasFinal, Assembly-CSharp
+      - m_Target: {fileID: 476938442}
+        m_TargetAssemblyTypeName: CanvasEnemigo, Assembly-CSharp
         m_MethodName: Validar4
         m_Mode: 1
         m_Arguments:
@@ -12536,7 +12536,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 0.87058824}
+  m_Color: {r: 1, g: 0, b: 0, a: 0.9137255}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -14403,8 +14403,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PreguntasFinal, Assembly-CSharp
+      - m_Target: {fileID: 476938442}
+        m_TargetAssemblyTypeName: CanvasEnemigo, Assembly-CSharp
         m_MethodName: Validar2
         m_Mode: 1
         m_Arguments:
@@ -14536,8 +14536,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PreguntasFinal, Assembly-CSharp
+      - m_Target: {fileID: 476938442}
+        m_TargetAssemblyTypeName: CanvasEnemigo, Assembly-CSharp
         m_MethodName: Validar2
         m_Mode: 1
         m_Arguments:
@@ -14802,8 +14802,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PreguntasFinal, Assembly-CSharp
+      - m_Target: {fileID: 476938442}
+        m_TargetAssemblyTypeName: CanvasEnemigo, Assembly-CSharp
         m_MethodName: Validar3
         m_Mode: 1
         m_Arguments:
@@ -15326,8 +15326,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PreguntasFinal, Assembly-CSharp
+      - m_Target: {fileID: 476938442}
+        m_TargetAssemblyTypeName: CanvasEnemigo, Assembly-CSharp
         m_MethodName: Validar1
         m_Mode: 1
         m_Arguments:
@@ -16059,8 +16059,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PreguntasFinal, Assembly-CSharp
+      - m_Target: {fileID: 476938442}
+        m_TargetAssemblyTypeName: CanvasEnemigo, Assembly-CSharp
         m_MethodName: Validar3
         m_Mode: 1
         m_Arguments:
@@ -16159,7 +16159,7 @@ Transform:
   - {fileID: 422962745}
   - {fileID: 1905780075}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1174170643
 PrefabInstance:
@@ -16561,8 +16561,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PreguntasFinal, Assembly-CSharp
+      - m_Target: {fileID: 476938442}
+        m_TargetAssemblyTypeName: CanvasEnemigo, Assembly-CSharp
         m_MethodName: Validar1
         m_Mode: 1
         m_Arguments:
@@ -17539,8 +17539,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PreguntasFinal, Assembly-CSharp
+      - m_Target: {fileID: 476938442}
+        m_TargetAssemblyTypeName: CanvasEnemigo, Assembly-CSharp
         m_MethodName: Validar4
         m_Mode: 1
         m_Arguments:
@@ -19391,7 +19391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4840642, g: 0.053993024, b: 0.8584906, a: 0.7411765}
+  m_Color: {r: 0.4840642, g: 0.053993024, b: 0.8584906, a: 0.9411765}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -21151,8 +21151,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PreguntasFinal, Assembly-CSharp
+      - m_Target: {fileID: 476938442}
+        m_TargetAssemblyTypeName: CanvasEnemigo, Assembly-CSharp
         m_MethodName: Validar3
         m_Mode: 1
         m_Arguments:

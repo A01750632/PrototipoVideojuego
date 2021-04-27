@@ -25,6 +25,7 @@ public class CanvasEnemigo : MonoBehaviour
     public GameObject pantallaGameOver;
     public GameObject pantallaWinner;
 
+    
     public GameObject fondo;
 
     public GameObject objeto; //Enemigo Final
@@ -60,6 +61,7 @@ public class CanvasEnemigo : MonoBehaviour
         niveel = nivel;
         if (col == 1)
         {
+            
             pantallaContestar.SetActive(true);
             fondo.SetActive(true);
         }
@@ -69,10 +71,10 @@ public class CanvasEnemigo : MonoBehaviour
         // Concurrente
         StartCoroutine(SubirPregunta());
         
-        //hide = !hide; 
-        pantallaPregunta.SetActive(true);
+        hide = !hide; 
+        pantallaPregunta.SetActive(hide);
         pantallaContestar.SetActive(false); 
-        //Time.timeScale = hide ? 0 : 1f;
+        Time.timeScale = hide ? 0 : 1f;
     }
 
     public void EscribirPregunta2()
@@ -132,7 +134,7 @@ public class CanvasEnemigo : MonoBehaviour
         } else if (SceneManager.GetActiveScene().name == "Nivel3")
         {
             request = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarPreguntaNivel3");
-        }else if (SceneManager.GetActiveScene().name == "Nivel4")
+        } else if (SceneManager.GetActiveScene().name == "Nivel4")
         {
             request = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarPreguntaNivel4");   
         }
@@ -175,7 +177,7 @@ public class CanvasEnemigo : MonoBehaviour
         else
         {
             StartCoroutine(MandarOp1());
-            Time.timeScale = 1;
+            //Time.timeScale = 1;
             pantallaGameOver.SetActive(true);
             //Destroy(gameObject, 1);
         }
@@ -188,20 +190,22 @@ public class CanvasEnemigo : MonoBehaviour
         if (opcion2.text == respuestaCorrecta.text)
         {
             StartCoroutine(MandarOp2());
-            Time.timeScale = 1;
-            Destroy(gameObject, 1);
+            //Time.timeScale = 1;
+            //Destroy(gameObject, 1);
             VidasPersonaje.instance.monedas += 10;
             HUD.instance.ActualizarMonedas();
+            pantallaWinner.SetActive(true);
 
         }
         else
         {
             StartCoroutine(MandarOp2());
-            Time.timeScale = 1;
-            Destroy(gameObject, 1);
+            //Time.timeScale = 1;
+            //Destroy(gameObject, 1);
+            pantallaGameOver.SetActive(true);
         }
 
-        PasarNivel();
+        //PasarNivel();
     }
 
     public void Validar3()
@@ -209,19 +213,21 @@ public class CanvasEnemigo : MonoBehaviour
         if (opcion3.text == respuestaCorrecta.text)
         {
             StartCoroutine(MandarOp3());
-            Time.timeScale = 1;
-            Destroy(gameObject, 1);
+            //Time.timeScale = 1;
+            //Destroy(gameObject, 1);
             VidasPersonaje.instance.monedas += 10;
             HUD.instance.ActualizarMonedas();
+            pantallaWinner.SetActive(true);
         }
         else
         {
             StartCoroutine(MandarOp3());
-            Time.timeScale = 1;
-            Destroy(gameObject, 1);
+            //Time.timeScale = 1;
+            //Destroy(gameObject, 1);
+            pantallaGameOver.SetActive(true);
         }
 
-        PasarNivel();
+        //PasarNivel();
     }
 
     public void Validar4()
@@ -229,19 +235,21 @@ public class CanvasEnemigo : MonoBehaviour
         if (opcion4.text == respuestaCorrecta.text)
         {
             StartCoroutine(MandarOp4());
-            Time.timeScale = 1;
-            Destroy(gameObject, 1);
+            //Time.timeScale = 1;
+            //Destroy(gameObject, 1);
             VidasPersonaje.instance.monedas += 10;
             HUD.instance.ActualizarMonedas();
+            pantallaWinner.SetActive(true);
         }
         else
         {
             StartCoroutine(MandarOp4());
-            Time.timeScale = 1;
-            Destroy(gameObject, 1);
+            //Time.timeScale = 1;
+            //Destroy(gameObject, 1);
+            pantallaGameOver.SetActive(true);
         }
 
-        PasarNivel();
+        //PasarNivel();
     }
 
     //Revisa el puntaje para comprobar que se tenga un m�nimo para poder desbloquear el siguiente nivel.
