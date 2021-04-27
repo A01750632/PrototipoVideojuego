@@ -1793,6 +1793,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   red: {fileID: 1162212420}
+  nivel: 0
 --- !u!4 &303078810
 Transform:
   m_ObjectHideFlags: 0
@@ -2199,6 +2200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   red: {fileID: 1162212420}
+  nivel: 4
 --- !u!95 &371566405
 Animator:
   serializedVersion: 3
@@ -3129,6 +3131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   red: {fileID: 1162212420}
+  nivel: 4
 --- !u!61 &581489961
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7703,6 +7706,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   red: {fileID: 1162212420}
+  nivel: 4
 --- !u!95 &1201984713
 Animator:
   serializedVersion: 3
@@ -13081,6 +13085,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   red: {fileID: 1162212420}
+  nivel: 4
 --- !u!95 &1857772074
 Animator:
   serializedVersion: 3
@@ -13443,6 +13448,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   red: {fileID: 1162212420}
+  nivel: 4
 --- !u!95 &1888465235
 Animator:
   serializedVersion: 3
@@ -13521,7 +13527,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1888465232}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -34.99, y: -0.35, z: 11.311412}
+  m_LocalPosition: {x: -49.4, y: 0.6, z: 11.311412}
   m_LocalScale: {x: 1.4648764, y: 1.4551374, z: 1}
   m_Children: []
   m_Father: {fileID: 237582656}
@@ -17301,6 +17307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   red: {fileID: 1162212420}
+  nivel: 4
 --- !u!95 &1929208546
 Animator:
   serializedVersion: 3
