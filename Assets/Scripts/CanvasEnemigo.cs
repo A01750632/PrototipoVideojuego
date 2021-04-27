@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 
 public class CanvasEnemigo : MonoBehaviour
 {
-    // Para desplegar la información
+    // Para desplegar la informaciï¿½n
 
     public Text textoPregunta;
     public Text opcion1;
@@ -29,13 +29,30 @@ public class CanvasEnemigo : MonoBehaviour
 
     public GameObject objeto; //Enemigo Final
 
+    public GameObject PantallaWinner2;
+    public GameObject PantallaGameOver2;
+    public Text textoPregunta2;
+    public Text opcion1_2; 
+    public Text opcion2_2; 
+    public Text opcion3_2;  
+    public Text opcion4_2;
+    public GameObject PantallaPregunta2;
+    public GameObject PantallaWinnerFinal;
+    public GameObject PantallaGameOverFinal;
+    public Text textoPreguntaFinal;
+    public Text opcion1Final; 
+    public Text opcion2Final; 
+    public Text opcion3Final;  
+    public Text opcion4Final;
+    public GameObject PantallaPregunta3;
+
     public int nivel; //Nivel actual
     public int sigNivel; //Siguiente nivel.
     public static int niveel;
     public Red red;
 
 
-    // Campos con la información de respuestas
+    // Campos con la informaciï¿½n de respuestas
     // Leer textoPregunta de la base de datos 
 
     public void colisiono(int col)
@@ -47,26 +64,84 @@ public class CanvasEnemigo : MonoBehaviour
             fondo.SetActive(true);
         }
     }
-    public void EscribirPregunta()     // Botón EscribirTextoPlano
+    public void EscribirPregunta()     // Botï¿½n EscribirTextoPlano
     {
         // Concurrente
         StartCoroutine(SubirPregunta());
         
-        hide = !hide; 
-        pantallaPregunta.SetActive(hide);
+        //hide = !hide; 
+        pantallaPregunta.SetActive(true);
         pantallaContestar.SetActive(false); 
-        Time.timeScale = hide ? 0 : 1f;
+        //Time.timeScale = hide ? 0 : 1f;
+    }
+
+    public void EscribirPregunta2()
+    {
+        pantallaWinner.SetActive(false);
+        pantallaGameOver.SetActive(false);
+        pantallaWinner = PantallaWinner2;
+        pantallaGameOver = PantallaGameOver2;
+
+        StartCoroutine(SubirPregunta());
+        
+        textoPregunta = textoPregunta2;
+        opcion1 = opcion1_2;
+        opcion2 = opcion2_2;
+        opcion3 = opcion3_2;
+        opcion4 = opcion4_2;
+        
+        PantallaPregunta2.SetActive(true);
+        pantallaWinner.SetActive(false);
+        pantallaGameOver.SetActive(false); 
+        pantallaContestar.SetActive(false);
+    }
+
+    public void EscribirPregunta3()
+    {
+        PantallaWinner2.SetActive(false);
+        PantallaGameOver2.SetActive(false);
+        PantallaPregunta2.SetActive(false);
+        pantallaWinner = PantallaWinnerFinal;
+        pantallaGameOver = PantallaGameOverFinal;
+
+        StartCoroutine(SubirPregunta());
+
+        textoPregunta = textoPreguntaFinal;
+        opcion1 = opcion1Final;
+        opcion2 = opcion2Final;
+        opcion3 = opcion3Final;
+        opcion4 = opcion4Final;
+        
+        PantallaPregunta3.SetActive(true);
+        pantallaWinner.SetActive(false);
+        pantallaGameOver.SetActive(false);
+        pantallaContestar.SetActive(false); 
+        
     }
     private IEnumerator SubirPregunta()
     {
-        // Encapsular los datos que se suben a la red con el método POST
+        // Encapsular los datos que se suben a la red con el mï¿½todo POST
         WWWForm forma = new WWWForm();
+        UnityWebRequest request;
+        if (SceneManager.GetActiveScene().name == "Nivel1")
+        {
+            request = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarPreguntaNivel1");   
+        } else if (SceneManager.GetActiveScene().name == "Nivel2")
+        {
+            request = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarPreguntaNivel2");   
+        } else if (SceneManager.GetActiveScene().name == "Nivel3")
+        {
+            request = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarPreguntaNivel3");
+        }else if (SceneManager.GetActiveScene().name == "Nivel4")
+        {
+            request = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarPreguntaNivel4");   
+        }
+        else
+        {
+            request = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarPreguntaNivel5");   
+        }
 
-        UnityWebRequest request = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarPreguntaNivel1"); 
-
-        yield return request.SendWebRequest();   //Regresa, ejecuta, espera...
-        //...ya regresó a la línea 27 (terminó de ejecutar SendWebRequest())
-
+        yield return request.SendWebRequest();
         if (request.result == UnityWebRequest.Result.Success)  //200 OK
         {
             string pregunta = request.downloadHandler.text;  //Datos descargados de la red
@@ -86,101 +161,26 @@ public class CanvasEnemigo : MonoBehaviour
     }
 
 
-    private IEnumerator SubirOpcion1()
-    {
-        WWWForm forma = new WWWForm();
-
-        UnityWebRequest request1 = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarOpcion1Nivel4");
-
-        yield return request1.SendWebRequest();
-
-        if (request1.result == UnityWebRequest.Result.Success)
-        {
-            string op1 = request1.downloadHandler.text;
-            opcion1.text = op1;
-        }
-        else
-        {
-            opcion1.text = "Error en la descarga: " + request1.responseCode.ToString();
-        }
-    }
-
-    private IEnumerator SubirOpcion2()
-    {
-        WWWForm forma = new WWWForm();
-
-        UnityWebRequest request2 = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarOpcion2Nivel4");
-
-        yield return request2.SendWebRequest();
-
-        if (request2.result == UnityWebRequest.Result.Success)
-        {
-            string op2 = request2.downloadHandler.text;
-            opcion2.text = op2;
-        }
-        else
-        {
-            opcion2.text = "Error en la descarga: " + request2.responseCode.ToString();
-        }
-    }
-
-    private IEnumerator SubirOpcion3()
-    {
-        WWWForm forma = new WWWForm();
-
-        UnityWebRequest request3 = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarOpcion3Nivel4");
-
-        yield return request3.SendWebRequest();
-
-        if (request3.result == UnityWebRequest.Result.Success)
-        {
-            string op3 = request3.downloadHandler.text;
-            opcion3.text = op3;
-        }
-        else
-        {
-            opcion3.text = "Error en la descarga: " + request3.responseCode.ToString();
-        }
-    }
-
-    private IEnumerator SubirOpcion4()
-    {
-        WWWForm forma = new WWWForm();
-        UnityWebRequest request4 = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarOpcion4Nivel4");
-
-        yield return request4.SendWebRequest();
-
-        if (request4.result == UnityWebRequest.Result.Success)
-        {
-            string op4 = request4.downloadHandler.text;
-            opcion4.text = op4;
-        }
-        else
-        {
-            opcion4.text = "Error en la descarga: " + request4.responseCode.ToString();
-        }
-    }
-
-
     public void Validar1()
     {
         if (opcion1.text == respuestaCorrecta.text)
         {
             StartCoroutine(MandarOp1());
-            Time.timeScale = 1;
-            Destroy(gameObject, 1);
+            //Time.timeScale = 1;
+            //Destroy(gameObject, 1);
             VidasPersonaje.instance.monedas += 10;
-            HUD.instance.ActualizarMonedas();   
-
+            HUD.instance.ActualizarMonedas();
+            pantallaWinner.SetActive(true);
         }
         else
         {
             StartCoroutine(MandarOp1());
             Time.timeScale = 1;
-            Destroy(gameObject, 1);
+            pantallaGameOver.SetActive(true);
+            //Destroy(gameObject, 1);
         }
 
-        PasarNivel();
+        //PasarNivel();
     }
 
     public void Validar2()
@@ -244,7 +244,7 @@ public class CanvasEnemigo : MonoBehaviour
         PasarNivel();
     }
 
-    //Revisa el puntaje para comprobar que se tenga un mínimo para poder desbloquear el siguiente nivel.
+    //Revisa el puntaje para comprobar que se tenga un mï¿½nimo para poder desbloquear el siguiente nivel.
     public void PasarNivel()
     {
         if (VidasPersonaje.instance.monedas > -1)

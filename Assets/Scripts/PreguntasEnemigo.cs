@@ -10,7 +10,7 @@ using UnityEngine.SceneManagement;
 public class PreguntasEnemigo : MonoBehaviour
 {
     //private PreguntasFinal preguntas; 
-    // Para desplegar la información
+    // Para desplegar la informaciï¿½n
     public int colision = 0;
 
     public CanvasEnemigo canvasA;
@@ -19,9 +19,8 @@ public class PreguntasEnemigo : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
+        //canvasV.gameObject.SetActive(false);
         colision = 1;
         canvasA.colisiono(colision);
-    
- 
     }
 }
