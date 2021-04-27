@@ -81,20 +81,20 @@ public class CanvasAmigo : MonoBehaviour
         UnityWebRequest request;
         if (SceneManager.GetActiveScene().name == "Nivel1")
         {
-            request = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarPreguntaNivel1");   
+            request = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarPreguntaNivel1");   //3.22.38.105
         } else if (SceneManager.GetActiveScene().name == "Nivel2")
         {
-            request = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarPreguntaNivel2");   
+            request = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarPreguntaNivel2");   //3.22.38.105
         } else if (SceneManager.GetActiveScene().name == "Nivel3")
         {
-            request = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarPreguntaNivel3");
+            request = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarPreguntaNivel3"); //3.22.38.105
         }else if (SceneManager.GetActiveScene().name == "Nivel4")
         {
-            request = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarPreguntaNivel4");   
+            request = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarPreguntaNivel4");  //3.22.38.105 
         }
         else
         {
-            request = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarPreguntaNivel5");   
+            request = UnityWebRequest.Get("http://Localhost:8080/pregunta/buscarPreguntaNivel5");   //3.22.38.105
         }
 
         yield return request.SendWebRequest();   //Regresa, ejecuta, espera...
@@ -243,7 +243,7 @@ public class CanvasAmigo : MonoBehaviour
             forma.AddField("estado", "Incorrecto");
 
         }
-        UnityWebRequest request = UnityWebRequest.Post("http://Localhost:8080/preguntaContestada/agregarPreguntaContestada", forma); 
+        UnityWebRequest request = UnityWebRequest.Post("http://Localhost:8080/preguntaContestada/agregarPreguntaContestada", forma); //3.22.38.105
         yield return request.SendWebRequest(); 
     }
 
@@ -268,7 +268,7 @@ public class CanvasAmigo : MonoBehaviour
             forma.AddField("estado", "Incorrecto");
 
         }
-        UnityWebRequest request = UnityWebRequest.Post("http://Localhost:8080/preguntaContestada/agregarPreguntaContestada", forma); 
+        UnityWebRequest request = UnityWebRequest.Post("http://Localhost:8080/preguntaContestada/agregarPreguntaContestada", forma); //3.22.38.105
         yield return request.SendWebRequest(); 
     }
 
@@ -293,7 +293,7 @@ public class CanvasAmigo : MonoBehaviour
             forma.AddField("estado", "Incorrecto");
 
         }
-        UnityWebRequest request = UnityWebRequest.Post("http://Localhost:8080/preguntaContestada/agregarPreguntaContestada", forma); 
+        UnityWebRequest request = UnityWebRequest.Post("http://Localhost:8080/preguntaContestada/agregarPreguntaContestada", forma); //3.22.38.105
         yield return request.SendWebRequest(); 
     }
 
@@ -318,7 +318,7 @@ public class CanvasAmigo : MonoBehaviour
             forma.AddField("estado", "Incorrecto");
 
         }
-        UnityWebRequest request = UnityWebRequest.Post("http://Localhost:8080/preguntaContestada/agregarPreguntaContestada", forma); 
+        UnityWebRequest request = UnityWebRequest.Post("http://Localhost:8080/preguntaContestada/agregarPreguntaContestada", forma); //3.22.38.105
         yield return request.SendWebRequest(); 
     }
 }
