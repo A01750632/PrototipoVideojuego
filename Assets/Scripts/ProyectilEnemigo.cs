@@ -21,6 +21,8 @@ public class ProyectilEnemigo : MonoBehaviour
     public static ProyectilEnemigo instance;
     public static float tiempoTotal;
 
+    public int nivel;
+
     public IEnumerator OnTriggerEnter2D(Collider2D other)
     {
         /*if(other.gameObject.CompareTag("proyectilArt"))
@@ -39,6 +41,7 @@ public class ProyectilEnemigo : MonoBehaviour
 
                 tiempoTotal = Time.time - Menu.tiempoInicial;
                 Destroy(other.gameObject, 0.3f);
+                Enemigo.niveel = nivel;
                 SceneManager.LoadScene("MapaNiveles"); //Pierde, regresa al mapa de niveles
 
                 WWWForm forma2 = new WWWForm();

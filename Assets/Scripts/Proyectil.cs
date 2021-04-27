@@ -46,6 +46,18 @@ public class Proyectil : MonoBehaviour
         Destroy(gameObject,segundos);
     }
 
+    public void CambiarDireccionPAmigo()
+    {
+        if (direccionDerecha <= -1)
+        {
+            rendererProyectil.flipX = true;
+        }
+        else if (direccionDerecha >= 1)
+        {
+            rendererProyectil.flipX = false;
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -73,15 +85,5 @@ public class Proyectil : MonoBehaviour
                 Destroy(gameObject,1.4f);
             }
         }
-        /*
-        if (direccionDerecha <= -1)
-        {
-            rendererProyectil.flipX = true;
-        }
-        else if (direccionDerecha >= 1)
-        {
-            rendererProyectil.flipX = false;
-        }
-        */
     }
 }

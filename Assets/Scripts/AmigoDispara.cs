@@ -33,8 +33,8 @@ public class AmigoDispara : MonoBehaviour
             Proyectil nuevo = Instantiate(proyectil);  //COPIA, clona
             nuevo.transform.position = gameObject.transform.position;
             nuevo.CambiarDireccion(direccionDerecha);
-            
             nuevo.gameObject.SetActive(true);
+           // nuevo.CambiarDireccionPAmigo();
             
         }
     }

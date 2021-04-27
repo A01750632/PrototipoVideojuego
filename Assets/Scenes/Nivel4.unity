@@ -1515,6 +1515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   red: {fileID: 0}
+  nivel: 5
 --- !u!95 &174693490
 Animator:
   serializedVersion: 3
@@ -3141,6 +3142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   red: {fileID: 1681872515}
+  nivel: 0
 --- !u!1 &354935690
 GameObject:
   m_ObjectHideFlags: 0
@@ -3962,6 +3964,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   red: {fileID: 0}
+  nivel: 5
 --- !u!95 &507042877
 Animator:
   serializedVersion: 3
@@ -4957,6 +4960,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   red: {fileID: 0}
+  nivel: 5
 --- !u!95 &678895295
 Animator:
   serializedVersion: 3
@@ -16647,6 +16651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   red: {fileID: 0}
+  nivel: 5
 --- !u!95 &755411196
 Animator:
   serializedVersion: 3
@@ -17403,6 +17408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   red: {fileID: 0}
+  nivel: 5
 --- !u!95 &840526929
 Animator:
   serializedVersion: 3
@@ -17831,6 +17837,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   red: {fileID: 0}
+  nivel: 5
 --- !u!95 &880541361
 Animator:
   serializedVersion: 3
@@ -18222,6 +18229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   red: {fileID: 0}
+  nivel: 5
 --- !u!95 &929654793
 Animator:
   serializedVersion: 3
@@ -18621,6 +18629,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   red: {fileID: 0}
+  nivel: 5
 --- !u!95 &968999289
 Animator:
   serializedVersion: 3
@@ -19050,6 +19059,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   red: {fileID: 0}
+  nivel: 5
 --- !u!95 &1009409872
 Animator:
   serializedVersion: 3
@@ -19370,6 +19380,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   red: {fileID: 0}
+  nivel: 5
 --- !u!61 &1025436229
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20997,6 +21008,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   red: {fileID: 0}
+  nivel: 5
 --- !u!95 &1165036712
 Animator:
   serializedVersion: 3
@@ -22257,6 +22269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   red: {fileID: 0}
+  nivel: 5
 --- !u!95 &1308374227
 Animator:
   serializedVersion: 3
@@ -22414,6 +22427,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   red: {fileID: 0}
+  nivel: 5
 --- !u!95 &1309030264
 Animator:
   serializedVersion: 3
@@ -23175,6 +23189,31 @@ MonoBehaviour:
   nivel: 5
   sigNivel: 6
   red: {fileID: 1681872515}
+  categoria: {fileID: 0}
+  categoria2: {fileID: 0}
+  "categor\xEDa3": {fileID: 0}
+  textoPista: {fileID: 0}
+  textPista: {fileID: 0}
+  panelPista: {fileID: 0}
+  textPista2: {fileID: 0}
+  panelPista2: {fileID: 0}
+  textPista3: {fileID: 0}
+  panelPista3: {fileID: 0}
+  botonCiencias: {fileID: 0}
+  botonTecnologia: {fileID: 0}
+  botonArtes: {fileID: 0}
+  botonMate: {fileID: 0}
+  textoPista2: {fileID: 0}
+  botonCiencias2: {fileID: 0}
+  botonTecnologia2: {fileID: 0}
+  botonArtes2: {fileID: 0}
+  botonMate2: {fileID: 0}
+  textoPista3: {fileID: 0}
+  botonCiencias3: {fileID: 0}
+  botonTecnologia3: {fileID: 0}
+  botonArtes3: {fileID: 0}
+  botonMate3: {fileID: 0}
+  intentos: 0
 --- !u!114 &1361815250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23491,6 +23530,31 @@ MonoBehaviour:
   nivel: 0
   sigNivel: 0
   red: {fileID: 1681872515}
+  categoria: {fileID: 0}
+  categoria2: {fileID: 0}
+  "categor\xEDa3": {fileID: 0}
+  textoPista: {fileID: 0}
+  textPista: {fileID: 0}
+  panelPista: {fileID: 0}
+  textPista2: {fileID: 0}
+  panelPista2: {fileID: 0}
+  textPista3: {fileID: 0}
+  panelPista3: {fileID: 0}
+  botonCiencias: {fileID: 0}
+  botonTecnologia: {fileID: 0}
+  botonArtes: {fileID: 0}
+  botonMate: {fileID: 0}
+  textoPista2: {fileID: 0}
+  botonCiencias2: {fileID: 0}
+  botonTecnologia2: {fileID: 0}
+  botonArtes2: {fileID: 0}
+  botonMate2: {fileID: 0}
+  textoPista3: {fileID: 0}
+  botonCiencias3: {fileID: 0}
+  botonTecnologia3: {fileID: 0}
+  botonArtes3: {fileID: 0}
+  botonMate3: {fileID: 0}
+  intentos: 0
 --- !u!1 &1390657043
 GameObject:
   m_ObjectHideFlags: 0
@@ -26694,6 +26758,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   red: {fileID: 0}
+  nivel: 5
 --- !u!95 &1678776661
 Animator:
   serializedVersion: 3
@@ -29587,6 +29652,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   red: {fileID: 0}
+  nivel: 5
 --- !u!95 &1945482703
 Animator:
   serializedVersion: 3
