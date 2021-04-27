@@ -1003,11 +1003,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7491239740785986795, guid: 3acd1e2098bea724dbe8aa5ada49b2e9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 118.43
+      value: 88.3
       objectReference: {fileID: 0}
     - target: {fileID: 7491239740785986795, guid: 3acd1e2098bea724dbe8aa5ada49b2e9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.41
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7491239740785986795, guid: 3acd1e2098bea724dbe8aa5ada49b2e9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1859,6 +1859,10 @@ PrefabInstance:
       propertyPath: red
       value: 
       objectReference: {fileID: 739415389}
+    - target: {fileID: 9223170732642207557, guid: aa6b8eaffec99634fa5094bb17d4fd9f, type: 3}
+      propertyPath: nivel
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 9223170732642207559, guid: aa6b8eaffec99634fa5094bb17d4fd9f, type: 3}
       propertyPath: m_Name
       value: EnemigoDQuieto (1)
@@ -3872,6 +3876,31 @@ MonoBehaviour:
   nivel: 3
   sigNivel: 4
   red: {fileID: 739415389}
+  categoria: {fileID: 0}
+  categoria2: {fileID: 0}
+  "categor\xEDa3": {fileID: 0}
+  textoPista: {fileID: 0}
+  textPista: {fileID: 0}
+  panelPista: {fileID: 0}
+  textPista2: {fileID: 0}
+  panelPista2: {fileID: 0}
+  textPista3: {fileID: 0}
+  panelPista3: {fileID: 0}
+  botonCiencias: {fileID: 0}
+  botonTecnologia: {fileID: 0}
+  botonArtes: {fileID: 0}
+  botonMate: {fileID: 0}
+  textoPista2: {fileID: 0}
+  botonCiencias2: {fileID: 0}
+  botonTecnologia2: {fileID: 0}
+  botonArtes2: {fileID: 0}
+  botonMate2: {fileID: 0}
+  textoPista3: {fileID: 0}
+  botonCiencias3: {fileID: 0}
+  botonTecnologia3: {fileID: 0}
+  botonArtes3: {fileID: 0}
+  botonMate3: {fileID: 0}
+  intentos: 0
 --- !u!114 &476938443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4162,6 +4191,31 @@ MonoBehaviour:
   nivel: 0
   sigNivel: 0
   red: {fileID: 739415389}
+  categoria: {fileID: 0}
+  categoria2: {fileID: 0}
+  "categor\xEDa3": {fileID: 0}
+  textoPista: {fileID: 0}
+  textPista: {fileID: 0}
+  panelPista: {fileID: 0}
+  textPista2: {fileID: 0}
+  panelPista2: {fileID: 0}
+  textPista3: {fileID: 0}
+  panelPista3: {fileID: 0}
+  botonCiencias: {fileID: 0}
+  botonTecnologia: {fileID: 0}
+  botonArtes: {fileID: 0}
+  botonMate: {fileID: 0}
+  textoPista2: {fileID: 0}
+  botonCiencias2: {fileID: 0}
+  botonTecnologia2: {fileID: 0}
+  botonArtes2: {fileID: 0}
+  botonMate2: {fileID: 0}
+  textoPista3: {fileID: 0}
+  botonCiencias3: {fileID: 0}
+  botonTecnologia3: {fileID: 0}
+  botonArtes3: {fileID: 0}
+  botonMate3: {fileID: 0}
+  intentos: 0
 --- !u!1 &502783028
 GameObject:
   m_ObjectHideFlags: 0
@@ -4489,6 +4543,10 @@ PrefabInstance:
       propertyPath: red
       value: 
       objectReference: {fileID: 739415389}
+    - target: {fileID: 9223170732642207557, guid: aa6b8eaffec99634fa5094bb17d4fd9f, type: 3}
+      propertyPath: nivel
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 9223170732642207559, guid: aa6b8eaffec99634fa5094bb17d4fd9f, type: 3}
       propertyPath: m_Name
       value: EnemigoDQuieto (4)
@@ -12498,6 +12556,10 @@ PrefabInstance:
       propertyPath: red
       value: 
       objectReference: {fileID: 739415389}
+    - target: {fileID: 2828014491022653462, guid: e17b58c7e5f8cca4e96fb8e729d2099a, type: 3}
+      propertyPath: nivel
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e17b58c7e5f8cca4e96fb8e729d2099a, type: 3}
 --- !u!4 &690245055 stripped
@@ -13380,6 +13442,10 @@ PrefabInstance:
       propertyPath: red
       value: 
       objectReference: {fileID: 739415389}
+    - target: {fileID: 9223170732642207557, guid: aa6b8eaffec99634fa5094bb17d4fd9f, type: 3}
+      propertyPath: nivel
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 9223170732642207559, guid: aa6b8eaffec99634fa5094bb17d4fd9f, type: 3}
       propertyPath: m_Name
       value: EnemigoDQuieto (6)
@@ -14101,6 +14167,10 @@ PrefabInstance:
       propertyPath: red
       value: 
       objectReference: {fileID: 739415389}
+    - target: {fileID: 2828014491022653462, guid: e17b58c7e5f8cca4e96fb8e729d2099a, type: 3}
+      propertyPath: nivel
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e17b58c7e5f8cca4e96fb8e729d2099a, type: 3}
 --- !u!4 &920531624 stripped
@@ -14179,6 +14249,10 @@ PrefabInstance:
       propertyPath: red
       value: 
       objectReference: {fileID: 739415389}
+    - target: {fileID: 2828014491022653462, guid: e17b58c7e5f8cca4e96fb8e729d2099a, type: 3}
+      propertyPath: nivel
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e17b58c7e5f8cca4e96fb8e729d2099a, type: 3}
 --- !u!1001 &940747703
@@ -14313,6 +14387,10 @@ PrefabInstance:
       propertyPath: red
       value: 
       objectReference: {fileID: 739415389}
+    - target: {fileID: 2828014491022653462, guid: e17b58c7e5f8cca4e96fb8e729d2099a, type: 3}
+      propertyPath: nivel
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e17b58c7e5f8cca4e96fb8e729d2099a, type: 3}
 --- !u!4 &948085026 stripped
@@ -14919,6 +14997,10 @@ PrefabInstance:
       propertyPath: red
       value: 
       objectReference: {fileID: 739415389}
+    - target: {fileID: 2828014491022653462, guid: e17b58c7e5f8cca4e96fb8e729d2099a, type: 3}
+      propertyPath: nivel
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e17b58c7e5f8cca4e96fb8e729d2099a, type: 3}
 --- !u!1 &1025376696
@@ -15439,6 +15521,10 @@ PrefabInstance:
       propertyPath: red
       value: 
       objectReference: {fileID: 739415389}
+    - target: {fileID: 9223170732642207557, guid: aa6b8eaffec99634fa5094bb17d4fd9f, type: 3}
+      propertyPath: nivel
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 9223170732642207559, guid: aa6b8eaffec99634fa5094bb17d4fd9f, type: 3}
       propertyPath: m_Name
       value: EnemigoDQuieto (1)
@@ -15508,6 +15594,10 @@ PrefabInstance:
       propertyPath: red
       value: 
       objectReference: {fileID: 739415389}
+    - target: {fileID: 9223170732642207557, guid: aa6b8eaffec99634fa5094bb17d4fd9f, type: 3}
+      propertyPath: nivel
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 9223170732642207559, guid: aa6b8eaffec99634fa5094bb17d4fd9f, type: 3}
       propertyPath: m_Name
       value: EnemigoDQuieto (5)
@@ -15974,6 +16064,10 @@ PrefabInstance:
       propertyPath: red
       value: 
       objectReference: {fileID: 739415389}
+    - target: {fileID: 2828014491022653462, guid: e17b58c7e5f8cca4e96fb8e729d2099a, type: 3}
+      propertyPath: nivel
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e17b58c7e5f8cca4e96fb8e729d2099a, type: 3}
 --- !u!1 &1138640966
@@ -16224,6 +16318,10 @@ PrefabInstance:
       propertyPath: red
       value: 
       objectReference: {fileID: 739415389}
+    - target: {fileID: 9223170732642207557, guid: aa6b8eaffec99634fa5094bb17d4fd9f, type: 3}
+      propertyPath: nivel
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 9223170732642207559, guid: aa6b8eaffec99634fa5094bb17d4fd9f, type: 3}
       propertyPath: m_Name
       value: EnemigoDQuieto (3)
@@ -16978,6 +17076,10 @@ PrefabInstance:
       propertyPath: red
       value: 
       objectReference: {fileID: 739415389}
+    - target: {fileID: 9223170732642207557, guid: aa6b8eaffec99634fa5094bb17d4fd9f, type: 3}
+      propertyPath: nivel
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 9223170732642207559, guid: aa6b8eaffec99634fa5094bb17d4fd9f, type: 3}
       propertyPath: m_Name
       value: EnemigoDQuieto
@@ -17058,6 +17160,10 @@ PrefabInstance:
       propertyPath: red
       value: 
       objectReference: {fileID: 739415389}
+    - target: {fileID: 9223170732642207557, guid: aa6b8eaffec99634fa5094bb17d4fd9f, type: 3}
+      propertyPath: nivel
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 9223170732642207559, guid: aa6b8eaffec99634fa5094bb17d4fd9f, type: 3}
       propertyPath: m_Name
       value: EnemigoDQuieto (2)
@@ -17450,6 +17556,10 @@ PrefabInstance:
       propertyPath: red
       value: 
       objectReference: {fileID: 739415389}
+    - target: {fileID: 9223170732642207557, guid: aa6b8eaffec99634fa5094bb17d4fd9f, type: 3}
+      propertyPath: nivel
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 9223170732642207559, guid: aa6b8eaffec99634fa5094bb17d4fd9f, type: 3}
       propertyPath: m_Name
       value: EnemigoDQuieto (2)
@@ -20395,6 +20505,10 @@ PrefabInstance:
       propertyPath: red
       value: 
       objectReference: {fileID: 739415389}
+    - target: {fileID: 2828014491022653462, guid: e17b58c7e5f8cca4e96fb8e729d2099a, type: 3}
+      propertyPath: nivel
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e17b58c7e5f8cca4e96fb8e729d2099a, type: 3}
 --- !u!1 &1699661285
@@ -20796,6 +20910,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   red: {fileID: 739415389}
+  nivel: 0
 --- !u!1001 &1737891274
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23420,6 +23535,10 @@ PrefabInstance:
       propertyPath: red
       value: 
       objectReference: {fileID: 739415389}
+    - target: {fileID: 9223170732642207557, guid: aa6b8eaffec99634fa5094bb17d4fd9f, type: 3}
+      propertyPath: nivel
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 9223170732642207559, guid: aa6b8eaffec99634fa5094bb17d4fd9f, type: 3}
       propertyPath: m_Name
       value: EnemigoDQuieto

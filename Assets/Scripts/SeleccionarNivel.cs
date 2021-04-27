@@ -11,11 +11,14 @@ public class SeleccionarNivel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(CanvasEnemigo.niveel == 0)
+        if(CanvasEnemigo.niveel == 0 && VidasPersonaje.instance.vidas == 0)
+        {
+            nivel = Enemigo.instance.nivel;
+        } else if(CanvasEnemigo.niveel == 0)
         {
             nivel = 2; //Posiciona en el primer Nivel
-        }
-        else
+        
+        } else
         {
             nivel = CanvasEnemigo.niveel;
         }

@@ -252,6 +252,10 @@ PrefabInstance:
       propertyPath: red
       value: 
       objectReference: {fileID: 1076158101}
+    - target: {fileID: 8354901801491047585, guid: 0390e8c4a9b09bf4f8864a2100450117, type: 3}
+      propertyPath: nivel
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0390e8c4a9b09bf4f8864a2100450117, type: 3}
 --- !u!4 &5345941 stripped
@@ -1727,6 +1731,10 @@ PrefabInstance:
     - target: {fileID: 4689731751862854232, guid: 0d2d56d6b905cde4ca5d6e0393a23f25, type: 3}
       propertyPath: m_Name
       value: RobotoBotoCaminando
+      objectReference: {fileID: 0}
+    - target: {fileID: 4689731751862854236, guid: 0d2d56d6b905cde4ca5d6e0393a23f25, type: 3}
+      propertyPath: nivel
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4689731751862854239, guid: 0d2d56d6b905cde4ca5d6e0393a23f25, type: 3}
       propertyPath: m_RootOrder
@@ -3383,6 +3391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   red: {fileID: 1076158101}
+  nivel: 0
 --- !u!1 &286850172
 GameObject:
   m_ObjectHideFlags: 0
@@ -4980,6 +4989,10 @@ PrefabInstance:
       propertyPath: red
       value: 
       objectReference: {fileID: 1076158101}
+    - target: {fileID: 8354901801491047585, guid: 0390e8c4a9b09bf4f8864a2100450117, type: 3}
+      propertyPath: nivel
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0390e8c4a9b09bf4f8864a2100450117, type: 3}
 --- !u!4 &430110691 stripped
@@ -5423,6 +5436,10 @@ PrefabInstance:
     - target: {fileID: 4689731751862854232, guid: 0d2d56d6b905cde4ca5d6e0393a23f25, type: 3}
       propertyPath: m_Name
       value: RobotoBotoCaminando (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4689731751862854236, guid: 0d2d56d6b905cde4ca5d6e0393a23f25, type: 3}
+      propertyPath: nivel
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4689731751862854238, guid: 0d2d56d6b905cde4ca5d6e0393a23f25, type: 3}
       propertyPath: m_FlipX
@@ -17834,6 +17851,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RobotoBotoCaminando (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4689731751862854236, guid: 0d2d56d6b905cde4ca5d6e0393a23f25, type: 3}
+      propertyPath: nivel
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4689731751862854239, guid: 0d2d56d6b905cde4ca5d6e0393a23f25, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -17947,6 +17968,10 @@ PrefabInstance:
     - target: {fileID: 4689731751862854232, guid: 0d2d56d6b905cde4ca5d6e0393a23f25, type: 3}
       propertyPath: m_Name
       value: RobotoBotoCaminando (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4689731751862854236, guid: 0d2d56d6b905cde4ca5d6e0393a23f25, type: 3}
+      propertyPath: nivel
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4689731751862854239, guid: 0d2d56d6b905cde4ca5d6e0393a23f25, type: 3}
       propertyPath: m_RootOrder
@@ -18597,6 +18622,10 @@ PrefabInstance:
     - target: {fileID: 4689731751862854232, guid: 0d2d56d6b905cde4ca5d6e0393a23f25, type: 3}
       propertyPath: m_Name
       value: RobotoBotoCaminando (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4689731751862854236, guid: 0d2d56d6b905cde4ca5d6e0393a23f25, type: 3}
+      propertyPath: nivel
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4689731751862854238, guid: 0d2d56d6b905cde4ca5d6e0393a23f25, type: 3}
       propertyPath: m_FlipX
@@ -20418,6 +20447,10 @@ PrefabInstance:
       propertyPath: red
       value: 
       objectReference: {fileID: 1076158101}
+    - target: {fileID: 8354901801491047585, guid: 0390e8c4a9b09bf4f8864a2100450117, type: 3}
+      propertyPath: nivel
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0390e8c4a9b09bf4f8864a2100450117, type: 3}
 --- !u!4 &1223630210 stripped
@@ -21764,6 +21797,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RobotoBotoCaminando (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4689731751862854236, guid: 0d2d56d6b905cde4ca5d6e0393a23f25, type: 3}
+      propertyPath: nivel
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4689731751862854238, guid: 0d2d56d6b905cde4ca5d6e0393a23f25, type: 3}
       propertyPath: m_FlipX
       value: 1
@@ -22040,6 +22077,10 @@ PrefabInstance:
       propertyPath: red
       value: 
       objectReference: {fileID: 1076158101}
+    - target: {fileID: 8354901801491047585, guid: 0390e8c4a9b09bf4f8864a2100450117, type: 3}
+      propertyPath: nivel
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0390e8c4a9b09bf4f8864a2100450117, type: 3}
 --- !u!4 &1395083992 stripped
@@ -24555,6 +24596,10 @@ PrefabInstance:
       propertyPath: red
       value: 
       objectReference: {fileID: 1076158101}
+    - target: {fileID: 8354901801491047585, guid: 0390e8c4a9b09bf4f8864a2100450117, type: 3}
+      propertyPath: nivel
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0390e8c4a9b09bf4f8864a2100450117, type: 3}
 --- !u!4 &1605632394 stripped
@@ -25614,6 +25659,10 @@ PrefabInstance:
       propertyPath: red
       value: 
       objectReference: {fileID: 1076158101}
+    - target: {fileID: 8354901801491047585, guid: 0390e8c4a9b09bf4f8864a2100450117, type: 3}
+      propertyPath: nivel
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0390e8c4a9b09bf4f8864a2100450117, type: 3}
 --- !u!4 &1735713485 stripped
@@ -26990,6 +27039,10 @@ PrefabInstance:
       propertyPath: red
       value: 
       objectReference: {fileID: 1076158101}
+    - target: {fileID: 8354901801491047585, guid: 0390e8c4a9b09bf4f8864a2100450117, type: 3}
+      propertyPath: nivel
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0390e8c4a9b09bf4f8864a2100450117, type: 3}
 --- !u!4 &1892866462 stripped
@@ -27541,6 +27594,10 @@ PrefabInstance:
       propertyPath: red
       value: 
       objectReference: {fileID: 1076158101}
+    - target: {fileID: 8354901801491047585, guid: 0390e8c4a9b09bf4f8864a2100450117, type: 3}
+      propertyPath: nivel
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0390e8c4a9b09bf4f8864a2100450117, type: 3}
 --- !u!1 &1955502010
@@ -29044,6 +29101,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RobotoBotoCaminando
       objectReference: {fileID: 0}
+    - target: {fileID: 4689731751862854236, guid: 0d2d56d6b905cde4ca5d6e0393a23f25, type: 3}
+      propertyPath: nivel
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4689731751862854239, guid: 0d2d56d6b905cde4ca5d6e0393a23f25, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -29214,6 +29275,10 @@ PrefabInstance:
       propertyPath: red
       value: 
       objectReference: {fileID: 1076158101}
+    - target: {fileID: 8354901801491047585, guid: 0390e8c4a9b09bf4f8864a2100450117, type: 3}
+      propertyPath: nivel
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0390e8c4a9b09bf4f8864a2100450117, type: 3}
 --- !u!1001 &3814268513899850468
@@ -29464,11 +29529,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7491239740785986795, guid: 3acd1e2098bea724dbe8aa5ada49b2e9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.06
+      value: -0.37
       objectReference: {fileID: 0}
     - target: {fileID: 7491239740785986795, guid: 3acd1e2098bea724dbe8aa5ada49b2e9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.72
+      value: 4.57
       objectReference: {fileID: 0}
     - target: {fileID: 7491239740785986795, guid: 3acd1e2098bea724dbe8aa5ada49b2e9, type: 3}
       propertyPath: m_LocalPosition.z

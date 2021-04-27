@@ -340,7 +340,7 @@ public class CanvasEnemigo : MonoBehaviour
     //Revisa el puntaje para comprobar que se tenga un m�nimo para poder desbloquear el siguiente nivel.
     public void PasarNivel()
     {
-        if (VidasPersonaje.instance.monedas > -1)
+        if (VidasPersonaje.instance.monedas > 170)
         {
             pantallaWinner.SetActive(true); //Se activa el panel de ganador
             niveel = sigNivel;
@@ -355,6 +355,7 @@ public class CanvasEnemigo : MonoBehaviour
             niveel = nivel;
             SceneManager.LoadScene("MapaNiveles"); //Regresa al mapa de niveles.
             red.tiempopuntaje(VidasPersonaje.instance.monedas);
+            Time.timeScale = 1; //Corre el tiempo para el siguiente nivel
         }
     }
     

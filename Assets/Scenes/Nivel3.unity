@@ -8092,11 +8092,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7491239740785986795, guid: 3acd1e2098bea724dbe8aa5ada49b2e9, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.7521
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7491239740785986795, guid: 3acd1e2098bea724dbe8aa5ada49b2e9, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.6645
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7491239740785986795, guid: 3acd1e2098bea724dbe8aa5ada49b2e9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8517,6 +8517,31 @@ MonoBehaviour:
   nivel: 0
   sigNivel: 0
   red: {fileID: 1162212420}
+  categoria: {fileID: 0}
+  categoria2: {fileID: 0}
+  "categor\xEDa3": {fileID: 0}
+  textoPista: {fileID: 0}
+  textPista: {fileID: 0}
+  panelPista: {fileID: 0}
+  textPista2: {fileID: 0}
+  panelPista2: {fileID: 0}
+  textPista3: {fileID: 0}
+  panelPista3: {fileID: 0}
+  botonCiencias: {fileID: 0}
+  botonTecnologia: {fileID: 0}
+  botonArtes: {fileID: 0}
+  botonMate: {fileID: 0}
+  textoPista2: {fileID: 0}
+  botonCiencias2: {fileID: 0}
+  botonTecnologia2: {fileID: 0}
+  botonArtes2: {fileID: 0}
+  botonMate2: {fileID: 0}
+  textoPista3: {fileID: 0}
+  botonCiencias3: {fileID: 0}
+  botonTecnologia3: {fileID: 0}
+  botonArtes3: {fileID: 0}
+  botonMate3: {fileID: 0}
+  intentos: 0
 --- !u!4 &1317064956
 Transform:
   m_ObjectHideFlags: 0
@@ -11678,6 +11703,31 @@ MonoBehaviour:
   nivel: 4
   sigNivel: 5
   red: {fileID: 1162212420}
+  categoria: {fileID: 0}
+  categoria2: {fileID: 0}
+  "categor\xEDa3": {fileID: 0}
+  textoPista: {fileID: 0}
+  textPista: {fileID: 0}
+  panelPista: {fileID: 0}
+  textPista2: {fileID: 0}
+  panelPista2: {fileID: 0}
+  textPista3: {fileID: 0}
+  panelPista3: {fileID: 0}
+  botonCiencias: {fileID: 0}
+  botonTecnologia: {fileID: 0}
+  botonArtes: {fileID: 0}
+  botonMate: {fileID: 0}
+  textoPista2: {fileID: 0}
+  botonCiencias2: {fileID: 0}
+  botonTecnologia2: {fileID: 0}
+  botonArtes2: {fileID: 0}
+  botonMate2: {fileID: 0}
+  textoPista3: {fileID: 0}
+  botonCiencias3: {fileID: 0}
+  botonTecnologia3: {fileID: 0}
+  botonArtes3: {fileID: 0}
+  botonMate3: {fileID: 0}
+  intentos: 0
 --- !u!114 &1678680349
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -143,7 +143,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcfc8635128fedf4cad26b10fe0b54e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destruyeEnemigo: {fileID: 6545449324797707966}
+  red: {fileID: 0}
+  nivel: 2
 --- !u!82 &6545449324797707966
 AudioSource:
   m_ObjectHideFlags: 0

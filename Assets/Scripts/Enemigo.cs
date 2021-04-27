@@ -21,14 +21,16 @@ public class Enemigo : MonoBehaviour
     public static Enemigo instance;
     public static float tiempoTotal;
     public Red red;
+    public int nivel;
+    public static int niveel;
 
     public void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.CompareTag("proyectilArt"))
         {
             Destroy(gameObject);
-            VidasPersonaje.instance.monedas += 10;
-            HUD.instance.ActualizarMonedas();
+            //VidasPersonaje.instance.monedas += 10;
+            //HUD.instance.ActualizarMonedas();
         }
         if (other.gameObject.CompareTag("Player"))
         {
@@ -39,6 +41,7 @@ public class Enemigo : MonoBehaviour
             if (VidasPersonaje.instance.vidas == 0)
             {
                 Destroy(other.gameObject, 0.3f);
+                niveel= nivel;
                 SceneManager.LoadScene("MapaNiveles"); //Pierde, regresa al mapa de niveles
                 red.tiempopuntaje(VidasPersonaje.instance.monedas);
 
