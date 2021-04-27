@@ -30,24 +30,13 @@ public class CanvasAmigo : MonoBehaviour
 
     public MoverAmigo amigo;
 
-    public Text categoria;
-    public Text textoPista;
-    public GameObject textPista;
-    public GameObject pista;
-    public GameObject botonCiencias;
-    public GameObject botonTecnologia;
-    public GameObject botonArtes;
-    public GameObject botonMate;
+    
 
-    public int intentos;
-
+    
     // Campos con la información de respuestas
     // Leer textoPregunta de la base de datos 
 
-    void Start()
-    {
-        intentos = PlayerPrefs.GetInt("intentos");
-    }
+
     public void colisiono(int col)
     {
      if(col == 1){
@@ -65,15 +54,6 @@ public class CanvasAmigo : MonoBehaviour
         pantallaPregunta.SetActive(hide);
         pantallaContestar.SetActive(false); 
         Time.timeScale = hide ? 0 : 1f;
-    }
-    public void Pista()
-    {
-        pista.SetActive(true);
-        textPista.SetActive(true);
-        intentos=intentos-1;
-        PlayerPrefs.SetInt("intentos", intentos);
-        PlayerPrefs.Save();
-        print(intentos);
     }
     private IEnumerator SubirPregunta()
     {
@@ -110,32 +90,7 @@ public class CanvasAmigo : MonoBehaviour
             opcion4.text = arregloP[4];
             respuestaCorrecta.text = arregloP[5];
             idPregunta.text = arregloP[6];
-            categoria.text = arregloP[7];
-            textoPista.text = arregloP[8];
-    
-            if (intentos > 0){
-                if(categoria.text == "Ciencia"){
-                    botonCiencias.SetActive(true);
 
-                }
-                else if(categoria.text == "Tecnología"){
-                    botonTecnologia.SetActive(true); 
-                }
-                else if(categoria.text == "Artes"){
-                    botonArtes.SetActive(true); 
-           
-                }
-                else{
-                    botonMate.SetActive(true); 
-                }
-            }
-            else
-            {
-                textoPista.text = "Ya no tienes pistas";
-                textPista.SetActive(true);
-            }
-
-            
         }
         else
         {

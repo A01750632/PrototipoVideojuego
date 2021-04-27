@@ -95,9 +95,9 @@ public class CanvasEnemigo : MonoBehaviour
         niveel = nivel;
         if (col == 1)
         {
-            
-            pantallaContestar.SetActive(true);
             fondo.SetActive(true);
+            pantallaContestar.SetActive(true);
+            
         }
     }
     public void EscribirPregunta()     // Bot�n EscribirTextoPlano
@@ -108,11 +108,12 @@ public class CanvasEnemigo : MonoBehaviour
         hide = !hide; 
         pantallaPregunta.SetActive(hide);
         pantallaContestar.SetActive(false); 
-        Time.timeScale = hide ? 0 : 1f;
+        //Time.timeScale = hide ? 0 : 1f;
     }
 
     public void EscribirPregunta2()
     {
+        fondo.SetActive(true);
         pantallaWinner.SetActive(false);
         pantallaGameOver.SetActive(false);
         pantallaWinner = PantallaWinner2;
@@ -142,6 +143,7 @@ public class CanvasEnemigo : MonoBehaviour
 
     public void EscribirPregunta3()
     {
+        fondo.SetActive(true);
         PantallaWinner2.SetActive(false);
         PantallaGameOver2.SetActive(false);
         PantallaPregunta2.SetActive(false);
@@ -257,12 +259,24 @@ public class CanvasEnemigo : MonoBehaviour
             //Destroy(gameObject, 1);
             VidasPersonaje.instance.monedas += 10;
             HUD.instance.ActualizarMonedas();
+            botonCiencias.SetActive(false);
+            botonTecnologia.SetActive(false);
+            botonArtes.SetActive(false);
+            botonMate.SetActive(false);
+            textPista.SetActive(false);
+            panelPista.SetActive(false);
             pantallaWinner.SetActive(true);
         }
         else
         {
             StartCoroutine(MandarOp1());
             //Time.timeScale = 1;
+            botonCiencias.SetActive(false);
+            botonTecnologia.SetActive(false);
+            botonArtes.SetActive(false);
+            botonMate.SetActive(false);
+            textPista.SetActive(false);
+            panelPista.SetActive(false);
             pantallaGameOver.SetActive(true);
             //Destroy(gameObject, 1);
         }
@@ -279,6 +293,12 @@ public class CanvasEnemigo : MonoBehaviour
             //Destroy(gameObject, 1);
             VidasPersonaje.instance.monedas += 10;
             HUD.instance.ActualizarMonedas();
+            botonCiencias.SetActive(false);
+            botonTecnologia.SetActive(false);
+            botonArtes.SetActive(false);
+            botonMate.SetActive(false);
+            textPista.SetActive(false);
+            panelPista.SetActive(false);
             pantallaWinner.SetActive(true);
 
         }
@@ -287,6 +307,12 @@ public class CanvasEnemigo : MonoBehaviour
             StartCoroutine(MandarOp2());
             //Time.timeScale = 1;
             //Destroy(gameObject, 1);
+            botonCiencias.SetActive(false);
+            botonTecnologia.SetActive(false);
+            botonArtes.SetActive(false);
+            botonMate.SetActive(false);
+            textPista.SetActive(false);
+            panelPista.SetActive(false);
             pantallaGameOver.SetActive(true);
         }
 
@@ -302,6 +328,12 @@ public class CanvasEnemigo : MonoBehaviour
             //Destroy(gameObject, 1);
             VidasPersonaje.instance.monedas += 10;
             HUD.instance.ActualizarMonedas();
+            botonCiencias.SetActive(false);
+            botonTecnologia.SetActive(false);
+            botonArtes.SetActive(false);
+            botonMate.SetActive(false);
+            textPista.SetActive(false);
+            panelPista.SetActive(false);
             pantallaWinner.SetActive(true);
         }
         else
@@ -309,6 +341,12 @@ public class CanvasEnemigo : MonoBehaviour
             StartCoroutine(MandarOp3());
             //Time.timeScale = 1;
             //Destroy(gameObject, 1);
+            botonCiencias.SetActive(false);
+            botonTecnologia.SetActive(false);
+            botonArtes.SetActive(false);
+            botonMate.SetActive(false);
+            textPista.SetActive(false);
+            panelPista.SetActive(false);
             pantallaGameOver.SetActive(true);
         }
 
@@ -324,6 +362,12 @@ public class CanvasEnemigo : MonoBehaviour
             //Destroy(gameObject, 1);
             VidasPersonaje.instance.monedas += 10;
             HUD.instance.ActualizarMonedas();
+            botonCiencias.SetActive(false);
+            botonTecnologia.SetActive(false);
+            botonArtes.SetActive(false);
+            botonMate.SetActive(false);
+            textPista.SetActive(false);
+            panelPista.SetActive(false);
             pantallaWinner.SetActive(true);
         }
         else
@@ -331,6 +375,12 @@ public class CanvasEnemigo : MonoBehaviour
             StartCoroutine(MandarOp4());
             //Time.timeScale = 1;
             //Destroy(gameObject, 1);
+            botonCiencias.SetActive(false);
+            botonTecnologia.SetActive(false);
+            botonArtes.SetActive(false);
+            botonMate.SetActive(false);
+            textPista.SetActive(false);
+            panelPista.SetActive(false);
             pantallaGameOver.SetActive(true);
         }
 
@@ -340,13 +390,15 @@ public class CanvasEnemigo : MonoBehaviour
     //Revisa el puntaje para comprobar que se tenga un m�nimo para poder desbloquear el siguiente nivel.
     public void PasarNivel()
     {
-        if (VidasPersonaje.instance.monedas > 170)
+        if (VidasPersonaje.instance.monedas > -1) //170
         {
             pantallaWinner.SetActive(true); //Se activa el panel de ganador
             niveel = sigNivel;
             SceneManager.LoadScene("MapaNiveles"); //Desbloquea el siguiente nivel
             red.tiempopuntaje(VidasPersonaje.instance.monedas);
-
+            
+            PlayerPrefs.SetInt("intentos",2);
+            PlayerPrefs.Save();
             Time.timeScale = 1; //Corre el tiempo para el siguiente nivel
         }
         else
@@ -355,6 +407,8 @@ public class CanvasEnemigo : MonoBehaviour
             niveel = nivel;
             SceneManager.LoadScene("MapaNiveles"); //Regresa al mapa de niveles.
             red.tiempopuntaje(VidasPersonaje.instance.monedas);
+            PlayerPrefs.SetInt("intentos",2);
+            PlayerPrefs.Save();
             Time.timeScale = 1; //Corre el tiempo para el siguiente nivel
         }
     }
