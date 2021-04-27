@@ -1,0 +1,516 @@
+fileFormatVersion: 2
+guid: 809275318956e404bad8bb96e208d091
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6465050650257205426
+    second: RobotoBotoEnemigo_0
+  - first:
+      213: -6370771486673803393
+    second: RobotoBotoEnemigo_1
+  - first:
+      213: 6129246264758718804
+    second: RobotoBotoEnemigo_2
+  - first:
+      213: -902949984430968464
+    second: RobotoBotoEnemigo_3
+  - first:
+      213: 1282695411073472
+    second: RobotoBotoEnemigo_4
+  - first:
+      213: 6986965506902991073
+    second: RobotoBotoEnemigo_5
+  - first:
+      213: -8507398152194419017
+    second: RobotoBotoEnemigo_6
+  - first:
+      213: -5764832348166878688
+    second: RobotoBotoEnemigo_7
+  - first:
+      213: -1257747179124667811
+    second: RobotoBotoEnemigo_8
+  - first:
+      213: 8259763891872669703
+    second: RobotoBotoEnemigo_9
+  - first:
+      213: -7457158831887828370
+    second: RobotoBotoEnemigo_10
+  - first:
+      213: 1596433954006356705
+    second: RobotoBotoEnemigo_11
+  - first:
+      213: -3690197731770389374
+    second: RobotoBotoEnemigo_12
+  - first:
+      213: -5387817138185892818
+    second: RobotoBotoEnemigo_13
+  - first:
+      213: -5036317621295497213
+    second: RobotoBotoEnemigo_14
+  - first:
+      213: -7467066787118317628
+    second: RobotoBotoEnemigo_15
+  - first:
+      213: 8379519748273665758
+    second: RobotoBotoEnemigo_16
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RobotoBotoEnemigo_0
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 332
+        width: 103
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b82d77205978b950800000000000000
+      internalID: 6465050650257205426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotoBotoEnemigo_1
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 331
+        width: 100
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f77ee9f26197697a0800000000000000
+      internalID: -6370771486673803393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotoBotoEnemigo_2
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 332
+        width: 107
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45155dfe0057f0550800000000000000
+      internalID: 6129246264758718804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotoBotoEnemigo_3
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 329
+        width: 84
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0713c00f5c31873f0800000000000000
+      internalID: -902949984430968464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotoBotoEnemigo_4
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 333
+        width: 91
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c1055cca9e840000800000000000000
+      internalID: 1282695411073472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotoBotoEnemigo_5
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 333
+        width: 108
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e02cd82c10b6f060800000000000000
+      internalID: 6986965506902991073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotoBotoEnemigo_6
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 334
+        width: 103
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b613a76476afe980800000000000000
+      internalID: -8507398152194419017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotoBotoEnemigo_7
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 333
+        width: 114
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02a05d1d5833fffa0800000000000000
+      internalID: -5764832348166878688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotoBotoEnemigo_8
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 166
+        width: 107
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a460bba959b8ee0800000000000000
+      internalID: -1257747179124667811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotoBotoEnemigo_9
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 166
+        width: 105
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7002baf5f7390a270800000000000000
+      internalID: 8259763891872669703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotoBotoEnemigo_10
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 164
+        width: 80
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6ab8a75d89d28890800000000000000
+      internalID: -7457158831887828370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotoBotoEnemigo_11
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 166
+        width: 86
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e2dbef093ca72610800000000000000
+      internalID: 1596433954006356705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotoBotoEnemigo_12
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 166
+        width: 89
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28cafd6e6b8c9ccc0800000000000000
+      internalID: -3690197731770389374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotoBotoEnemigo_13
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 168
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2c0ba3dbd0aa35b0800000000000000
+      internalID: -5387817138185892818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotoBotoEnemigo_14
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 165
+        width: 100
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30044a69ec76b1ab0800000000000000
+      internalID: -5036317621295497213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotoBotoEnemigo_15
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 245
+        width: 100
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cff1bfb156af5890800000000000000
+      internalID: -7467066787118317628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotoBotoEnemigo_16
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 141
+        width: 100
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed6f83080d80a4470800000000000000
+      internalID: 8379519748273665758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
