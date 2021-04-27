@@ -11675,8 +11675,8 @@ MonoBehaviour:
   opcion3Final: {fileID: 561109155}
   opcion4Final: {fileID: 776576057}
   PantallaPregunta3: {fileID: 1927907816}
-  nivel: 3
-  sigNivel: 4
+  nivel: 4
+  sigNivel: 5
   red: {fileID: 1162212420}
 --- !u!114 &1678680349
 MonoBehaviour:

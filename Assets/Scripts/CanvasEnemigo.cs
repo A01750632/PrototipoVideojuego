@@ -261,6 +261,8 @@ public class CanvasEnemigo : MonoBehaviour
             niveel = sigNivel;
             SceneManager.LoadScene("MapaNiveles"); //Desbloquea el siguiente nivel
             red.tiempopuntaje(VidasPersonaje.instance.monedas);
+
+            Time.timeScale = 1; //Corre el tiempo para el siguiente nivel
         }
         else
         {
