@@ -20,6 +20,7 @@ public class Menu : MonoBehaviour
     public static float tiempoInicial;
     public bool hide;
     public GameObject opciones;
+    public GameObject instrucciones;
     public GameObject creditos; 
     
     public void IniciarJuego(){
@@ -32,6 +33,12 @@ public class Menu : MonoBehaviour
     {
         hide = !hide;
         opciones.SetActive(hide);
+    }
+
+    public void Instrucciones()
+    {
+        hide = !hide;
+        instrucciones.SetActive(hide);
     }
 
     public void Creditos(){

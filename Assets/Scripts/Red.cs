@@ -41,7 +41,13 @@ public class Red : MonoBehaviour
     }
     public void CrearCuenta()     //Boton
     {
+     
         SceneManager.LoadScene("EscenaRegistro");
+    }
+
+    public void Salir()
+    {
+        Application.Quit();
     }
 
     private IEnumerator SubirTextoPlano()
