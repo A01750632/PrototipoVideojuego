@@ -24,13 +24,13 @@ public class Proyectil : MonoBehaviour
 
     private float veloz1 = +0.1f;
 
-    public void OnTriggerEnter2D(Collider2D other)
+    /*public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
         }
-    }
+    }*/
 
         void Start()
     {

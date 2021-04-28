@@ -30,4 +30,12 @@ public class PajaroDispara : MonoBehaviour
         }
         
     }
+    //CHECAR ESTOOO
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+        }
+    }
 }
