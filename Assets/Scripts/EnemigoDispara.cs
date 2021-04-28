@@ -32,10 +32,12 @@ public class EnemigoDispara : MonoBehaviour
             Proyectil nuevo = Instantiate(proyectil);
             nuevo.transform.position = gameObject.transform.position;
             nuevo.gameObject.SetActive(true);
+            
             if(rendererEnemigo.flipX == false)
             {
                 nuevo.CambiarDireccion(-1);
-            }else
+            }
+            else
             {
                 nuevo.CambiarDireccion(1);
             }

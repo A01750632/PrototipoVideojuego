@@ -2122,7 +2122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcfc8635128fedf4cad26b10fe0b54e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  red: {fileID: 0}
+  red: {fileID: 1681872515}
   nivel: 5
 --- !u!95 &174693490
 Animator:
@@ -5331,7 +5331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcfc8635128fedf4cad26b10fe0b54e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  red: {fileID: 0}
+  red: {fileID: 1681872515}
   nivel: 5
 --- !u!95 &507042877
 Animator:
@@ -6912,7 +6912,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcfc8635128fedf4cad26b10fe0b54e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  red: {fileID: 0}
+  red: {fileID: 1681872515}
   nivel: 5
 --- !u!95 &678895295
 Animator:
@@ -18526,7 +18526,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcfc8635128fedf4cad26b10fe0b54e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  red: {fileID: 0}
+  red: {fileID: 1681872515}
   nivel: 5
 --- !u!95 &755411196
 Animator:
@@ -19204,7 +19204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcfc8635128fedf4cad26b10fe0b54e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  red: {fileID: 0}
+  red: {fileID: 1681872515}
   nivel: 5
 --- !u!95 &840526929
 Animator:
@@ -19766,7 +19766,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcfc8635128fedf4cad26b10fe0b54e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  red: {fileID: 0}
+  red: {fileID: 1681872515}
   nivel: 5
 --- !u!95 &880541361
 Animator:
@@ -20422,7 +20422,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcfc8635128fedf4cad26b10fe0b54e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  red: {fileID: 0}
+  red: {fileID: 1681872515}
   nivel: 5
 --- !u!95 &929654793
 Animator:
@@ -20978,7 +20978,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcfc8635128fedf4cad26b10fe0b54e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  red: {fileID: 0}
+  red: {fileID: 1681872515}
   nivel: 5
 --- !u!95 &968999289
 Animator:
@@ -21622,7 +21622,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcfc8635128fedf4cad26b10fe0b54e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  red: {fileID: 0}
+  red: {fileID: 1681872515}
   nivel: 5
 --- !u!95 &1009409872
 Animator:
@@ -22022,7 +22022,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcfc8635128fedf4cad26b10fe0b54e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  red: {fileID: 0}
+  red: {fileID: 1681872515}
   nivel: 5
 --- !u!61 &1025436229
 BoxCollider2D:
@@ -23568,7 +23568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcfc8635128fedf4cad26b10fe0b54e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  red: {fileID: 0}
+  red: {fileID: 1681872515}
   nivel: 5
 --- !u!95 &1165036712
 Animator:
@@ -24667,7 +24667,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcfc8635128fedf4cad26b10fe0b54e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  red: {fileID: 0}
+  red: {fileID: 1681872515}
   nivel: 5
 --- !u!95 &1308374227
 Animator:
@@ -24825,7 +24825,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcfc8635128fedf4cad26b10fe0b54e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  red: {fileID: 0}
+  red: {fileID: 1681872515}
   nivel: 5
 --- !u!95 &1309030264
 Animator:
@@ -28723,7 +28723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcfc8635128fedf4cad26b10fe0b54e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  red: {fileID: 0}
+  red: {fileID: 1681872515}
   nivel: 5
 --- !u!95 &1678776661
 Animator:
@@ -32036,7 +32036,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcfc8635128fedf4cad26b10fe0b54e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  red: {fileID: 0}
+  red: {fileID: 1681872515}
   nivel: 5
 --- !u!95 &1945482703
 Animator:

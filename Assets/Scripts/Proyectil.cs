@@ -20,14 +20,24 @@ public class Proyectil : MonoBehaviour
     //renderer del objeto
     private SpriteRenderer rendererProyectil; // Sabe si la cmara lo está viendo
 
-    public int direccionDerecha = +1;       //Factor de la velocidad
+    public int direccionDerecha = 0; //+1       //Factor de la velocidad
 
     private float veloz1 = +0.1f;
 
-    void Start()
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+        }
+    }
+
+        void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         rb.velocity = new Vector2(direccionDerecha * (velocidadX*1.6f), 0);
+
+        //rb.velocity = new Vector2(-1, -(velocidadX * 1.6f)); //Pajaro
         rendererProyectil = GetComponent<SpriteRenderer>();
     }
 
