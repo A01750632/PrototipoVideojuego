@@ -23,6 +23,8 @@ public class Enemigo : MonoBehaviour
     public Red red;
     public int nivel;
     public static int niveel;
+    //Referencia al Audio Source
+    public AudioSource vidaMenos;
 
     public void OnTriggerEnter2D(Collider2D other)
     {
@@ -35,7 +37,10 @@ public class Enemigo : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             //Descontar una vida 
-            VidasPersonaje.instance.vidas--; 
+            VidasPersonaje.instance.vidas--;
+            //Reproducir un efecto de sonido
+            vidaMenos.Play();
+
             //Actualizar las 'flechas'
             HUD.instance.ActualizarVidas();
             if (VidasPersonaje.instance.vidas == 0)

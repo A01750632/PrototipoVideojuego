@@ -23,6 +23,9 @@ public class ProyectilEnemigo : MonoBehaviour
 
     public int nivel;
 
+    //Referencia al Audio Source
+    public AudioSource vidaMenos;
+
     public IEnumerator OnTriggerEnter2D(Collider2D other)
     {
         /*if(other.gameObject.CompareTag("proyectilArt"))
@@ -33,7 +36,10 @@ public class ProyectilEnemigo : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             //Descontar una vida 
-            VidasPersonaje.instance.vidas--; 
+            VidasPersonaje.instance.vidas--;
+            //Reproducir un efecto de sonido
+            vidaMenos.Play();
+
             //Actualizar las 'flechas'
             HUD.instance.ActualizarVidas();
             if (VidasPersonaje.instance.vidas == 0)
