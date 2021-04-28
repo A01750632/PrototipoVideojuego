@@ -5,6 +5,16 @@ using UnityEngine.UI;
 using UnityEngine.Networking;
 using System;
 using UnityEngine.SceneManagement;
+/*
+ * Canvas que activa las 3 preguntas del enemigo final con pistas
+ *
+ * Autores: 
+ * Jorge Chávez Badillo            A01749448
+ * Ariadna Jocelyn Guzmán Jiménez  A01749373
+ * Liam Garay Monroy               A01750632
+ * Amy Murakami Tsutsumi           A01750185
+ * Andrea Vianey Díaz Álvarez      A01750147
+ */
 
 public class CanvasEnemigo : MonoBehaviour
 {

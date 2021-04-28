@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /*
-Prueba si el colider esta fuera o dentro de una plataforma.
- 
-Autores:  
-Jorge Chávez Badillo            A01749448
-Ariadna Jocelyn Guzmán Jiménez  A01749373
-Liam Garay Monroy               A01750632
-Amy Murakami Tsutsumi           A01750185
-Andrea Vianey Díaz Álvarez      A01750147
-*/
+ * Prueba si el colider esta fuera o dentro de una plataforma.
+ *
+ * Autores: 
+ * Jorge Chávez Badillo            A01749448
+ * Ariadna Jocelyn Guzmán Jiménez  A01749373
+ * Liam Garay Monroy               A01750632
+ * Amy Murakami Tsutsumi           A01750185
+ * Andrea Vianey Díaz Álvarez      A01750147
+ */
 
 public class PruebaPiso : MonoBehaviour
 {

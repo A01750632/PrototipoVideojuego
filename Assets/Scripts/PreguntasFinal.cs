@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.Networking;
-using System; 
+using System;
+//CHECAR ESTE 
 public class PreguntasFinal : MonoBehaviour
 {
     // Para desplegar la información

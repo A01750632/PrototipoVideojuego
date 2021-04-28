@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//CHECAR ESTE
+
 public class MoverSiguienteNivel : MonoBehaviour
 {
     public int cargarProxEscena;

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using UnityEngine.Networking;
 
 /*
- * Detecta la colisión del enemigo con el personaje
+ * Detecta la colisión del proyectil del enemigo con el personaje. 
  * 
  * Autores: 
  * Jorge Chávez Badillo A01749448

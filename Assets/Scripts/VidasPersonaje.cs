@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 /*
  * Maneja el control de las vidas del personaje
+ * 
  * Autores: 
  * Jorge Chávez Badillo A01749448
  * Ariadna Jocelyn Guzmán Jiménez A01749373

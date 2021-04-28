@@ -5,6 +5,17 @@ using UnityEngine.UI;
 using System;
 using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
+/* 
+ * Selecciona el nivel del jugador. Bloquea los niveles que aún no están disponibles.
+ * Desbloquea los niveles cuando pasa el nivel. 
+ * 
+ * Autores: 
+ * Jorge Chávez Badillo            A01749448
+ * Ariadna Jocelyn Guzmán Jiménez  A01749373
+ * Liam Garay Monroy               A01750632
+ * Amy Murakami Tsutsumi           A01750185
+ * Andrea Vianey Díaz Álvarez      A01750147
+ */
 
 public class SeleccionarNivel : MonoBehaviour
 {

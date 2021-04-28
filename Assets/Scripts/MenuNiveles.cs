@@ -4,14 +4,15 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 /*
-
-Autores: 
-Jorge Chávez Badillo            A01749448
-Ariadna Jocelyn Guzmán Jiménez  A01749373
-Liam Garay Monroy               A01750632
-Amy Murakami Tsutsumi           A01750185
-Andrea Vianey Díaz Álvarez      A01750147
-*/
+ * Menú que despliega los niveles, se carga el nivel de acuerdo con el botón que presiona el jugador
+ *
+ * Autores: 
+ * Jorge Chávez Badillo            A01749448
+ * Ariadna Jocelyn Guzmán Jiménez  A01749373
+ * Liam Garay Monroy               A01750632
+ * Amy Murakami Tsutsumi           A01750185
+ * Andrea Vianey Díaz Álvarez      A01750147
+ */
 
 public class MenuNiveles : MonoBehaviour
 {
@@ -19,8 +20,6 @@ public class MenuNiveles : MonoBehaviour
     public GameObject trama;
     public void nivelUno()
     {
-        trama.SetActive(true);
-        Destroy(gameObject, 60);
         SceneManager.LoadScene("Nivel1");
         
     }
