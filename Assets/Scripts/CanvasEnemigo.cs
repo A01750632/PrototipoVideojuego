@@ -400,7 +400,9 @@ public class CanvasEnemigo : MonoBehaviour
             PlayerPrefs.SetInt("intentos",2);
             PlayerPrefs.Save();
             Time.timeScale = 1; //Corre el tiempo para el siguiente nivel
-            red.actualizarNivel(nivel);
+
+            red.actualizarNivel(nivel);  //actualiza el nuevo nivel desbloqueado
+
         }
         else
         {

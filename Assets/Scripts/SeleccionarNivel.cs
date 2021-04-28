@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 public class SeleccionarNivel : MonoBehaviour
 {
     public Button[] nivBotones;
-    private int nivel;
+    public static int nivel;
 
     // Start is called before the first frame update
     public IEnumerator Start()
