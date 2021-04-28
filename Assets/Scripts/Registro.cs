@@ -32,6 +32,7 @@ public class Registro : MonoBehaviour
     private String textoNacimiento;
     public static Registro instance;
     public static String nombre;
+    public Red red;
 
     //Inicializar los intentos para pista
     void Start()

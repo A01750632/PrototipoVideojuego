@@ -91,9 +91,7 @@ public class Red : MonoBehaviour
         {
             forma2.AddField("Usuario", Red.nombre);
         }
-
-
-        UnityWebRequest request = UnityWebRequest.Post("http://Localhost:8080/partida/agregarPartida", forma2);//3.22.38.105
+        UnityWebRequest request = UnityWebRequest.Post("http://Localhost:8080/partida/AgregarPartida", forma2);//3.22.38.105
         yield return request.SendWebRequest();
         if (request.result == UnityWebRequest.Result.Success)  //200 OK
         {
@@ -111,4 +109,33 @@ public class Red : MonoBehaviour
         StartCoroutine(subirTiempoPuntaje(puntajeTotal));
     }
 
+    private IEnumerator subiractualizarNivel(int nivel)
+    {
+        WWWForm forma2 = new WWWForm();
+        forma2.AddField("nivel", nivel);
+
+        if (Red.nombre == null)
+        {
+            forma2.AddField("Usuario", Registro.nombre);
+        }
+        else
+        {
+            forma2.AddField("Usuario", Red.nombre);
+        }
+        UnityWebRequest request = UnityWebRequest.Post("http://Localhost:8080/jugador/ActualizarNivel", forma2);//3.22.38.105
+        yield return request.SendWebRequest();
+        if (request.result == UnityWebRequest.Result.Success)  //200 OK
+        {
+            string textoPlano = request.downloadHandler.text;  //Datos descargados de la red
+            print(textoPlano);
+        }
+        else
+        {
+            print("Error en la descarga: " + request.responseCode.ToString());
+        }
+    }
+    public void actualizarNivel(int nivel)
+    {
+        StartCoroutine(subiractualizarNivel(nivel));
+    }
 }
