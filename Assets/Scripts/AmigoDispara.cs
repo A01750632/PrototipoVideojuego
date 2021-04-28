@@ -2,13 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 /*
-*Autores: 
-*Jorge Chávez Badillo            A01749448
-*Ariadna Jocelyn Guzmán Jiménez  A01749373
-*Liam Garay Monroy               A01750632
-*Amy Murakami Tsutsumi           A01750185
-*Andrea Vianey Díaz Álvarez      A01750147
-*/
+ * Disparo del amigo automático cada 1.5f segundos
+ *
+ * Autores: 
+ * Jorge Chávez Badillo            A01749448
+ * Ariadna Jocelyn Guzmán Jiménez  A01749373
+ * Liam Garay Monroy               A01750632
+ * Amy Murakami Tsutsumi           A01750185
+ * Andrea Vianey Díaz Álvarez      A01750147
+ */
+
 public class AmigoDispara : MonoBehaviour
 {
     public Proyectil proyectil;
