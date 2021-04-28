@@ -16,9 +16,13 @@ Andrea Vianey Díaz Álvarez      A01750147
 public class MenuNiveles : MonoBehaviour
 {
     // Start is called before the first frame update
+    public GameObject trama;
     public void nivelUno()
     {
+        trama.SetActive(true);
+        Destroy(gameObject, 60);
         SceneManager.LoadScene("Nivel1");
+        
     }
     
     public void nivelDos()

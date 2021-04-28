@@ -2103,3 +2103,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c186b8a22cb937843aeee2e511b8ccc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trama: {fileID: 0}
