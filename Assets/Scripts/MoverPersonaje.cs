@@ -1,16 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 /*
- * Movimiento del personaje. Incluye proyectil que cambia la dirección con el personaje. 
- *
- * Autores: 
- * Jorge Chávez Badillo            A01749448
- * Ariadna Jocelyn Guzmán Jiménez  A01749373
- * Liam Garay Monroy               A01750632
- * Amy Murakami Tsutsumi           A01750185
- * Andrea Vianey Díaz Álvarez      A01750147
- */
+ * 
+Autores de equipo 1: 
+Jorge Chávez Badillo            A01749448
+Ariadna Jocelyn Guzmán Jiménez  A01749373
+Liam Garay Monroy               A01750632
+Amy Murakami Tsutsumi           A01750185
+Andrea Vianey Díaz Álvarez      A01750147
+*/
 
 public class MoverPersonaje : MonoBehaviour
 {
@@ -35,6 +35,16 @@ public class MoverPersonaje : MonoBehaviour
 
     //public AmigoMov amigo;
 
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.CompareTag("ArmaEnemigo"))
+        {
+            Destroy(other.gameObject);
+            //VidasPersonaje.instance.monedas += 10;
+            //HUD.instance.ActualizarMonedas();
+        }
+    }
+
 
     //METODOS
     // Start is called before the first frame update
@@ -44,7 +54,6 @@ public class MoverPersonaje : MonoBehaviour
         rigidbody = GetComponent<Rigidbody2D>();    //Enlazar RB ->script
         
     }
-
     // Update is called once per frame (FRECUENTEMENTE, 60 veces/seg)
     void Update()
     {

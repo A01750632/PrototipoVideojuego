@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 /*
- * Disparo vertical del enemigo pájaro automático cada 1.35f segundos
+ * Disparo vertical del enemigo pï¿½jaro automï¿½tico cada 1.35f segundos
  *
  * Autores: 
- * Jorge Chávez Badillo            A01749448
- * Ariadna Jocelyn Guzmán Jiménez  A01749373
+ * Jorge Chï¿½vez Badillo            A01749448
+ * Ariadna Jocelyn Guzmï¿½n Jimï¿½nez  A01749373
  * Liam Garay Monroy               A01750632
  * Amy Murakami Tsutsumi           A01750185
- * Andrea Vianey Díaz Álvarez      A01750147
+ * Andrea Vianey Dï¿½az ï¿½lvarez      A01750147
  */
 
 public class PajaroDispara : MonoBehaviour
@@ -39,13 +39,5 @@ public class PajaroDispara : MonoBehaviour
             nuevo.Destruir(1f);
         }
         
-    }
-    //CHECAR ESTOOO
-    public void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            Destroy(gameObject);
-        }
     }
 }
