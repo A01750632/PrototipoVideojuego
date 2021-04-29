@@ -14,27 +14,28 @@ using UnityEngine.UI; //Para imagenes
  
 public class HUD : MonoBehaviour
 {
+    //Imagenes de las vidas (flechas)
     public Image imagen1;
     public Image imagen2;
     public Image imagen3;
     public static HUD instance;
-    public Text textoMonedas;
+    public Text textoMonedas; //Texto que cuenta las monedas recolectadas
 
 
-    private void Awake()
+    private void Awake() //Se ejecuta cuando el objeto se activa (antes del Start)
     {
         instance = this;
     }
     
-    public void ActualizarMonedas()
+    public void ActualizarMonedas() //Actualiza las monedas que recolecta el personaje
     {
         textoMonedas.text = VidasPersonaje.instance.monedas.ToString();
     }
     
     public void ActualizarVidas()
     {
-        int vidas = VidasPersonaje.instance.vidas;
-        if (vidas == 2)
+        int vidas = VidasPersonaje.instance.vidas; //Cuántas vidas tiene el personaje
+        if (vidas == 2) //Esconde las imagenes de las vidas cuando las pierde el personaje
         {
             imagen3.enabled = false;
         }

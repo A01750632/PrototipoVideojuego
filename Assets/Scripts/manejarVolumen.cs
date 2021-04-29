@@ -16,7 +16,7 @@ using UnityEngine.Audio;
 
 public class manejarVolumen : MonoBehaviour
 {
-    public AudioMixer audio;
+    public AudioMixer audio; //Control de vo´lumen
     
     // Start is called before the first frame update
     public void manejarNivel(float valor)

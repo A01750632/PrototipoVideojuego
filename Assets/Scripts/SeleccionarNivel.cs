@@ -49,7 +49,7 @@ public class SeleccionarNivel : MonoBehaviour
 
         int posNiv = PlayerPrefs.GetInt("posNiv", nivel); //Posiciona en el Nivel indicado
 
-        for (int i = 0; i < nivBotones.Length; i++)
+        for (int i = 0; i < nivBotones.Length; i++) //Habilita los botones para que el jugador pueda presionarlo en caso de que haya pasado el nivel
         {
             if (i + 2 > posNiv)
                 nivBotones[i].interactable = false;

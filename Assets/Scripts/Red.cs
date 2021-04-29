@@ -66,7 +66,7 @@ public class Red : MonoBehaviour
         forma.AddField("usuarioUsuarioo", textoNombre.text);
         forma.AddField("passwordUsuarioo", textoContrasena.text);
 
-        UnityWebRequest request = UnityWebRequest.Post("http://Localhost:8080/jugador/BuscarJugador", forma); //3.22.38.105
+        UnityWebRequest request = UnityWebRequest.Post("http://3.22.38.105:8080/jugador/BuscarJugador", forma); //3.22.38.105
         yield return request.SendWebRequest();   //Regresa, ejecuta, espera...
         //...ya regreso a la linea 27 (termino de ejecutar SendWebRequest())
 
@@ -104,7 +104,7 @@ public class Red : MonoBehaviour
         {
             forma2.AddField("Usuario", Red.nombre);
         }
-        UnityWebRequest request = UnityWebRequest.Post("http://Localhost:8080/partida/AgregarPartida", forma2);//3.22.38.105
+        UnityWebRequest request = UnityWebRequest.Post("http://3.22.38.105:8080/partida/AgregarPartida", forma2);//3.22.38.105
         yield return request.SendWebRequest();
         if (request.result == UnityWebRequest.Result.Success)  //200 OK
         {
@@ -135,7 +135,7 @@ public class Red : MonoBehaviour
         {
             forma2.AddField("Usuario", Red.nombre);
         }
-        UnityWebRequest request = UnityWebRequest.Post("http://Localhost:8080/jugador/ActualizarNivel", forma2);//3.22.38.105
+        UnityWebRequest request = UnityWebRequest.Post("http://3.22.38.105:8080/jugador/ActualizarNivel", forma2);//3.22.38.105
         yield return request.SendWebRequest();
         if (request.result == UnityWebRequest.Result.Success)  //200 OK
         {

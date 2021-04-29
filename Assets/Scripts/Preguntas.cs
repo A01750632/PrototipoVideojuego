@@ -14,17 +14,17 @@ using UnityEngine;
 public class Preguntas : MonoBehaviour
 {
     private bool hide;
-    public GameObject pantallaGameOver;
-    public GameObject pantallaWinner;
+    public GameObject pantallaGameOver; //Panel de game over
+    public GameObject pantallaWinner; //Panel de ganador
 
-    public void Ganador()
+    public void Ganador() //Muestra panel de ganador
     {
         hide = !hide;
         pantallaWinner.SetActive(hide);
         Time.timeScale = hide ? 0 : 1f;
     }
 
-    public void GameOver()
+    public void GameOver() //Muestra panel de game over
     {
         hide = !hide;
         pantallaGameOver.SetActive(hide);

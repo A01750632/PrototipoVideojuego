@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 //using UnityEditor.SearchService;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine.SceneManagement; //escenas
 /*
- * Detecta la colision del enemigo final con el personaje
+ * Detecta la colision del enemigo final con el personaje para desplegar 
+ * las últimas 3 preguntas del nivel
  *
  * Autores: 
  * Jorge Chávez Badillo            A01749448
@@ -17,27 +18,11 @@ public class enemigoFinal : MonoBehaviour
 {
     //private PreguntasFinal preguntas; 
 
-    public void OnTriggerEnter2D(Collider2D other)
+    public void OnTriggerEnter2D(Collider2D other) 
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))//Personaje colisiona con el enemigo final
         {
-            SceneManager.LoadScene("PreguntaEnemigoFinal");
-            //PreguntasFinal.instance2.EscribirPregunta(); 
-            // Reproducir el efecto 
-            //efectoEnemigo.Play(); 
-            // Descontar una vida
-            //SaludPersonaje.instance.vidas--;
-            // Actualizar los 'corazones'
-            //HUD.instance.ActualizarVidas();
-            //if (SaludPersonaje.instance.vidas == 0)
-            //{
-            // Almacenar en Preferencias las monedas recolectadas
-            //PlayerPrefs.SetInt("numeroMonedas", SaludPersonaje.instance.monedas); 
-            //PlayerPrefs.Save(); // Inmediato guarda el valor 
-
-            //efectoMuere.Play();  
-            //Destroy(other.gameObject, 0.3f);
-            //SceneManager.LoadScene("EscenaMenu");   // Pierde, regresa al menú
+            SceneManager.LoadScene("PreguntaEnemigoFinal"); //Carga la escena con las 3 preguntas del enemigo final
         }
     }
 }

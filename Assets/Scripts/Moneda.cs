@@ -29,13 +29,11 @@ public class Moneda : MonoBehaviour
 
             //Dejar de dibujar la moneda
             GetComponent<SpriteRenderer>().enabled = false;
-            //prender la explosión
-            //moneda.transform.hijo del transform(transform de la explosion).explosion se hace activa
-            //gameObject.transform.GetChild(0).gameObject.SetActive(true);
+            
             Destroy(gameObject, 0.5f);
             //Contar oritos
-            VidasPersonaje.instance.monedas += 10;
-            HUD.instance.ActualizarMonedas();
+            VidasPersonaje.instance.monedas += 10; //Cada moneda es igual a 10 puntos
+            HUD.instance.ActualizarMonedas(); //Actualiza la cantidad de monedas que recolecta el jugador
         }
     }
 }

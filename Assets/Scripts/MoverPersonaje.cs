@@ -26,6 +26,7 @@ public class MoverPersonaje : MonoBehaviour
     //clase amigo para indicar direccion
     public MoverAmigo amigo;
 
+    //clase amigoDispara 
     public AmigoDispara disparoAmigo;
     
     private int direccion = 1;
@@ -33,15 +34,12 @@ public class MoverPersonaje : MonoBehaviour
     //Referencia al Audio Source
     public AudioSource armaDisparo;
 
-    //public AmigoMov amigo;
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.CompareTag("ArmaEnemigo"))
+        if(other.gameObject.CompareTag("ArmaEnemigo")) //Destruye el proyectil del enemigo al colisionar con el personaje
         {
             Destroy(other.gameObject);
-            //VidasPersonaje.instance.monedas += 10;
-            //HUD.instance.ActualizarMonedas();
         }
     }
 
@@ -58,7 +56,7 @@ public class MoverPersonaje : MonoBehaviour
     void Update()
     {
         float movHorizontal = Input.GetAxis("Horizontal");  //[-1, 1]
-        if(movHorizontal<-0.001)
+        if(movHorizontal<-0.001) //Indicar la dirección del personaje
         {
             direccion=-1;
         } else if (movHorizontal>0.001)
@@ -66,7 +64,7 @@ public class MoverPersonaje : MonoBehaviour
             direccion = +1;
         }
 
-        rigidbody.velocity = new Vector2(movHorizontal*maxVelocidadX, rigidbody.velocity.y);
+        rigidbody.velocity = new Vector2(movHorizontal*maxVelocidadX, rigidbody.velocity.y); //Velocidad del personaje
 
         //salto (Después lo vamos a resolver con JUMP)
         //float movVertical = Input.GetAxis("Vertical");
@@ -83,14 +81,14 @@ public class MoverPersonaje : MonoBehaviour
             //Reproducir un efecto de sonido
             armaDisparo.Play();
             Proyectil nuevo = Instantiate(proyectil);  //COPIA, clona
-            nuevo.transform.position = gameObject.transform.position;
+            nuevo.transform.position = gameObject.transform.position; //posiciona el proyectil en la posicion del personaje
             nuevo.CambiarDireccion(direccion);
             
             nuevo.gameObject.SetActive(true);  //Start
             //proyectil amigo
         }
 
-        if(amigo.gameObject.activeSelf)
+        if(amigo.gameObject.activeSelf) //Si el amigo está activo sigue la dirección y posición del personaje
         {
         amigo.CambiarDireccion(direccion);
         amigo.AnimarMovimiento(rigidbody.velocity.x);

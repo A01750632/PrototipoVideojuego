@@ -15,9 +15,9 @@ using UnityEngine;
 public class VidasPersonaje : MonoBehaviour
 {
     // Start is called before the first frame update
-    public int vidas = 3;
+    public int vidas = 3; //Personaje tiene 3 vidas al inicio del nivel
     public static VidasPersonaje instance;
-    public int monedas = 0;
+    public int monedas = 0; //Monedas recolectadas
 
     private void Awake()
     {

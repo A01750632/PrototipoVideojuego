@@ -15,15 +15,14 @@ using UnityEngine;
 
 public class PruebaPiso : MonoBehaviour
 {
-    public static bool estaEnPiso = false;
+    public static bool estaEnPiso = false; //Booleano que indica si el personaje está tocando el piso
 
     //Se ejecuta cuando el collider Entra a otro collider
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag != "Oro")
+        if (other.gameObject.tag != "Oro") //Personaje choca con colider que no sea el de oro
         {
             estaEnPiso = true;
-            //print("Está en piso");
         }
     }
 
@@ -31,6 +30,5 @@ public class PruebaPiso : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other)
     {
         estaEnPiso = false;
-        //print("No está en piso");
     }
 }

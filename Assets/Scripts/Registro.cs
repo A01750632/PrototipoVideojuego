@@ -77,7 +77,7 @@ public class Registro : MonoBehaviour
                 nombre = textoUsuario.text;
                 WWWForm forma2 = new WWWForm();
                 forma2.AddField("usuarioUsuarioo", textoUsuario.text);
-                UnityWebRequest request2 = UnityWebRequest.Post("http://Localhost:8080/jugador/BuscarJugadorUnity", forma2); //3.22.38.105
+                UnityWebRequest request2 = UnityWebRequest.Post("http://3.22.38.105:8080/jugador/BuscarJugadorUnity", forma2); //3.22.38.105
                 yield return request2.SendWebRequest();   //Regresa, ejecuta, espera...
                                                           //...ya regres� a la l�nea 27 (termin� de ejecutar SendWebRequest())
                 if (request2.result == UnityWebRequest.Result.Success)  //200 OK
@@ -104,7 +104,7 @@ public class Registro : MonoBehaviour
                         forma.AddField("Carrera", textoEstudiar.text);
                         forma.AddField("materia", textoMateria.text);
 
-                        UnityWebRequest request = UnityWebRequest.Post("http://Localhost:8080/jugador/AgregarJugadorUnity", forma); ////3.22.38.105
+                        UnityWebRequest request = UnityWebRequest.Post("http://3.22.38.105:8080/jugador/AgregarJugadorUnity", forma); ////3.22.38.105
                         yield return request.SendWebRequest();
 
                         if (request.result == UnityWebRequest.Result.Success)  //200 OK

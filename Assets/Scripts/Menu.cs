@@ -22,25 +22,27 @@ public class Menu : MonoBehaviour
     public GameObject instrucciones;
     public GameObject creditos; 
     
-    public void IniciarJuego(){
+    public void IniciarJuego() //Opción "jugar" en el videojuego
+    {
         // Cambiar escena
         tiempoInicial = Time.time;
         SceneManager.LoadScene("MapaNiveles");
     }
 
-    public void Opciones()
+    public void Opciones() //Opción "opciones" en el videojuego
     {
         hide = !hide;
         opciones.SetActive(hide);
     }
 
-    public void Instrucciones()
+    public void Instrucciones() //Opción "instrucciones" en el videojuego
     {
         hide = !hide;
         instrucciones.SetActive(hide);
     }
 
-    public void Creditos(){
+    public void Creditos() //Opción "creditos" en el videojuego
+    {
         hide = !hide; 
         creditos.SetActive(hide); 
     }

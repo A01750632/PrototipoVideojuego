@@ -15,7 +15,7 @@ public class EnemigoDispara : MonoBehaviour
 {
     public Proyectil proyectil;
 
-    //render del enemigo
+    //Render del enemigo
     private SpriteRenderer rendererEnemigo;
 
     // Start is called before the first frame update
@@ -29,13 +29,13 @@ public class EnemigoDispara : MonoBehaviour
     {
         while(true)     //Ciclo infinito
         {
-            yield  return new WaitForSeconds(1.35f);
+            yield  return new WaitForSeconds(1.35f); //Espera para crear otro proyectil
             //Continuar..
-            Proyectil nuevo = Instantiate(proyectil);
-            nuevo.transform.position = gameObject.transform.position;
-            nuevo.gameObject.SetActive(true);
+            Proyectil nuevo = Instantiate(proyectil); //Crear nuevo proyectil
+            nuevo.transform.position = gameObject.transform.position; //El proyectil se coloca en la posición del enemigo
+            nuevo.gameObject.SetActive(true); //Enemigo dispara el proyectil
             
-            if(rendererEnemigo.flipX == false)
+            if(rendererEnemigo.flipX == false) //Cambiar dirección del enemigo
             {
                 nuevo.CambiarDireccion(-1);
             }
@@ -43,7 +43,7 @@ public class EnemigoDispara : MonoBehaviour
             {
                 nuevo.CambiarDireccion(1);
             }
-            nuevo.Destruir(0.45f);
+            nuevo.Destruir(0.45f); //Destruye el proyectil
         }
     }
 }

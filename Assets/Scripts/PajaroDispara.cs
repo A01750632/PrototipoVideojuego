@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 /*
- * Disparo vertical del enemigo p�jaro autom�tico cada 1.35f segundos
+ * Disparo vertical del enemigo pajaro automatico cada 1.35f segundos
  *
  * Autores: 
  * Jorge Ch�vez Badillo            A01749448
@@ -30,13 +30,13 @@ public class PajaroDispara : MonoBehaviour
     {
         while (true)     //Ciclo infinito
         {
-            yield return new WaitForSeconds(1.35f);
+            yield return new WaitForSeconds(1.35f); //Espera para crear otro proyectil
             //Continuar..
-            Proyectil nuevo = Instantiate(proyectil);
-            nuevo.transform.position = gameObject.transform.position;
-            nuevo.gameObject.SetActive(true);
+            Proyectil nuevo = Instantiate(proyectil); //Crear nuevo proyectil
+            nuevo.transform.position = gameObject.transform.position; //El proyectil se coloca en la posición del enemigo
+            nuevo.gameObject.SetActive(true); //Enemigo dispara el proyectil
 
-            nuevo.Destruir(1f);
+            nuevo.Destruir(1f); //Se destruye despues de un segundo
         }
         
     }

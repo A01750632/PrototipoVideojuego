@@ -14,17 +14,17 @@ using UnityEngine;
 
 public class Trama : MonoBehaviour
 {
-    public GameObject trama;
+    public GameObject trama; //Canvas trama
     // Start is called before the first frame update
     void Start()
     {
-        trama.SetActive(true);
-        Destroy(trama,20);
+        trama.SetActive(true); //Activa la trama correspondiente al inicio del nivel
+        Destroy(trama,20); //La destruye en 20 segundos
     }
 
     public void Empezar()
     {
-        Destroy(trama, 0.2f);
+        Destroy(trama, 0.2f); //Destruye el canvas trama cuando presiona el botón empezar
     }
 
 

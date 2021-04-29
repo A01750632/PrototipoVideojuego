@@ -17,36 +17,36 @@ using UnityEngine.SceneManagement;
 public class MenuNiveles : MonoBehaviour
 {
     // Start is called before the first frame update
-    public GameObject trama;
-    public void nivelUno()
+
+    public void nivelUno() //Carga escena del nivel 1
     {
         SceneManager.LoadScene("Nivel1");
         
     }
     
-    public void nivelDos()
+    public void nivelDos() //Carga escena del nivel 2
     {
         SceneManager.LoadScene("Nivel2");
             
     }
     
-    public void nivelTres()
+    public void nivelTres() //Carga escena del nivel 3
     {
         SceneManager.LoadScene("Nivel3");
             
     }
-    public void nivelCuatro()
+    public void nivelCuatro() //Carga escena del nivel 4
     {
         SceneManager.LoadScene("Nivel4");
             
     }
-    public void nivelCinco()
+    public void nivelCinco() //Carga escena del nivel 5
     {
         SceneManager.LoadScene("Nivel5");
             
     }
 
-    public void Menu()
+    public void Menu() //Carga escena del menu
     {
         SceneManager.LoadScene("EscenaMenu");
     }

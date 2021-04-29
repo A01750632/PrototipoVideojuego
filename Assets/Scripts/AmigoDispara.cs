@@ -23,7 +23,7 @@ public class AmigoDispara : MonoBehaviour
         StartCoroutine(GenerarDisparo()); 
     }
 
-    public void CambiarDireccion(int direccion)
+    public void CambiarDireccion(int direccion) //Cambia direccion del amigo de acuerdo a la dirección del personaje
     {
         direccionDerecha=direccion;
     }
@@ -31,14 +31,13 @@ public class AmigoDispara : MonoBehaviour
     {
         while(true)     //Ciclo infinito
         {
-            yield  return new WaitForSeconds(1.5f);
+            yield  return new WaitForSeconds(1.5f); //Espera para crear otro proyectil
             //Continuar..
             Proyectil nuevo = Instantiate(proyectil);  //COPIA, clona
-            nuevo.transform.position = gameObject.transform.position;
-            nuevo.CambiarDireccion(direccionDerecha);
-            nuevo.gameObject.SetActive(true);
-           // nuevo.CambiarDireccionPAmigo();
-            
+            nuevo.transform.position = gameObject.transform.position; //El proyectil se coloca en la posición del amigo
+            nuevo.CambiarDireccion(direccionDerecha); //Cambia la direccion de acuerdo con el amigo y personaje
+            nuevo.gameObject.SetActive(true); //Amigo dispara el proyectil
+
         }
     }
 }

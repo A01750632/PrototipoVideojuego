@@ -20,18 +20,19 @@ public class PreguntaAmigo : MonoBehaviour
     // Para desplegar la información
     public int colision = 0;
 
-    public CanvasAmigo canvasA;
-    public HUD canvasV;
+    public CanvasAmigo canvasA; //Canvas de amigo
+    public HUD canvasV; //Canvas de vidas del personaje
     
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player")) //colisión del personaje con amigo
         {
             colision = 1;
-            canvasA.colisiono(colision);
-            Destroy(gameObject);
-            if (VidasPersonaje.instance.vidas > 10) {
+            canvasA.colisiono(colision); //Mostrar el canvas de amigo para desplegar la pregunta
+            Destroy(gameObject); //Destruye el canvas amigo
+            if (VidasPersonaje.instance.vidas > 10) //Si el jugador contesta mal la pregunta, destruye el amigo
+            {
                 Destroy(gameObject);
             }
         }

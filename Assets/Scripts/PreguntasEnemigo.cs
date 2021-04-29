@@ -22,14 +22,14 @@ public class PreguntasEnemigo : MonoBehaviour
     // Para desplegar la informaci�n
     public int colision = 0;
 
-    public CanvasEnemigo canvasA;
-    public HUD canvasV;
+    public CanvasEnemigo canvasA; //Canvas de preguntas de enemigo final
+    public HUD canvasV; //Canvas de vidas del personaje
 
 
-    public void OnTriggerEnter2D(Collider2D other)
+    public void OnTriggerEnter2D(Collider2D other) //El personaje colisiona con el enemigo final
     {
         //canvasV.gameObject.SetActive(false);
         colision = 1;
-        canvasA.colisiono(colision);
+        canvasA.colisiono(colision); //Despliega el canvas de enemeigo
     }
 }

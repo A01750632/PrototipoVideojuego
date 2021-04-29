@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 /*
- * Cambia animación del personaje
+ * Cambia animación del personaje. Permite modificar el parámetro de velocidad de Animator.
  *
  * Autores: 
  * Jorge Chávez Badillo            A01749448
@@ -31,7 +31,7 @@ public class CambiaAnimacion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //velocidad
+        //Velocidad
         float velocidad = Mathf.Abs(rb2D.velocity.x);
         anim.SetFloat("velocidad", velocidad);
 
@@ -45,8 +45,10 @@ public class CambiaAnimacion : MonoBehaviour
             sprRenderer.flipX = true;
         }
 
-        // saltando
+        //Saltando
         anim.SetBool("saltando", !PruebaPiso.estaEnPiso);
+
+        //Disparando
         anim.SetBool("disparando",Input.GetButtonDown("Fire1"));
     }
 }

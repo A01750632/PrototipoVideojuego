@@ -15,7 +15,7 @@ using UnityEngine;
 
 public class Proyectil : MonoBehaviour
 {
-    private float velocidadX = 10;
+    private float velocidadX = 10; //Establece velocidad en eje x
     private Rigidbody2D rb;
     // Start is called before the first frame update
 
@@ -24,41 +24,32 @@ public class Proyectil : MonoBehaviour
 
     public int direccionDerecha = 0; //+1       //Factor de la velocidad
 
-    private float veloz1 = +0.1f;
-
-    /*public void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            Destroy(gameObject);
-        }
-    }*/
+    private float veloz1 = +0.1f; //Velocidad del proyectil
 
         void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.velocity = new Vector2(direccionDerecha * (velocidadX*1.6f), 0);
+        rb.velocity = new Vector2(direccionDerecha * (velocidadX*1.6f), 0); //Establece la velocidad del proyectil de acuerdo con la dirección del personaje
 
-        //rb.velocity = new Vector2(-1, -(velocidadX * 1.6f)); //Pajaro
         rendererProyectil = GetComponent<SpriteRenderer>();
     }
 
-    public void CambiarDireccion(float velocidad)
+    public void CambiarDireccion(float velocidad) //Cambia dirección del proyectil
     {
         direccionDerecha = velocidad < 0 ? -1 : +1;
     }
 
-    public void velocidad(float veloz)
+    public void velocidad(float veloz) //Indica la velocidad del proyectil
     {
         veloz1 = veloz;
     }
 
-    public void Destruir(float segundos)
+    public void Destruir(float segundos) //Destruye el proyectil en cierto tiempo
     {
         Destroy(gameObject,segundos);
     }
 
-    public void CambiarDireccionPAmigo()
+    public void CambiarDireccionPAmigo() //Cambiar la dirección del proyectil del Amigo
     {
         if (direccionDerecha <= -1)
         {
@@ -73,28 +64,21 @@ public class Proyectil : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Rotar
-        //gameObject.transform.Rotate(Vector3.forward, 5);
-        // Revisas si debo destruir el proyectil (sale de la pantalla)
-        /*
-        if(! rendererProyectil.isVisible)
-        {
-            Destroy(gameObject);
-        }
-        */
+
         //Detectar velocidad para destruir proyectil
-        if (veloz1 == 0)
+        if (veloz1 == 0) //Si la velocidad es cero se destruye en 0.6 segundos
         {
             Destroy(gameObject,0.6f);
         }
-        else if(veloz1 != 0)
+        else if(veloz1 != 0) //Si la velocidad es diferente a cero
         {
-            if(!rendererProyectil.isVisible)
+            if(!rendererProyectil.isVisible) //En caso de no estar visible se destruye automáticamente
             {
                 Destroy(gameObject);
             }
-            else{
-                Destroy(gameObject,1.4f);
+            else //De lo contrario se destruye en 1.4 segundos
+            {
+                Destroy(gameObject,1.4f); 
             }
         }
     }

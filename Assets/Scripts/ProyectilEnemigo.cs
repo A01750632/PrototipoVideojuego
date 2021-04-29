@@ -28,11 +28,7 @@ public class ProyectilEnemigo : MonoBehaviour
 
     public IEnumerator OnTriggerEnter2D(Collider2D other)
     {
-        /*if(other.gameObject.CompareTag("proyectilArt"))
-        {
-            Destroy(gameObject);
-        }
-        */
+
         if (other.gameObject.CompareTag("Player"))
         {
             //Descontar una vida 
@@ -42,12 +38,12 @@ public class ProyectilEnemigo : MonoBehaviour
 
             //Actualizar las 'flechas'
             HUD.instance.ActualizarVidas();
-            if (VidasPersonaje.instance.vidas == 0)
+            if (VidasPersonaje.instance.vidas == 0) //Si el personaje no tiene vidas
             {
 
-                tiempoTotal = Time.time - Menu.tiempoInicial;
-                Destroy(other.gameObject, 0.3f);
-                Enemigo.niveel = nivel;
+                tiempoTotal = Time.time - Menu.tiempoInicial; //tiempo jugado
+                Destroy(other.gameObject, 0.3f); //Destruye el personaje
+                Enemigo.niveel = nivel; //Se queda en el mismo nivel
                 SceneManager.LoadScene("MapaNiveles"); //Pierde, regresa al mapa de niveles
 
                 WWWForm forma2 = new WWWForm();

@@ -28,7 +28,7 @@ public class MenuPausa : MonoBehaviour
         Time.timeScale = estaPausado ? 0 : 1;
     }
 
-    public void Reiniciar()
+    public void Reiniciar() //Oprime el botón reiniciar
     {
         estaPausado = !estaPausado;
         //Prende o apaga la pantalla, depende del valor del bool
@@ -38,7 +38,7 @@ public class MenuPausa : MonoBehaviour
 
     }
 
-    public void Salir()
+    public void Salir() //Oprime el botón salir
     {
         estaPausado = !estaPausado;
         //Prende o apaga la pantalla, depende del valor del bool
@@ -47,7 +47,7 @@ public class MenuPausa : MonoBehaviour
           
     }
     
-    public void Niveles()
+    public void Niveles() //Oprime el botón mapa
     {
         estaPausado = !estaPausado;
         //Prende o apaga la pantalla, depende del valor del bool
@@ -58,7 +58,7 @@ public class MenuPausa : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape)) //checa si el jugador presiona el botón de pausa (ESC)
         {
             Pausar();
         }
