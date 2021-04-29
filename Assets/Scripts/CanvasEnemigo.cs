@@ -58,7 +58,7 @@ public class CanvasEnemigo : MonoBehaviour
     public GameObject PantallaPregunta3;
 
     public int nivel; //Nivel actual
-    public int sigNivel; //Siguiente nivel.
+    public int sigNivel = SeleccionarNivel.nivel; //Siguiente nivel.
     public static int niveel;
     public Red red;
 
