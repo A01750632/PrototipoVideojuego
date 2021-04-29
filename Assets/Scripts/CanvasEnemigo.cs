@@ -102,6 +102,7 @@ public class CanvasEnemigo : MonoBehaviour
     {
         intentos = PlayerPrefs.GetInt("intentos");
     }
+    //Detecta la colisión del personaje y el enemigo
     public void colisiono(int col)
     {
         niveel = nivel;
@@ -112,6 +113,8 @@ public class CanvasEnemigo : MonoBehaviour
             
         }
     }
+
+    //Manda la primera pregunta y sus componentes desde la base de datos
     public void EscribirPregunta()     // Bot�n EscribirTextoPlano
     {
         // Concurrente
@@ -123,6 +126,7 @@ public class CanvasEnemigo : MonoBehaviour
         //Time.timeScale = hide ? 0 : 1f;
     }
 
+    //Manda la segunda pregunta y sus componentes desde la base de datos
     public void EscribirPregunta2()
     {
         fondo.SetActive(true);
@@ -153,6 +157,7 @@ public class CanvasEnemigo : MonoBehaviour
         pantallaContestar.SetActive(false);
     }
 
+    //Manda la tercera pregunta y sus componentes desde la base de datos
     public void EscribirPregunta3()
     {
         fondo.SetActive(true);
@@ -184,7 +189,7 @@ public class CanvasEnemigo : MonoBehaviour
         pantallaContestar.SetActive(false); 
         
     }
-    
+    //Manda la pista desde la base de datos, si aún tiene intentos disponibles
     public void Pista()
     {
         panelPista.SetActive(true);
@@ -194,11 +199,14 @@ public class CanvasEnemigo : MonoBehaviour
         PlayerPrefs.Save();
         print(intentos);
     }
+
+    //Extrae los datos de la base de datos al videojuego
     private IEnumerator SubirPregunta()
     {
         // Encapsular los datos que se suben a la red con el m�todo POST
         WWWForm forma = new WWWForm();
         UnityWebRequest request;
+        //Realiza la conexión de acuerdo al nivel donde se encuentra el jugador
         if (SceneManager.GetActiveScene().name == "Nivel1")
         {
             request = UnityWebRequest.Get("http://3.22.38.105:8080/pregunta/buscarPreguntaNivel1");  //3.22.38.105 
@@ -218,6 +226,8 @@ public class CanvasEnemigo : MonoBehaviour
         }
 
         yield return request.SendWebRequest();
+
+        //Guarda los datos en variables separadas
         if (request.result == UnityWebRequest.Result.Success)  //200 OK
         {
             string pregunta = request.downloadHandler.text;  //Datos descargados de la red
@@ -231,7 +241,8 @@ public class CanvasEnemigo : MonoBehaviour
             idPregunta.text = arregloP[6];
             categoria.text = arregloP[7];
             textoPista.text = arregloP[8];
-            
+
+            //Si aún tiene pistas disponibles habilita el botón de la pista según su categoria
             if (intentos > 0){
                 if(categoria.text == "Ciencia"){
                     botonCiencias.SetActive(true);
@@ -261,7 +272,7 @@ public class CanvasEnemigo : MonoBehaviour
         }
     }
 
-
+    //Valida que la respuesta correcta sea la opción 1
     public void Validar1()
     {
         if (opcion1.text == respuestaCorrecta.text)
@@ -295,6 +306,7 @@ public class CanvasEnemigo : MonoBehaviour
         }
     }
 
+    //Valida que la respuesta correcta sea la opción 2
     public void Validar2()
     {
         if (opcion2.text == respuestaCorrecta.text)
@@ -330,6 +342,7 @@ public class CanvasEnemigo : MonoBehaviour
         }
     }
 
+    //Valida que la respuesta correcta sea la opción 3
     public void Validar3()
     {
         if (opcion3.text == respuestaCorrecta.text)
@@ -364,6 +377,7 @@ public class CanvasEnemigo : MonoBehaviour
         }
     }
 
+    //Valida que la respuesta correcta sea la opción 4
     public void Validar4()
     {
         if (opcion4.text == respuestaCorrecta.text)
@@ -426,8 +440,8 @@ public class CanvasEnemigo : MonoBehaviour
             Time.timeScale = 1; //Corre el tiempo para el siguiente nivel
         }
     }
-    
 
+    //Manda opcion que contestó el jugador
     private IEnumerator MandarOp1()
     {
         WWWForm forma = new WWWForm();
@@ -455,6 +469,7 @@ public class CanvasEnemigo : MonoBehaviour
         yield return request.SendWebRequest();
     }
 
+    //Manda opcion que contestó el jugador
     private IEnumerator MandarOp2()
     {
         WWWForm forma = new WWWForm();
@@ -482,6 +497,7 @@ public class CanvasEnemigo : MonoBehaviour
         yield return request.SendWebRequest();
     }
 
+    //Manda opcion que contestó el jugador
     private IEnumerator MandarOp3()
     {
         WWWForm forma = new WWWForm();
@@ -509,6 +525,7 @@ public class CanvasEnemigo : MonoBehaviour
         yield return request.SendWebRequest();
     }
 
+    //Manda opcion que contestó el jugador
     private IEnumerator MandarOp4()
     {
         WWWForm forma = new WWWForm();
