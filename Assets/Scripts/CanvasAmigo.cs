@@ -36,9 +36,9 @@ public class CanvasAmigo : MonoBehaviour
     public GameObject pantallaWinner;
     public CanvasAmigo instanceAmigo;
 
-    public GameObject fondo;
+    public GameObject fondo; //fondo negro
 
-    public MoverAmigo amigo;
+    public MoverAmigo amigo; //movimiento del Amigo
 
     
 
@@ -46,7 +46,7 @@ public class CanvasAmigo : MonoBehaviour
     // Campos con la información de respuestas
     // Leer textoPregunta de la base de datos 
 
-
+    //Detecta la colisión del personaje y el amigo
     public void colisiono(int col)
     {
      if(col == 1){
@@ -54,6 +54,7 @@ public class CanvasAmigo : MonoBehaviour
          fondo.SetActive(true);
      }   
     }
+    //Manda la pregunta y sus componentes desde la base de datos
     public void EscribirPregunta()     // Botón EscribirTextoPlano
     {
         // Concurrente
@@ -65,10 +66,12 @@ public class CanvasAmigo : MonoBehaviour
         pantallaContestar.SetActive(false); 
         Time.timeScale = hide ? 0 : 1f;
     }
+    //Extrae los datos de la base de datos al videojuego
     private IEnumerator SubirPregunta()
     {
         WWWForm forma = new WWWForm();
         UnityWebRequest request;
+        //Realiza la conexión de acuerdo al nivel donde se encuentra el jugador
         if (SceneManager.GetActiveScene().name == "Nivel1")
         {
             request = UnityWebRequest.Get("http://3.22.38.105:8080/pregunta/buscarPreguntaNivel1");   //3.22.38.105
@@ -88,7 +91,8 @@ public class CanvasAmigo : MonoBehaviour
         }
 
         yield return request.SendWebRequest();   //Regresa, ejecuta, espera...
-        
+
+        //Guarda los datos en variables separadas
         if (request.result == UnityWebRequest.Result.Success) //200 OK
         {
             string pregunta = request.downloadHandler.text; //Datos descargados de la red
@@ -108,7 +112,7 @@ public class CanvasAmigo : MonoBehaviour
         }
     }
     
-
+    //Valida que la respuesta correcta sea la opción 1
     public void Validar1()
     {
         if (opcion1.text == respuestaCorrecta.text) {
@@ -129,6 +133,7 @@ public class CanvasAmigo : MonoBehaviour
         }
     }
 
+    //Valida que la respuesta correcta sea la opción 2
     public void Validar2()
     {
         if(opcion2.text == respuestaCorrecta.text){
@@ -149,6 +154,7 @@ public class CanvasAmigo : MonoBehaviour
         }
     }
 
+    //Valida que la respuesta correcta sea la opción 3
     public void Validar3() 
     {
         if(opcion3.text == respuestaCorrecta.text){
@@ -168,6 +174,7 @@ public class CanvasAmigo : MonoBehaviour
         }
     }
 
+    //Valida que la respuesta correcta sea la opción 4
     public void Validar4()
     {
         if(opcion4.text == respuestaCorrecta.text){
@@ -187,6 +194,7 @@ public class CanvasAmigo : MonoBehaviour
         }
     }
     
+    //Manda opcion que contestó el jugador
     private IEnumerator MandarOp1()
     {
         WWWForm forma = new  WWWForm();
@@ -212,6 +220,7 @@ public class CanvasAmigo : MonoBehaviour
         yield return request.SendWebRequest(); 
     }
 
+    //Manda opcion que contestó el jugador
     private IEnumerator MandarOp2()
     {
         WWWForm forma = new  WWWForm();
@@ -237,6 +246,7 @@ public class CanvasAmigo : MonoBehaviour
         yield return request.SendWebRequest(); 
     }
 
+    //Manda opcion que contestó el jugador
     private IEnumerator MandarOp3()
     {
         WWWForm forma = new  WWWForm();
@@ -262,6 +272,7 @@ public class CanvasAmigo : MonoBehaviour
         yield return request.SendWebRequest(); 
     }
 
+    //Manda opcion que contestó el jugador
     private IEnumerator MandarOp4()
     {
         WWWForm forma = new  WWWForm();

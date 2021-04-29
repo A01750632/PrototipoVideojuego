@@ -39,7 +39,7 @@ public class Registro : MonoBehaviour
     private String textoNacimiento;
     public static Registro instance;
     public static String nombre;
-    public Red red;
+    public Red red; //Subir datos a la base de datos
 
     //Inicializar los intentos para pista
     void Start()
@@ -53,30 +53,32 @@ public class Registro : MonoBehaviour
     }
     // -------
 
-    public void volver()     //Bot�n
+    public void volver()     //Bot�n de regresar
     {
         SceneManager.LoadScene("InicioSesion");
     }
 
     //Escribir
-    public void EscribirRegistro()     //Bot�n
+    public void EscribirRegistro()     //Bot�n para registrar el usuario
     {
         //Concurrente
         StartCoroutine(SubirRegistro());
     }
 
-
+    //Sube el registro del usuario en la base de datos
     private IEnumerator SubirRegistro()
     {
         if (textoNombre.text != "" && textoContrasena.text != "" && textoCorreo.text != "" && textoYear.text != "" && textoMes.text != "" && textoDia.text != "" && textoUsuario.text != "" && textoEstudiar.text != "" && textoGenero.text != "" && textoPais.text != "" && textoMateria.text != "" && textoNivel.text != "")
         {
             print(textoNombre.text);
+            //Validar que el correo ingresado sea correcto
             if (email_bien_escrito(textoCorreo.text.ToString()) == true)
             {
                 //Revisar que el usuario no exita
                 nombre = textoUsuario.text;
                 WWWForm forma2 = new WWWForm();
                 forma2.AddField("usuarioUsuarioo", textoUsuario.text);
+                //Verifica que el usuario no exista
                 UnityWebRequest request2 = UnityWebRequest.Post("http://3.22.38.105:8080/jugador/BuscarJugadorUnity", forma2); //3.22.38.105
                 yield return request2.SendWebRequest();   //Regresa, ejecuta, espera...
                                                           //...ya regres� a la l�nea 27 (termin� de ejecutar SendWebRequest())
@@ -103,7 +105,7 @@ public class Registro : MonoBehaviour
                         forma.AddField("nivel", textoNivel.text);
                         forma.AddField("Carrera", textoEstudiar.text);
                         forma.AddField("materia", textoMateria.text);
-
+                        //Manda los datos de registro a la base de datos
                         UnityWebRequest request = UnityWebRequest.Post("http://3.22.38.105:8080/jugador/AgregarJugadorUnity", forma); ////3.22.38.105
                         yield return request.SendWebRequest();
 
@@ -139,7 +141,7 @@ public class Registro : MonoBehaviour
             resultado.text = "Faltan Campos de llenar";
         }
     }
-
+    //Verifica que el correo sea correcto
     private Boolean email_bien_escrito(String email)
     {
         String expresion;

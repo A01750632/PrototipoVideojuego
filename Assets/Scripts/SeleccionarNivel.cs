@@ -26,6 +26,7 @@ public class SeleccionarNivel : MonoBehaviour
     public IEnumerator Start()
     {
         WWWForm forma = new WWWForm();
+        //Guarda el nombre del usuario que inició sesión
         if (Red.nombre == null)
         {
             forma.AddField("Usuario", Registro.nombre);
@@ -34,7 +35,7 @@ public class SeleccionarNivel : MonoBehaviour
         {
             forma.AddField("Usuario", Red.nombre);
         }
-
+        //Busca el nivel en el que se encuentra el jugador
         UnityWebRequest request = UnityWebRequest.Post("http://Localhost:8080/jugador/BuscarNivel", forma);
         yield return request.SendWebRequest();
         if (request.result == UnityWebRequest.Result.Success)
@@ -45,7 +46,7 @@ public class SeleccionarNivel : MonoBehaviour
         {
             print(request.responseCode.ToString());
         }
-        nivel = Convert.ToInt32(request.downloadHandler.text) + 1;
+        nivel = Convert.ToInt32(request.downloadHandler.text) + 1; //Convierte el nivel (string) a un entero
 
         int posNiv = PlayerPrefs.GetInt("posNiv", nivel); //Posiciona en el Nivel indicado
 

@@ -48,6 +48,7 @@ public class ProyectilEnemigo : MonoBehaviour
 
                 WWWForm forma2 = new WWWForm();
 
+                //Manda el tiempo total jugado del usuario
                 forma2.AddField("tiempoTotal", tiempoTotal.ToString());
                 if (Red.nombre == null)
                 {
@@ -58,7 +59,7 @@ public class ProyectilEnemigo : MonoBehaviour
                     forma2.AddField("Usuario", Red.nombre);
                 }
                 
-
+                //Agrega un registro en la tabla partida
                 UnityWebRequest request = UnityWebRequest.Post("http://Localhost:8080/partida/agregarPartida", forma2);
                 yield return request.SendWebRequest();
                 if (request.result == UnityWebRequest.Result.Success)  //200 OK
