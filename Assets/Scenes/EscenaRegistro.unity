@@ -865,7 +865,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\xBFQue carrera universitaria te interesa m\xE1s?"
+  m_Text: "\xBFQu\xE9 carrera universitaria te interesa m\xE1s?"
 --- !u!222 &180407278
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3482,6 +3482,8 @@ MonoBehaviour:
     - m_Text: "Dise\xF1o"
       m_Image: {fileID: 0}
     - m_Text: "Qu\xEDmica"
+      m_Image: {fileID: 0}
+    - m_Text: Otro
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -9876,8 +9878,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 285.25, y: 177.39}
-  m_SizeDelta: {x: 470.5, y: 120.8076}
+  m_AnchoredPosition: {x: 243.05115, y: 157.91356}
+  m_SizeDelta: {x: 554.8977, y: 159.7604}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1809365489
 MonoBehaviour:

@@ -11759,13 +11759,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: ddc4058a26c5b4fbab57438a2b0f0909, type: 3}
-    m_FontSize: 50
+    m_Font: {fileID: 12800000, guid: 58b647c5b2ec4184e9a07a561cdf0644, type: 3}
+    m_FontSize: 90
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 50
-    m_Alignment: 0
+    m_MaxSize: 90
+    m_Alignment: 2
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -11796,8 +11796,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 659.9975, y: 478.55}
-  m_SizeDelta: {x: 151.0287, y: 68.449}
+  m_AnchoredPosition: {x: 658.5112, y: 475}
+  m_SizeDelta: {x: 154.0012, y: 79.675}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1158328524
 GameObject:
@@ -25978,21 +25978,21 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: ddc4058a26c5b4fbab57438a2b0f0909, type: 3}
-    m_FontSize: 50
+    m_Font: {fileID: 12800000, guid: 58b647c5b2ec4184e9a07a561cdf0644, type: 3}
+    m_FontSize: 80
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 3
-    m_MaxSize: 50
+    m_MaxSize: 80
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "En SQL te enfrentaras a delete que en pocos segundos puede eliminarte
+  m_Text: "En SQL te enfrentar\xE1s a \"Delete\", que en pocos segundos puede eliminarte
     junto con sus fantasmas malignos \n\nRecuerda que debes juntar 180 puntos para
-    pasar el nivel\n\nSalva al amigo para que te ayude en esta aventura\n"
+    pasar el nivel\n\nSalva al amigo para que te ayude en esta aventura.\n"
 --- !u!222 &1912458897
 CanvasRenderer:
   m_ObjectHideFlags: 0

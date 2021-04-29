@@ -19771,21 +19771,21 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: ddc4058a26c5b4fbab57438a2b0f0909, type: 3}
-    m_FontSize: 50
+    m_Font: {fileID: 12800000, guid: 58b647c5b2ec4184e9a07a561cdf0644, type: 3}
+    m_FontSize: 80
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 3
-    m_MaxSize: 50
+    m_MinSize: 0
+    m_MaxSize: 300
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "En HTML te enfrentaras a STYLE que con su gran tonalidad y sus hechiceros
-    malvados pueden lastimarte  \n\nRecuerda que debes juntar 180 puntos para pasar
-    el nivel\n\nSalva al amigo para que te ayude en esta aventura\n"
+  m_Text: "En HTML te enfrentar\xE1s a \"STYLE\", que con su gran tonalidad y sus
+    hechiceros malvados pueden lastimarte  \n\nRecuerda que debes juntar 180 puntos
+    para pasar el nivel\n\nSalva al amigo para que te ayude en esta aventura.\n"
 --- !u!222 &1235390840
 CanvasRenderer:
   m_ObjectHideFlags: 0
