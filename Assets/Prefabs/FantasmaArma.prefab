@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 3113047782868944715}
   m_Layer: 0
   m_Name: FantasmaArma
-  m_TagString: Untagged
+  m_TagString: ArmaEnemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -160,7 +160,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nivel: 6
-  vidaMenos: {fileID: 3113047782868944715}
 --- !u!82 &3113047782868944715
 AudioSource:
   m_ObjectHideFlags: 0

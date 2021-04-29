@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 1998695706597291732}
   m_Layer: 0
   m_Name: armaClass
-  m_TagString: Untagged
+  m_TagString: ArmaEnemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -160,7 +160,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nivel: 5
-  vidaMenos: {fileID: 1998695706597291732}
 --- !u!82 &1998695706597291732
 AudioSource:
   m_ObjectHideFlags: 0

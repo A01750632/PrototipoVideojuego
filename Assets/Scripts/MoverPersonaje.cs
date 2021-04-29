@@ -33,12 +33,14 @@ public class MoverPersonaje : MonoBehaviour
 
     //Referencia al Audio Source
     public AudioSource armaDisparo;
+    public AudioSource armaEnemigo;
 
 
     public void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.CompareTag("ArmaEnemigo")) //Destruye el proyectil del enemigo al colisionar con el personaje
         {
+            armaEnemigo.Play();
             Destroy(other.gameObject);
         }
     }

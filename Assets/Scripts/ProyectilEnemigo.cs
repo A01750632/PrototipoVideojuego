@@ -24,7 +24,7 @@ public class ProyectilEnemigo : MonoBehaviour
     public int nivel;
 
     //Referencia al Audio Source
-    public AudioSource vidaMenos;
+    //public AudioSource vidaMenos;
 
     public IEnumerator OnTriggerEnter2D(Collider2D other)
     {
@@ -34,7 +34,7 @@ public class ProyectilEnemigo : MonoBehaviour
             //Descontar una vida 
             VidasPersonaje.instance.vidas--;
             //Reproducir un efecto de sonido
-            vidaMenos.Play();
+            //vidaMenos.Play();
 
             //Actualizar las 'flechas'
             HUD.instance.ActualizarVidas();

@@ -9508,7 +9508,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 966250675}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -49.44, y: -2.71, z: 52.537872}
+  m_LocalPosition: {x: -49.178, y: -2.797, z: 52.537872}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1296463842}
@@ -11880,6 +11880,10 @@ PrefabInstance:
       propertyPath: canvasV
       value: 
       objectReference: {fileID: 1579452520}
+    - target: {fileID: 8308009386772149817, guid: 4ba09e2b8b91c6f46b139a091d31d8e1, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ba09e2b8b91c6f46b139a091d31d8e1, type: 3}
 --- !u!1 &1183334579
@@ -12453,6 +12457,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 153311905523145232, guid: 639b929bfa4b2e1429c6982d7c5f5812, type: 3}
     - target: {fileID: 7491239740785986790, guid: 3acd1e2098bea724dbe8aa5ada49b2e9, type: 3}
+      propertyPath: armaEnemigo
+      value: 
+      objectReference: {fileID: 1243542625}
+    - target: {fileID: 7491239740785986790, guid: 3acd1e2098bea724dbe8aa5ada49b2e9, type: 3}
       propertyPath: disparoAmigo
       value: 
       objectReference: {fileID: 599089288}
@@ -12533,6 +12541,102 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vidas: 3
   monedas: 0
+--- !u!82 &1243542625
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243542622}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 8cddc85d35d4a17498fbb62a596eb96f, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 838cf0f05f8077445a96c68691cac111, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!82 &1253846349 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 1332435247422231423, guid: f1c9fd982598dfe4eb352cacaa317bc4, type: 3}
@@ -14203,7 +14307,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1389434239}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -50.316586, y: -2.71, z: 52.537872}
+  m_LocalPosition: {x: -49.766, y: -2.806, z: 52.537872}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1296463842}

@@ -28,8 +28,11 @@ public class PreguntasEnemigo : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other) //El personaje colisiona con el enemigo final
     {
-        //canvasV.gameObject.SetActive(false);
-        colision = 1;
-        canvasA.colisiono(colision); //Despliega el canvas de enemeigo
+        if (other.gameObject.CompareTag("Player")) //Colisiona el Personaje con Enemigo
+        {
+            //canvasV.gameObject.SetActive(false);
+            colision = 1;
+            canvasA.colisiono(colision); //Despliega el canvas de enemeigo
+        }
     }
 }
