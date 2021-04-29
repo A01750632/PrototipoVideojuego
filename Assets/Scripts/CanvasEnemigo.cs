@@ -278,6 +278,7 @@ public class CanvasEnemigo : MonoBehaviour
             textPista.SetActive(false);
             panelPista.SetActive(false);
             pantallaWinner.SetActive(true);
+            Destroy(pantallaWinner, 20);
         }
         else
         {
@@ -290,10 +291,8 @@ public class CanvasEnemigo : MonoBehaviour
             textPista.SetActive(false);
             panelPista.SetActive(false);
             pantallaGameOver.SetActive(true);
-            //Destroy(gameObject, 1);
+            Destroy(pantallaGameOver, 5);
         }
-
-        //PasarNivel();
     }
 
     public void Validar2()
@@ -312,6 +311,7 @@ public class CanvasEnemigo : MonoBehaviour
             textPista.SetActive(false);
             panelPista.SetActive(false);
             pantallaWinner.SetActive(true);
+            Destroy(pantallaWinner, 5);
 
         }
         else
@@ -326,9 +326,8 @@ public class CanvasEnemigo : MonoBehaviour
             textPista.SetActive(false);
             panelPista.SetActive(false);
             pantallaGameOver.SetActive(true);
+            Destroy(pantallaGameOver, 5);
         }
-
-        //PasarNivel();
     }
 
     public void Validar3()
@@ -347,6 +346,7 @@ public class CanvasEnemigo : MonoBehaviour
             textPista.SetActive(false);
             panelPista.SetActive(false);
             pantallaWinner.SetActive(true);
+            Destroy(pantallaWinner, 5);
         }
         else
         {
@@ -360,9 +360,8 @@ public class CanvasEnemigo : MonoBehaviour
             textPista.SetActive(false);
             panelPista.SetActive(false);
             pantallaGameOver.SetActive(true);
+            Destroy(pantallaGameOver, 5);
         }
-
-        //PasarNivel();
     }
 
     public void Validar4()
@@ -381,6 +380,7 @@ public class CanvasEnemigo : MonoBehaviour
             textPista.SetActive(false);
             panelPista.SetActive(false);
             pantallaWinner.SetActive(true);
+            Destroy(pantallaWinner, 5);
         }
         else
         {
@@ -394,9 +394,8 @@ public class CanvasEnemigo : MonoBehaviour
             textPista.SetActive(false);
             panelPista.SetActive(false);
             pantallaGameOver.SetActive(true);
+            Destroy(pantallaGameOver, 5);
         }
-
-        //PasarNivel();
     }
 
     //Revisa el puntaje para comprobar que se tenga un m�nimo para poder desbloquear el siguiente nivel.
