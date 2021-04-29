@@ -90,6 +90,8 @@ public class CanvasEnemigo : MonoBehaviour
     public GameObject botonTecnologia3;
     public GameObject botonArtes3;
     public GameObject botonMate3;
+    public GameObject PantallaWINNER;
+    public GameObject PantallaGAMEOVER;
 
     public int intentos;
 
@@ -400,9 +402,9 @@ public class CanvasEnemigo : MonoBehaviour
     //Revisa el puntaje para comprobar que se tenga un m�nimo para poder desbloquear el siguiente nivel.
     public void PasarNivel()
     {
-        if (VidasPersonaje.instance.monedas > 180) //Condicion de para pasar de nivel
+        if (VidasPersonaje.instance.monedas > -1) //Condicion de para pasar de nivel
         {
-            pantallaWinner.SetActive(true); //Se activa el panel de ganador
+            PantallaWINNER.SetActive(true); //Se activa el panel de ganador
             niveel = sigNivel;
             SceneManager.LoadScene("MapaNiveles"); //Desbloquea el siguiente nivel
             red.tiempopuntaje(VidasPersonaje.instance.monedas);
@@ -416,7 +418,7 @@ public class CanvasEnemigo : MonoBehaviour
         }
         else
         {
-            pantallaGameOver.SetActive(true); //Se activa panel de juego perdido
+            PantallaGAMEOVER.SetActive(true); //Se activa panel de juego perdido
             niveel = nivel;
             SceneManager.LoadScene("MapaNiveles"); //Regresa al mapa de niveles.
             red.tiempopuntaje(VidasPersonaje.instance.monedas);
