@@ -6,15 +6,15 @@ using System;
 using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 /* 
- * Selecciona el nivel del jugador. Bloquea los niveles que aún no están disponibles.
+ * Selecciona el nivel del jugador. Bloquea los niveles que aï¿½n no estï¿½n disponibles.
  * Desbloquea los niveles cuando pasa el nivel. 
  * 
  * Autores: 
- * Jorge Chávez Badillo            A01749448
- * Ariadna Jocelyn Guzmán Jiménez  A01749373
+ * Jorge Chï¿½vez Badillo            A01749448
+ * Ariadna Jocelyn Guzmï¿½n Jimï¿½nez  A01749373
  * Liam Garay Monroy               A01750632
  * Amy Murakami Tsutsumi           A01750185
- * Andrea Vianey Díaz Álvarez      A01750147
+ * Andrea Vianey Dï¿½az ï¿½lvarez      A01750147
  */
 
 public class SeleccionarNivel : MonoBehaviour
@@ -26,7 +26,7 @@ public class SeleccionarNivel : MonoBehaviour
     public IEnumerator Start()
     {
         WWWForm forma = new WWWForm();
-        //Guarda el nombre del usuario que inició sesión
+        //Guarda el nombre del usuario que iniciï¿½ sesiï¿½n
         if (Red.nombre == null)
         {
             forma.AddField("Usuario", Registro.nombre);
@@ -36,7 +36,7 @@ public class SeleccionarNivel : MonoBehaviour
             forma.AddField("Usuario", Red.nombre);
         }
         //Busca el nivel en el que se encuentra el jugador
-        UnityWebRequest request = UnityWebRequest.Post("http://Localhost:8080/jugador/BuscarNivel", forma);
+        UnityWebRequest request = UnityWebRequest.Post("http://3.22.38.105:8080/jugador/BuscarNivel", forma);
         yield return request.SendWebRequest();
         if (request.result == UnityWebRequest.Result.Success)
         {
